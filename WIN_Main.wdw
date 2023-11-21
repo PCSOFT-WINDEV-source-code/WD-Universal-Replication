@@ -1,0 +1,1538 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : WIN_Main
+ major_version : 28
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : WIN_Main
+ identifier : 0x286e5f9611d679f6
+ internal_properties : CAAAAAgAAABxAa3LNFWJ6hDBx0fnGtWwij4I77lhi1FYtIUQVSrnfKBYraC4yDdPEZoKq4rTFDF15BfbaFg3wJHIPXdM2CzLxr1Dy/2ab9UtabFFl+QDs/OAATB1mEjVUSGO63ocy8TAJ7WQ+OYyoRPGeUo5rKH5106tHk+DGI/oWQRAs+7Osu+juSm3ofLrfSQ8sfM0I8d1rENruyz10Js5j+DGfZdOsZu5XKOpdAtOtTGLSc5DAMvHF9WveVAdiyzAGKjuh0FG56tK9CIpOdzXJuUKo0ydZEKgUMbYuXVKFMm6kNa9ewwhV9x3S39cr/CZRfJFE3eEdtfVrd1RHS8NpkJElSIMz24LTPyIyAKy4PuywCptlARUmgL4THfrdcnG+8W3xOJOVvZPpK+GSKjsOWysIlJhfbhCEuJZ05bt6896kQCd9FeNxgQtt6B4Xw3Q5dRHwwIzoLLXR8ryTUrxx4K4kBZqY0PdEONhKunuipVsnUecazp9JVOe8KL2jRxKb2oQ7Sp0qcygrWQUAvwrHeLo4J0kn5BZTtWvTlZ2VPC7q8XKveR456Svj+EZpD4n/YGMMSnvE+tomUrxAuk4Vr0gHwl1HtGYLF8zI+My2X6vEyIl+riVkSHaS+nf/UoY0Y7PArFR9CXi7NQlVJy+2L8+Wfrth2jjfHcsx5HYssg0Ep8kfHr/mySMVf3N9M4hiSWnkQRxpUfBnSmhASmufxc5LcvDwW7xGqWAtYvo4QjNH1C2bfJ3/T/G7RmKdZ8FjUVskcr+IEqOzB4I4nuPmsbik3IkVO1jCO2VFXZmbcgjK/7np9l48A==
+ properties :
+  width : 755
+  height : 772
+  widthClient : 753
+  heightClient : 740
+ controls :
+  -
+    name : BTN_Initialize_Example
+    identifier : 0x286e5f9611e579f6
+    internal_properties : CAAAAAgAAADvebjMfrSNXv+yampUhggqNcTSUi8gvoWCSJapbXiAswsJgDDaqGll+ioIb+3V3ESaqsqcRElc17aPe2qDOtHoLfaMm5/VqDWEeIDLNeGx6f/4b1gJYh1Bp6NWr29aaxb9dZdFDvegC5h5+vPtVETSLR9fkpByy3JoWAi4m349hL75SraMWV7/iCsvRpag1ZSZR5Fji2NaTUZ/yD2IyA0rwlpf6dNKkYc5vNJBkmopfmTpuKbyuYqlgm1Icu249nQeOiKNONmfZlMMbAdCGOMUW8p4wtGZY4xNSRruzxKEmi3upN9xfsc9swr8s1MDoGwjSps6Mex1uaGFFaAb+vA/bI2zNiHGU0iUOuXRfKtRwdqGdCd6yYBhCtFeEpdRHUSj7tM+WcoDkoHPhs4QFA7yFk1McykVHW6T5p18TvuTswFYL9pC93b0gsPc33NRiinzJDsGo9Ljs5lU6SS0x4cZKIAe8AAD8TO7qSjchgQ8QaHi728SX9XEjWO7e+KgCozjJmKCtSNVJ2+wlPBirqdsteWt2ZqSfL8F9m2X5KLyp+d4dK5czpCCznXiqmNtkzxZCVEXe1nA07uHIT7pzQRC5Pl3ILEDm5/h4E2R0uimlIocyM4yDRw/lcj0EL/2h4mKHUzJR13RygBn6d80OW3tIqGojqkhrHl5fK9F+KGg3hVrtS0LpUzZ4EyxoBCKoQQ6SEztRIEiDCd1nKmAjosUu3m2wgj4k7pHxgFCbj2uy5yO+EDA6kY7rS5YT3KuvFnxGPzrd+pcilKhPsheEGDw/qBQmEePv9Zbh7ixeLLhCxG8ziU3gTak+XicAs3jn0B5eJayvxXB2GscqoZP1svZIs6U/7qWpqloplIJ3MisYWXyEPowiYvbE+L5FloaHehNozi+HsPUBLS7q4WDV2wwXEo6riq2SNEUVd43gtPLvikIo4NWKiBStLGuqDz6cTq1YC951E+GRw==
+    properties :
+     x : 202
+     y : 122
+     width : 151
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+      -
+        code : |1-
+         // Open the window for initializing the example
+         Open(WIN_Initialization)
+         
+         // If the initialization was not performed, gray the options that cannot be run
+         IF fDirectoryExist(pGlobal.gsTransferDirectory) THEN
+         	GRP_INIT_OK..State = Active
+         ELSE
+         	GRP_INIT_OK..State = Grayed
+         END
+         
+         // Lists the different subscribers that were previously created, other than the default one (Spain).
+         DisplayAdditionalSubscribers()
+         
+         // Displays the entire window (with opened HideShow) if the different subscribers have already been created or a minimized window otherwise
+         HS_Subscribers = (LooperCount(LOOP_SUBSCRIBER) <> 0)
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : STC_Explanations
+    identifier : 0x286e5f9611e679f6
+    internal_properties : CAAAAAgAAADS9fNb3G0i32rJ0FFhp8G2eg4y04yqfe/2lCcUIz0DxB3nszFXtu5lrsNhZs00uU4zdF4KkTGUIS+sSE+u6hkgz4AH+YezlvJFF4Y0KDR7ooet7CoYvpljXOitufjd9rqT/lVcKpWkAqPZ4u1kzj/uSnb8fWkA7/xfBjcGr1nLxb9EAq1CVkmcItU9DMNcKzmGM7MGzTcSSWJxSUHzjHRbC+BA0dgfvZCJtczoPW3jgvhRpVKjn81Ef6jdXQhuBD/M7T7kBkhcrplHvJ4/3+k+IsInfGymGqBXWIPXJF4x3mewPwws83Q0TTaTrt4IQ5gaCtScCK+kV81dRDWOMdU7mxj9mkGrQP8JYeVI84E4stx6E9qkSF2RxKuHd96SDncDVrKVQGeNN9qkwb2KHrzCgMz8MgSi14djofgMOrAxuKKjRHksTnghtwFce7jXt7Qd87YT2vOsMehnEi2KCd1CS684ZRnA9t32fxwV1VbFDHBtFePBzlTPeakZj4j2JDYVUWTrTEPrN5SJGjZKYKMiDBUgH1wywGHNFTBwLVq+dV0Q2vWxk0v2hT98vamc9PYgAQ+wdBqdOtTzJP65b8uVnSmSA6UcblND8lVbKsbx0rySkLNJfMc=
+    properties :
+     x : 6
+     y : 70
+     width : 741
+     height : 37
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+  -
+    name : IMG_VisibleMap_Spain
+    identifier : 0x286e5f9611e379f6
+    internal_properties : CAAAAAgAAABlx302H+fX01Hzm0CXPRSAHFDFAMbhkrfHnGp3JzfopcqpSbsVwvd7yeYGDWGrTARcAR8G0jxV+S9r/qUPZLOaKt2+erSBMYL6gTMavYK2UDITlfDemgVhsr2WSNoDGXqBau0gpWnWWwphENbaEs4XHUmx5NoiYxvIDlL8C0mtHsWWTijjWXj0xND49PRPwBE6yPQBQHvoB/naEdTmoWjXvdMYfSmBKLSE6GbARmc5vJbtj7bNmwzcDz5gDg/NGFLMwPP9sqLgEY9P3qTYB1c6aVIkNJG3r6vshzIeJKx6U1iYwhdZpA1XR9Z/OKfHh75nfEn9mj1AcNhk06eHd8ZbwkcYSZ4f08IUtglxmJxprcW95trg+oSdX7f9rAKaLoGhgA6VqyCb1JhkMHGzuMWb+NrIqzYoLlduEJ7YgHNPEUQGpLLgKo6rFWVdq/uwdDzUVxhfkW4lpNJJq6Shg9+FAHJOTQ1puch7Cw03Tktq0A1vp7VIIYf+Io1PDwdu5N8ksXWDVuwBEky2Xtq0tgJ/zn747RtwluDhKRVa4MrTKPRrHHpuw1clzRo1uK54C2U7OtS/WSWUwTuYnSX0KgYv6H1bGDllj7DwQsqGzvphgFK2/iux7p77cRz7KTNh0T+zxNe+zMCEeSdUUx0szGqBvoPcWwj72XmI7fenekJZ4bZCkMVLkJBp86OLY/6eelQy5lVgt/I1y6zUQ4anAO5AEIo9R0NTZWlzieyxt7STwsK3BAXgdT+O20nWR68gzVcmbv9aQF5m09Z4te0T4Idlc2sA+yKeabDiUGC+y/ebvhfyTEaOO7cOFzvL/yrytir1+Xt2jFbMr8bfeeoKhqJ9VhIuqf3TUm1Uvp3yX3SFBiZvV9DpVn7UiUpOGloCaYRm+He/FZWuJKYd+RJQJ+V6xCHLHofDZus=
+    properties :
+     x : 524
+     y : 155
+     width : 248
+     height : 295
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+      -
+        code : |1-
+         
+        type : 18
+      -
+        code : |1-
+         
+        type : 66048
+  -
+    name : IMG_SubscriberDatabase_1
+    identifier : 0x286e5f9611e779f6
+    internal_properties : CAAAAAgAAACF/u4JYJWoLTuMV4OHm9Hr2bV/M9LBad97WOTvUumq80SBx87by/LiAczD1qW5Phzm46QENXkNCfyOitVyan4MYVeAxJn4kh+zthp0aiY2eQWYvt2GyPfORJy3VRR9IzL8Ug1DmCd86bMuKVPzr2vP4gKWKlVy1zXy8QmIaOBszKK6bnFmVIwZ2mi8LE9Y2bpSY0429BEnzLkVAl0hlUZvjabV2O0Y++9zOhqoCLIBHCWEchowTtifJ+HhlAq4aWuI/iNNNiNugO2lgpNjTB52P0so2zsDzg7MtHfFIjNUhN6J4ucfv00QBD+GLmh70cnHZZPjbUIRoyV1SAeTVlOUWT6VM6JPMzuVEPehj+LFPhYc3aVSw+0vg3Uq/b+jwmpQ5vJ7oSYtZQWMmCqRcZps5whzMOz90NJj6PYqn8TuPkbpO3KLNGQgjDpdyVbKRAvKm6OdP8zLlMtcpmHQ7AqNXFlqSA7CP5isX3Y3z5BNwHfneFpAwqwEQqFQF0WocGrgys79dJeR6CahrhCnkHhJWuLjPx7YsYIjkp6MTVkZzrZ7qhCQ6CsGiEAr3UEvThbnqJ4qOuBeYys21wlLyWnjDEvXMljLSOpMoadb+aWWhwKtH0bMfK91UzjCHnfmX2Dc13e+CGcCUd9hfR0MvVHlH+zIeBFf1gzkYiEXdcfKIjB2W7WdQzHv655P2AxE6O62LxelOMw7puHZCStHvagItYXlelOdq8HI8cOejdO8P4FAk6D2ur/KQpqEVNKdlmDUL2bMhXhzZbdPZBjS5HB6RJg0xX4seTLuxz/35eqe6ju8lDsnMGUbndPk+Fv/6qoCAxPRIgPlRV9nOCd4zvTdya7UggspTBnvJNOJyBa4TQlV0TxZYXlszAyRoxSid2abCO9/ObMBru0bRWidTdu5Sb0B835Abht/bGjMBkMN9GKf99p+p+I77geAOscr4rabrUHcqS9GqPUlVyqitTvCJXgUL6zcwsIJ9rjoSoGGdjs86hvd+ATBg1XXQERQXSjiYQG1H5YpkpBDlV0IKCZB1qbBbhe05GvmozCEDfNbNOQMHJpFvUl2x5fXSDEQNOVp9eNaWkRbZQD8LAig0zZdj+KEoL/U0dXAEQe2rm2qaQ==
+    properties :
+     x : 533
+     y : 306
+     width : 80
+     height : 80
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+      -
+        code : |1-
+         // Opens the popup menu named "Subscriber"
+         OpenPopupMenu(MENU_PopupSubscriber)
+        type : 18
+  -
+    name : StcSpainDatabase
+    identifier : 0x286e5f9611e879f6
+    internal_properties : CAAAAAgAAABvKGVZMGr4lJ7MyEBQbwPbt4L464Bw2E1EJvVzOyaox8HGRO0DvsyUXmTXFXcIIlAstSp7Hli6sX7u7w8fu+8B1NUnsNFI0ewW0viVgyJxTgTpm75Rsh21bkJAvJlIgkO8oZw0oFy9hISp6gggIu0h0nmQwdRCvGb+ftQZgXFVC/8GR0qTReIjg1XuBnvv5nVrsRgsKNUgd4LQjcpluJNUetj4MZDx3m7rMAR/c5IC/IApe1whlnLdtLqpWEX1FLGLmQLJ8AQtnZfkuprVKUyh4mSTVmQlzPeqq/pGkDr0hP/E7wUQj+A4rSHMvI4Z35hPOfWbVHy7NRuJBI8i9X15MCwzcP8xr5RVexNH2ZsoDwgUzocUdYXQwDGFQUGtaTGiuuZbSXYK82SlAASNgCxXyy51Z46Pc6z9JTXZQszzSKPzDNa9awAgbCyNOYSfneRP5XfMAbjaqr88BXHKvYrcWJBQpUlpKmdwqipaDbLQGo9VH39isso1bXyMeTTbzfbO7FJ2IVRUTQnHx1T7gBFxT9Wft5xvxLNLblQ+Wy3cQPXg+BUwPLqbZKF7Jpy/GJ++f2MaJp2BiJ2zcxwsK/aM6qZSKrQdLA/zelZjambHM7GJBZ73Vp72caUR5s6hiXLKt1PdolPfiCTycoik8TnTUTIruuGpBLGbKMXoUTrL7A+/gNknHd375FsHJJQ5Ejg0AVWkwuSvlZY9cOrNRLDzph/JUG6CgxE62XcL+47e2ibawmQ6s6LHjHAtHiCpKwFLYTKKJWyDMYVFr7hlqpJ3QdyFROleVSZDhs7bJ5x3ziyAs/fobbUV89JUT+DlRJA8/OSUJgknKTDPDRmAblheB8qefUz/GeOyZKeRHPGlIaBLoH0ilVtQsyreF2r3+mHuqva75SJXGg0Gzg==
+    properties :
+     x : 496
+     y : 240
+     width : 153
+     height : 60
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+  -
+    name : IMG_VisibleMap_Portugal
+    identifier : 0x286e5f9611e979f6
+    internal_properties : CAAAAAgAAAA858ZO+9sXOALcaZHGP3jJGXCrC4QI+3imltWb6cUoWWCSBxQ/+O05oOMtp4eGw2v8UvS9p0ivtC6VMenTjJZeC/ta3Utn8H2kxK8TqnIFmyvyep/RraiZRaiWGCizV/0/Vx9t25kUt7fx6OI/s5LD9LPd/d2nUiXNd+ibrlQ1+sH+N28ZdN67HDJ4sSL2jU6OxL71S0QkQm/Ku5tjUHi3ZJkYlDIB1OGMN31guPrPZJ7aS7jVHV85JZmIEf/3VGHyK3lcPGTjF8nnqdf5311AtH3xx4HxbWaFdEkJrCItsKcqsuMX/06vktf2/IoiEOPNLaXsLemQGAF3+zkKyDukQAa1GjKjDa+ojJRAPsHMGeC5BACKaiFrfBBeCU8EbxwKGfni3u5l85WbnKtRJkviyITPyF5VVamBd9mQcLPAZFgDBSyLeQRGYxXMZsOLS/cc2cLo0oO1wgYwmr/m8zCAqjitLmIAmJlS5ZSORQx5j5hcyFcoCnRPTDs6ociGJJxMzhRiI467kqwCKYrzOEN8vtwppiqSwB6h+fbabxrxpSymu8lA90nlaY0Ua6+L/Fw/m1blLXIDqLL3m/X1gXan5vCP4t0u30po7ay/Lpsez6t0sbwXHjzX2JGUnvHmPwE/hRSc7Ye0vA+uE/4HseQX6npsoyJ7Guztz0MdangvOVGyyYqumHgtwuyMCxDzmoZ1UHQOyM3H3U2cJrYDLGznSsRetwe06HDq1M8Xbt4zNVZVx4ZCoaWf/M1vQIc1uhFDf7S7+4G3UDo/6S4s87gsyLSo5aQoargE83sYmcrDd94AvaRXBdRlrJIQEwLq5hRwYu8JFJnjwJmRyjhs7etlmIJn+9bzoftMLoX97qvRBSrM9OD4aF9t59zkHTsKYlXtqzFyp3uPXUD41tNtoy8bFAlCHotJVavO5BcOD5Er
+    properties :
+     x : -28
+     y : 251
+     width : 176
+     height : 206
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+      -
+        code : |1-
+         
+        type : 18
+      -
+        code : |1-
+         
+        type : 66048
+  -
+    name : StcPortugalDatabase
+    identifier : 0x286e5f9611ea79f6
+    internal_properties : CAAAAAgAAADnRXLq9HuEE10X4TxZI+QdNNmjYzkn4ETVQPiNIA/6r2gsbW9HUcEKGQNUeRyCSSTv82As85OwhDpRuBQ1APL+ALAOGfiwXSKnwQJG3E3a9s4uAQKV7oDBq29q1W/o/mI00sLI83OQYRqAr8KmTxju2HGoMNr6s8vfCm7TXkwyuMKh7VmHVmOJruKK6SkXSJt+cMF1z/+tEuA6aW8cpiICicJYxyHOSGSirNe+B7ZFwAS/4Y/96/SQJ7AdFDNA5PrDAGDavi7xhIFUPWZCJA0fojjefbJ2jZsS9eazyej6ZE2MnVl2zde+mX4v4z2F2KOanirdlaDtVryUd/+DgUkvXibh8V+PoLomv3Qo/9e5no+N3AwFwpOTFwYnMBUM/uj48agQG/iNOILAawFeedtK6JSzeEWV05WeeYhMma3VAgI1INehR7yMecLE4Z4+3SwVmpnwWuWwxti73R/ZvVMDue2pn2LEVEhyfr+yZ6+Ex6iHztT0jylQ94Cgm3aa4G+s277jbCYnr/gTx7TcJa8Ag1+n08ulhM+h/JZVXFXz/nxV2nrHpIBhNz5IQys3YYWzHCA4o2HvyOg2s0W2wFPzc8JIWnwSXw6XMMe7Rqc4OLsHsjBDL++ELNEnITEqe4Lng3GZHTu+yoSqxNRSa7hLDRFtN0VOaei6XPeQc8G53i+TQf/UUX+sKgb7Avj6l0frX5deeRrJXlBk3DlvN7WUTCZGmHmMH2PuvkeFEyuRkVP9hXASlpdJLok0WY5pTmESWqAniDQDIllgbKZWsYUUPI0UcWmr6oA5M7OxoO5ztqQfbPbc8iaeUynIVzLk4UX+UvKKvlbtIAbBx4FSMIc+LeL8ZPzEwPnRfGz6kGTscUQ4rNSs1MbfhVsU1xJk9xTnIYO/t077CAbkc4fqwluPNEuv77BR6G0=
+    properties :
+     x : 67
+     y : 393
+     width : 152
+     height : 60
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+  -
+    name : SHA_Arrow_1
+    identifier : 0x286e5f9611ec79f6
+    internal_properties : CAAAAAgAAAAWkTPoDvUrUFGsEw8i+42K5fdy0t7M+Xa2UHWGUZiXi7Rmcy4BJmXL/i9wMVXDovlC3Xee5R5WJZlXo8gfcrWJLFGnN031kwOlBDWPDkI6blov62T6lwKxpQHnYeggVI9TTNbGVD39Q0m1s1ZhHzxD/zRSNyBo7zvd5vN5hqrxg7vgqm6UscZumliSHtUg2JJcbLmUztt+ng4NZVfDWeXpvibZw4+dTwsP+B4czl0CHARF2mOZaw7FfLJ+df+PvKrUAEcIuIDmSplwUR/au1yFHCaQulU61DagB51Ij7VfgVpOPkYz1t7p0dFk4jjQ5oBgKCoGcJ1RG0rKeXe6y1tuzA772BMDF9fgic2YFk1lgYWEcdMrCnT1lsditWfg/d9axn12lqyRDreB6u32Ddo0tq6J52mHzrOhW9y+3h+4Q07fKAdsvDMUqWegyjdg6wsK
+    properties :
+     x : 178
+     y : 339
+     width : 52
+     height : 12
+    type : 20
+    code_elements :
+     type_code : 32
+     p_codes : []
+  -
+    name : IMG_Echange
+    identifier : 0x286e5f9611ed79f6
+    internal_properties : CAAAAAgAAAC6cEV5HimgW7nWmp8D5tFBLnCgYdEehomOW+SvYja+i4DFSnCa2pnTRcAc3j1IVTWqNgrQf9FeTmgaXwU/k7U+UEZLzul/ykGn39aONq9TsbpLxy826eGEKstvlKQq9dOOEIq7IaOnP1/akUJiHjModqNYBuvUe/3wIz5V9Ul/Ui/mfE3TKRvagBuJ4tkLbd2Q7sxbvFsrFiuTknqtogvEXmPSq9xHiFFQI68+dqPS8LHnj6TcddTh6vNF/kgtPkypNEtXyQ3soI9aRMs6XpopHC3MLycdAdBL3qOek2sWGC9b3UwCbag1N09LAwnhnItjwvmESRuMn5g8jd8g+mc/15w2SXHf4+3D15/wvKcwFcZZcP9D4tR7rDJL52RIbPkTfX8C7oNoXl6QlLrUUWWmnDXY4ARNJVSdYRxhO1yiujETRO7y4Dq1UJoOloJcuoqTljLzgEC0YpAwb/F0aBxBvTaVOv0zAsPOKt09g8nYJ3N8hLkNranKWx4e9Loo6GKoUTe86c89AB2GLPrsa+nmu9VQgi8X5OZ7CJ8uHgCzgTonhPhgaFhm0pr5ndpoCxOq1wvDLCThgEzEONIQXHZ1nKMZ3E8vFD2jItrskF1xY4Ba4n3iMu8VRVmnvZIlZlpT9+HNXB5HqB+GrZm9GfZTIn3mqWOrrg/b29x4owvkgoajHErc4OS0H209qUu9vY4S22buBuFt+zpBD99qJ+ak4ugnKl6+kpZngPlHSVxQ7mYR/KgDaCB/X2o/aqITWdAZw7z9M7mT29I4P6evUMAMnZdZ9znNfivH4LKuQHSh3lQp/zaWBKlyzN+uXusdI96DbiI7SEhwPi55DcuGOKVOsvmGHQTTbwBU4DWe2HgU1T3hpgFJWf1MfTK8iOHs/Spg266aXVn8ou/YXG1nC1WW
+    properties :
+     x : 214
+     y : 257
+     width : 64
+     height : 64
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes : []
+  -
+    name : SHA_Border
+    identifier : 0x286e5f9611e479f6
+    internal_properties : CAAAAAgAAAApSulEdRBEfM9buQzK1Er9s3VPLwtW+7q3uOYUfxew3jUBbwXaLZrQJE7Imv1uVi4YkR2pYF5Hna3XQGTPpaRVFhfViPLlUs8Hg6r5PQSVAa14SKPpsKjTLuA/y0hB1NbiGnJKj2lg3ilX5OTO2kgn0fw677PL/ipCp1i9SNexQI8W7t6aMX0OEcytHB38MomVfQ3HfvLcSaGeZnB22NSqfRcKcA+Ug7h8HgArGqJcvLAwZAxgZEnP8wuTPIgcJPwuP/pciUZbEIyCLePJSSoe8gydga45kGiHLKPOjuw9WdDYrRlTYmJEpLW8qX8AlAqEHgi0W5mrqii9/8U/2rDHYU0/nrTnADqXlG8zBWTPu/6gnWW8+YYmeNFgXf9QAP7vJ9dTwOKMnjOsQT0j1rmnQOBbRU4hqAZl6/XpPxeomM7ckE3IE5JxWuba5N4tT9PHdPElzsU=
+    properties :
+     x : 239
+     y : 280
+     width : 212
+     height : 135
+    type : 20
+    code_elements :
+     type_code : 32
+     p_codes : []
+  -
+    name : STC_MovableReplica_1
+    identifier : 0x286e5f9611ee79f6
+    internal_properties : CAAAAAgAAAA795DYNfKhYfgKNTJYPwhiuNMM9zkEqC0wvgdxz5IfKE+Dc05unJs+EV8IrGBK4r7+pB/sEGxOdFTZVrBxAN+YFEuZ2VoPoUQBt3tqIMvYKaZa9h+YUoKi4SfiPJQJ5BXXjXDVhubr2YasR9E+Q/Z/jsvdZxGCDqgAyNFcZFasiLiS48D+6Z+jNB/hpYV47N/rHRtbkM2hD5gghmF//E1DcbzE4MTbJUlnDA+8NTqMOA1WlmexKqy3Boy4WKF558fQG3WX9OUNhDaa0iI53qozpDt0fAxUw0ja47ovcOak4E4snMvsiyBAAMFS30JPL+1Xm93cYQlnhIEWJPKdwy5oozXXFilOsce6LeXLbPqUYbULk07QcfKbvDqjiG++j2sJVWpzp+LvbFhsiBRvTy/KN7sAJF/1YcY+mo/h8QNGqazoTISs3HmubTTUV94jtW/Fpt66tSLaCQcUdN6phVtCltCQEL2d21R+QOkMpdZj6O0kgv4HaVY+Tx7C8bEpD8hvnIT8xDTQ1g5dLzs3S0c2qz0NrROh0hM=
+    properties :
+     x : 290
+     y : 290
+     width : 154
+     height : 31
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+  -
+    name : STC_MovableReplica_2
+    identifier : 0x286e5f9611ef79f6
+    internal_properties : CAAAAAgAAACkH5g5yPY2zJHde31yQv+5XGhmkP3EBQsydBfeNUP/C+cJpjWdxBPBvz9PewOEU7879T/4qrxjvFzfHlb+aT2LiUmUojL35DZrDnRSRC/TesvfoAA+3MN3BJLLxyrk4mT8EuaEXDeLjacv5dhr4R2CJzN7wvblKH29ylZ2h+4BQCF6qnPEVVnVcrkpVBo9muhTp1A+8+BI/nz8XZWSft/cOK84D7Pr+5JiRBNXvrMzYCtxGtiVVlg42WAsARQlkd7pWdsWl992DKlm39mWE3P3CiJzKj/AEDCT1I4wGD/gzQyCQv0SeAFz/sR0AwOh3iifPxDEIWhCJZ/5XHhGC0N/CXdYcKkVDJLcmkkxBVKpZDGbKuJwrqusBv/VKCyEtHrnzymfG42SteLjVgqAiHlxQ7boH5SJg6m+h6AGiowJiixgb2GHrunGAD7BoasA82gZkJ00RI7lzndjq60/SN2DSeemn1J6L85nEndxIZaArsNuPFIrdgRTsgpzSsK2kL5GrbYBaiE+pUrhKCOt+KHCDHVqOHBVifJzZxpOOj3uH0L40epOdYPqs/ECRzwPJzl0dFHnsYe8K2pE54s3eBQhWEHm0aLvDdq5zrTVPQ==
+    properties :
+     x : 246
+     y : 342
+     width : 198
+     height : 65
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+  -
+    name : SHA_Arrow_2
+    identifier : 0x286e5f9611f079f6
+    internal_properties : CAAAAAgAAADvR5nOF7u35jFSqI7ZQvYXyMT7pkISqdiFl8Lnlg4Hk/C9SavlThb2P149SMcovQv1SdrOe8OBVZlC48hTaK6C8/zPPmldZ+GmY5qCns1vaSqnbMGI/MbzCODYTKmKTWjsp1zyejaM2hUSv/VsM8Vk94hmzf7WV8lvBZsme6PGYNwjvGWZhD0jswvtaBp9gTsF/qGEzZzut3JOqMj3jED3HClNr6CmKefxfYLbTP6C8uop9ibGAEk5SEqlfZOK1Zc6ujxRh9KGX94PRaPZugeYafwDFGIzhk2Ai+0ZaWJURvByFJx+ZzaAeW8RbHDPBlDk9oU+Z/C2vl+t2Jil0gPzNLEXazXwfcXv7z2Wbn1PN1i0P7+kjjnu12liMZB6Mwx8D2mKrvCS/hxAHnqccejJQ1Q810sHZivHIHKUQlwfgJArOTL3m+w=
+    properties :
+     x : 178
+     y : 357
+     width : 48
+     height : 12
+    type : 20
+    code_elements :
+     type_code : 32
+     p_codes : []
+  -
+    name : STC_Steps
+    identifier : 0x286e5f9611e279f6
+    internal_properties : CAAAAAgAAAC+xuJShrIfLlEMlM5SXkjdO9TvZH7spOim+8SqXFwATg87cbQw8I17EvQYWSx8M0GZ3XB7jrn0EM0XggGuvEe6TJvncabSDZXHc0Zi46doNbDbVAI4LT5P+ixtODsbcNJ1pubciZYW+RT6wKTHmEvHbZqcM6oXjCD9++Ir5tmQAZZ6IyS8kNS70hgbRK3+SfzFXsAEzxCnvg2eXnCNW41OnwEcfhjOW1Lco25DJe5yYIKXJ3GC2qiAK+3VdleJON9fKqW4jgXxwdFoaCis+Wq03Gf5UPT4om0STWwXeTH6c0JHdpRGM8xA0fX5k0DDpE1209NZTDg6jiMrzqqAOHArfGix8XhryZZzAbjJnfeNO9LnyruQtpgEup90iqZbEWc32dsHiA2BdHXYrW9dcYozjy+UMKLmLGqaW56cC2day/VojVd7t0nbpYy7MfQmjQJg2RNKtvof7wNp69eTDYThY5I3u7VDU+Ee+5g/e7zICY98DtPIJaeAcyAqeaZ1jhuhERknFZ5PFm2zMG/cgr1dAIooQwZbfnMtvs8JwKmoCUrMWhlbd8A+wfjP8wq3w0Bv4mBR0pWif/a4Cq2ihQB3/YAazPKHerjAOM61HOr+yck+5NSX/CgdUrdcsBxmWGoclk84K7OUPwYOfjSgU8IzHKd2VPdhgfblHD//9AoLt3+dMAMyPREI0trV2OqrZJGy6kiR8vWeCXiHlDsCn1cdzQ6iiGhBu+5UdF0k2EVZsAmR7J2J5HEfMNsAPi9KVn9MkshOlO/9J961xTllW49jdZVO+rW2Qi1H9XNCtC+rZATsvSHiyOn9rMCXOz1ZUPTP3zIS705bT88pNEfjAewbJ4uLu0hvtsD3bYk1qNhg3E1myAhHG3gM4R0gmBht4iA7G3klspYpXOlSy3FRgirSgXV8ZMsYl2DYJmxgOgoZk+Ss0ZcgupfsUSYpXS6YyEZtOQv/qTtghiMQQcWtNjCnVdVSaaY/Rp3ozPW4sIxJYUU1OT2nzJ/0S690Vko7M5wtcQmzeZaRQk/+zEUADxRVCx6R9Yf6EkykDQTTb7Wv2n7DIh4Y0TSgo27WcX7hLlzBYDodvj9ZdZbvYW5aYBd/RFI7r/yb4F0OxVDXGsJ7dycym5Y91v6TytQOl0NZUH9WqbU=
+    properties :
+     x : 48
+     y : 124
+     width : 396
+     height : 112
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+  -
+    name : BTN_Close
+    identifier : 0x286e5f96120479f6
+    internal_properties : CAAAAAgAAABseIUHy4mf6ckLW1t/BbBNM8FgEDV8YQGLtE6cykoS9+pLE+ixwOQcRrpCxD0YnO54SgU/9szxS0sQ0PME4Cx47XF/dUzepW3n+UMlgkGd4KOs+WS1c6Xt1V7gX7dxQR097dpLZSXCp6iXEl1JqDILcn0m4Daq9gbXhHAs3WS00UjTO0vLd9UHgGaOv68ulyl/Cx5WdtzVTZMdOUHTmWWX6kmmQ1j/X/5ofsBxcSHhcfznl9qcnnYTV9f5EqCgpACb1k0E8CjIDgZDLyODlOqs+/qDHxWFTTqXIfAuapSQduLJPRUYp6Thme/rJmKmIVCgG/DYh3ydVkTKCH+Q7NPlaugOLpiahnD3jtSQxR0kA/BszKYsvWha3ZQe6Om7Wqdvm3nuykPa0Obpw75AbIDxlD5U8wcNkhFnBGYN3oY7vBOfXel9YtGP7Hnx4ptdv9zUV9xD4NJHBWadFK5Dr+3aiPz3ucsRoc4V1N8cXYdZ7Nv5N/mK9vCVnsoAfvVYMshqFtxIwd979uHuKZ+FkPxa01kdwXGJOmtFJ8OKynAeIDdwTuD+27m2qMfDiW2ns6X82QlfA/d2Yd+8/D3cdi1Ycv2w5PhyvlP0lQQGEbUVNIRRSjYdyM0XkNnKyEUgfLL6aZLWfW3YbkQEnD0Vqdrgt5GKxkAgcZxQPc4NTDCNr6e68LJyp/6WvHhwIfFlzDcMmuxd6oLj8Th2QKBjmwemd8v5iqw6VWb+CDVzwIOu6U1eH290CancflEFr4TLgvi1/vWGccOmcHHoouZjI491pA8ispNZRhMhKF+CaXUdw2H6YrCUGdcUr7NJAbQIUsvXKsdWLD5khWwVloJT+TSnAH0PU0WrWuTKzy5tsJpjdnb/EIOeuYTK2WoAFMxjCyTkxiefQmDPyhqmbL5lefIRHRooW3sA7rPIdScOa3pGF0MS5kThwk3c
+    properties :
+     x : 636
+     y : 483
+     width : 100
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+      -
+        internal_properties : CAAAAAgAAADQZyvpRjJZltgKBVFD+SKMukTEU1n2G2jmPSjnx1ZKdSF2vB36egNKcReVrz/xwpIZdIpZoyUu0CjPxu+MpGLAedmE/39iAmJIcu72BpKoWkpseLXy2lnJGPSMFw==
+        code : |1-
+         
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : STC_UseExample
+    identifier : 0x286e5f9611e179f6
+    internal_properties : CAAAAAgAAADP0DIeD352Qz/tm+zo023b8lyA0Tcc8/j6EMevq4Ic3rJ8r7nylpcpPw21C1Wms9yIN8+ZI+AwsO+JgKB3X+z93bdNbSHrYCXvq02ZlyT1eYB9F5nA68UOQ4U9gZ7PbLN4H2nG+qh9jrEXui5P4HqnK+GYuhx+gW7EKR5L1eEyXrZSoovIwTK8hCnGilUv7TjZxxZAopCJUA4D+5Un4dhUWb41q7N5sRUunSxGNdiGodx2p3WTGmq0OxD51dw+Q+lowjmiSHUAIlvWI80wNT2EbTPiDEDBdP31a1iRYGeGce2qYSAZXZDwIe8uyYkG/sgMfiwUl7mCbFPTtpfOXChEAaxbUvVK1dgQUH9j8gZze6UGD6ayV7popANieTjpbXRz6e4+l9kFRgiUmcwaN2xRcTOs8eR1oLlxeydKqeFq+eyGS6Zth7c9HAThWDMxeLmOotTULu7c7qNbmsnEyDY=
+    properties :
+     x : 6
+     y : 108
+     width : 445
+     height : 131
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+  -
+    name : IMG_Bar
+    identifier : 0x286e5f9611f179f6
+    internal_properties : CAAAAAgAAACbMoXyKIL8SUn0yyr+zEhT98tJNWPl5NY0XptwcNDoJMyOmLcXv8Tuu+zTj5Q3ICzCqJaWsRVWKbQV/zWVWxMxcLrk7LaJzyJ/vtCxVSMB+hlhwoWNPGZwgRSRo75vd0QUX43w5i0QVBDgE58p6ZxA9A72unxGBTmxxY2TCRxKmwskYvUDjG/BItel/iOVM4VWYwWQDraAy9yBvWwE1ej5UYjWwFMb277f/jZumbAVA3CGC2Ni58JBYeKWrW4jmlyHPayzjUo+pfajGLNDkfpYO4Bc6dslks3FoRZTyFdiWkFPDxyRzjSyxvVwrFpuWFxwAtCGn0QO3NUuEBM7R3WRJ28MJ64jpF/94WY7g3Vj6mjrAub+tMGIB1pDO39VisPNPocu/5oZ6rQ6Kv6LWDvW8RkKtp1rVB2m6CkNxZAQbb4Brx4XHEeOR0lvjSKVN2og9CHK2yYTkGpygIdjJa0Z8dZF694V87j04S2CxsDz+zIYNP1DpfQVuP9PE71YzlQ4j8FCgnAODnK6xEkhwbID66C8TB3Q7AB7iKbHUyaH+LWmRjbxCMlCEkWGznDch6Nreft9UNaQ+5sten8d6PTxw7h0kMG2/7yvIfI7z3m+neFI5m22t/kUNOUBXMBMGcg4Cztjw5yJjbFLUn4iiTGfmbqmzXuRo6uwjtq0gK9m+SWDKO+L4LkvYiveksxttHc=
+    properties :
+     x : 6
+     y : 5
+     width : 741
+     height : 59
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes : []
+  -
+    name : STC_Title
+    identifier : 0x286e5f9611f279f6
+    internal_properties : CAAAAAgAAABYimTCayEJHffZ30AhbAl8vvmwV75KiXLScGnBZQMB515ZT7Gx5WduGju8FNQTJrJBeZY/WMRv99rrLWaFOHoiOztilnfNBUL0aa5GT/MwWWLq8khvwQs6D3ENuOcEdnxVQ/VGRdvHolOZd0/FHu052sI/DOXUK1A9dpZhEXs5wDt7AuE0ItPzdEKBknFkzSyKhdm9+jhp7Ln4NbGdO1ppZlnS2te3a9tgAJihTmzxc8D2DL3g0lsUQc/J8qTun20Vja4dUI8EW76ofDICOefXP3JOhnZmno7qRBrYqpBOPQU3xuZ2yjhYPJCLOMw6aBO+FSmtElTgbsPbSaKv3YFd77Ya0L/076VRBVFqlQPIDdHhQ3yppRUjrQKMxjPDH0vdraC7D0lWuaa8ZAwcYCA7Va17DcI9Skw8805iynsTpC0pTzTotRfaHd5NJYC0/4r0AhpnYJKCd+x44K3z+qs3BlXElVYqOdVDp98nQw==
+    properties :
+     x : 21
+     y : 21
+     width : 419
+     height : 25
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : SHA_Arrow_3
+    identifier : 0x286e5f9611f379f6
+    internal_properties : CAAAAAgAAAA+nNRCs0MDhdplCmUVPvqbSr5H2nrRTei30AFzFyf/Y3GMN3Gd2O+OhDtV2kgqdj6ezpNKpB89cy0r/8bZccdRuzbvn1DgNrLOqIyzbD+O0NywP6lYnMtWB6MTnCjol5D9jnN9cpar5kGg2aVZMDsu50vfZXquR5jflwGDEGYvffsD415KS92Ql+cIUPMFnORxgm1GevWCzyuQGQenceM8ujDuiRofMZai/IXlWClsQ0tPdGEt6/5q839isv+TVkWaFDgApNyQLNhz53MiTyCDVwLaI+m7bbOHIbLWzY5PUgq2vmfE9NcgU4U2GV2jotPTLHNI7LQQPp+qbv1HWFSG5tjiyRiYRRLjA5wDBaTDld+eyE4nALWpf3012/ecKexrhqHWUhB5QurCMDU5YoP53U5AfLTqBA154a/CeWqEzUzRHQ==
+    properties :
+     x : 457
+     y : 339
+     width : 52
+     height : 12
+    type : 20
+    code_elements :
+     type_code : 32
+     p_codes : []
+  -
+    name : SHA_Arrow_4
+    identifier : 0x286e5f9611f479f6
+    internal_properties : CAAAAAgAAABqUHjWJ9enWYbR1pGh6tanzrpD9sZ96cSb9OXXa/tjx91gC1WxrDNCXU7naNKkiGAckM0Uduk/PQ8BccQj4+lDoRixETK6WMz4XjZ5jlHYKmJKqbuSFj1ouYnFyvCwOwA1sjtxujYH0vmEZc1JeA+mjzf/OVrGI/w/84WLiF6b1VOHo1qCWxkMp5NEiIsteCSBblVq4j2OwyuM7X8/iQ9UWqJ8f5DlO2AMPluLfid+0cExenereYAs5YFI0OWpqCMQPi7G8oJ6RvqtpXkozVK5feSY4a/Jx42hgyh0YxQxuIhgHD1yAtmSyVMce/fp1PmhSlFqvprysCU49C/5puYMREZQW4p+53RJkSK999J9243E1hDxfi8zzTwBFytIhUjHWo36PmzdJo4mlIlVRqedYcpEeMiesLnVjdueHdYQWfgFyQ==
+    properties :
+     x : 457
+     y : 357
+     width : 48
+     height : 12
+    type : 20
+    code_elements :
+     type_code : 32
+     p_codes : []
+  -
+    name : HS_Subscribers
+    identifier : 0x286e5f9611f579f6
+    internal_properties : CAAAAAgAAADRgtL8m5qXI/x844TnogAVNGf7wwI092KUWkDvdxQ1vxgcGOhsr1dkfVo4j9H5RlQwcYVRopljlrlsa29N3HRft6+XnXyuPNIPQdpelCGS40dOC7Ij9DNTn6f/ZdC0h3DKQWBDAW4mr1UITzM1+QWy4EtQtKtWs/giQq6VMoqwv776aQs8I/URGb6U23Qg2E4wCvTT3LpACN89+uO4597uVxD2punJAKnkCtNb4iLuQKfRaqevXL9AHcvtFFbRMlUnIa+Exph7+Ge5M0LGqAFCUTpabZ/Qh0Zu9yQp75ENV6qurWcb5Sl4s8c5XLvh4cmlQEOramV1CILT3uXEXOyz2aGklDPWyeUflYAZsytAFL/AApWMkNoI0WuunsVz/PBOkD6lO/CtNour/mtEkAgC71yaLE2vigrtUjrrOTSUmAO4iKeNegMir7QWX5QKzERhvVJDek+WZyjibn4PRb5Nuk8ogtqhB0WAp523qVW5bBo3xKM=
+    properties :
+     x : 6
+     y : 478
+     width : 741
+     height : 257
+    controls :
+     -
+       name : LOOP_SUBSCRIBER
+       identifier : 0x286e5f9611f679f6
+       internal_properties : CAAAAAgAAAAhezdfi2JO8s/kdTIVy+4rM3u9gafesQpVhzFwetedxo+kUnKiob0KP5kRijan09i5x7S9DhYHIkoxmYv60NcZ06D1O+V427rtSKjrix/DAAL1sY6G+aGi8Tkre4oEKf4+oFvfnTyLFCRKnTyGUoZF//pBd54sY9YzmQ4BYXPgshx68I3xkkArcRg+e+qAUpq04BaP43MO9PKpDRR61yeQ5IIP+qnSgMbAp7eovKWHpClau0p2E1BkvIqN6yzPERknD2PwiXx7/By1Gt8I7zIekYNik4lSY6pRkcqeZt75+YTrgw0+yU+dmH7JwG9aX6SbeoiRXXrq8odBHB3UWlbS+7lIgiSnQocfKaKUGYhMwa313tbisnCfn5XCmnpkfwsbF4tdrSBx7/VzJs7fIBa4VuhpaQS4AXm+QG7SRb+WoyO8Vth/3/YppPF85LtoWCJ2WFQ/JwIj54TspRBeEToHyK10a8UoMO9yivSHP0FB6aqX807e23ffbqW9AXcvpW5OrL2BpHBDRxXLi4SSJHP15BSSfCoE9WaObotcGkuRgYHnBWFgO/Gy/iOIJId0YJlkIfKxBNGBKaXVmm2o7J4awuYOGwHHgHNeF82kwmcnYDQelAYtrF7AmcrykNCJ4IQxi5+8UjsnA+efzQG8nf/nIJTZ2UeH8z+CtQAfV1+RlSlaJlzhF0dylYhA59Y+zvDkn7JccCs4bNk7UxMaZ2u4J6+pOyDUaOJkfHw+H3kiegItiYbomkdB+4+eyoy+K0eiaadQ47LeA7nZGLy2H6Ej7g0gxdqneupB2m+FamT2TAkwqCnHo2clio94KmfFV/2eZ+BlKAG6n15VIC09oEufXEkemYwiKXa07IUoMYsVnGrsB9OADOxkgvjZlSwBDshOpU0sjlT7xNfDWUyDwa/st+eyazmknzr4T1Q2kQLNia4inv1yx11oLkVtx8WHpXOOOzzM7i4rQOphpfP8tZKGLdn3gAkjuxzAXcOrI0GUf+Bxy5YlbIUzrFviWKWq89vJaahp2+ECIUKL6xpUYi42CGqdUHso722XBrg4onbwjN0HRVgL2aFwVVgDcJ8m9zaG/4XiWJApRrdk9JxuKBwzjR8dHeRMawsrblE5HlbBRSutj+d4E9bw/9KFrReVQqGXskOYlPnTT3V9OmNzKUQ3wrSHe5VID1X+arVK95OQo6tltBzDf1KDdThtmxew/8KLg0dham+NFeYlQNymD0xME7mmwzJ5kn79KP8HLJxSZeKHz7TqTvoUbcWyVo39QGtiXjM3FIV9f9hk/EkLlklizf80vNsED1QsNCznwOjOAGvpAhjtFUTy3n2oB4oXvQv0mKq4sUf30XpEyiv48LORGT5ll9GAIfCXIDqbxACRKc0bpjjNXPjBC5dLdpPPhpsNToK/r0X25f9Yfth/ZQM+1gRtScu71tBmLGH0l6xdVOB/fIP7RPaoy97X6Nao/+DibZaFsCDA/TiGEkTbYd2XQ5TYulycEkuQ/Ah2wedKTnbEmdHkcRoRl0KSgeUNPLWbuJMioG2cLkN75NK+ueXeOFxotnhgouHyovb7dcjrvrLaWDnbo2SDTBVpIW9hnQENEMPkf3HsF4bdO6C0LZzT2+C0fPyttwuuMFOylqz5wi546uxllV0Q0ZmlmtwkGtxVe2SYnfWKGsUK+4QRQQWdKs+45YQ7nRSgWOSGJI4QXro8HqKOoKWftEJlN1Sj2WkMRgaENVeJy/SU07kGsLquBIX8iAFKzmbxai6Wdhel6xIDTnWEE9HLORYhdt/Gbu4Ntj8XYjfma3zuWNlQI4zNT/+vrj2y+hZO9djo6xme4n9svgKSMlNX5FXY2FZ/nJYKCWppZ8Y987h91BxnoQB2P2JxlRe5YYvqC2FYqNTSkXog3MSUQ1lZMh5Bkm0K/NRgL0brhkeE90DhY4/jwE19/4oNdaI/7vCkyFUThNSR92OCmArIIq82VxjglqNPN8XvKs7WWxDkcP2G5AF58+82aLrkSAk/dKjZcZS1NdVrR1z3/gKeOwxpgqXZqloRcnkz27jhIfjdTDUJV29YwH5EMDJmjfsU1qrMWMf32zxIZA/goDuzwnxwMt0O37LB30Tnr5n4/cXv7/s1AHvBBAMqoNP7RR8nKjSo+71cG4ykhNqGALRYXuVDXc1qHfrIhSGjNUGIC/UdamyJbeuLS45fAsUdLDezM6lbs6FVdMg+ICpL2dgdePPbrcHl0hZrsfoAfDsL5xBvhoY88sH9HCP+UehlUImHEeVL6wSsgS2GArDVFRbp2J0nSp41ZVRkuqbE5iC06QZdU4czp1Vn1b7eRXCV2b4qZAuETlEBGhu77RwzwH/Zy3cLn1wDkpilfnKqS3wtc2pJRmCzPBb24Lgi9HQcp1J5u4djyJqDk0QSw/7nmrKgNc3Vjt90ZS03di3EgPIFzT3eKKX5j05CxltIvGj8SNm9Y85SK77NwwpG//Ru2FYi/MGBRKjLbHRJGaeOdNLE1NLbU34JuBskG/DNsThYLfOrJrosvugvZsND5brutTTbb17gvLqmLTdvrdK8DpJUAAFeb1yGQIIOMv1YbRZfUO8cMruGCLi/E4CjozonnH9sTbVtR8M3dDukZ2T0OgJ8sUt6r26qmUesKLhk6aJ8Mspr2nZpKoLWlaGF5mj2xMwK18yKf6F+o6lvwA/7n4lUGJCz+ZtjLievL9T4PNTGGmetcJ42tygYKTKMqMasnrsSRJ5iBBc1c8cN0zLyt485+MLqQuQDM/2FHRwShrmAhK6FWOGjR4lN8zSwuc958I3afEopWurCKoimH3GV0zUx7GI++PXcK3nFUWx/FbBHHfLD//G1E44brLElZ9OEc0O4SXnUYoWICiyPTnxBn1tOpYNTT/6v8JW67SYROmp8Er+EkJ0UZNlrwMVtC+TrZL3SYHUngcANNO8zwvoC2R2GH2N3hcQFYc38lcCTUFB+m2zwbMoOljAsdfSyBEfiNnoy25iGf6JA55guF1ThOi8oVNo69Rl/owWiDF4O/qvvhBg3OdZFa6cfOn8Hkt2owZfZ4k6K0CzZCldvdg6vCvCZVgUFgqNzRRPaZgxtzNI5Prf8XybzXgJ9gs2oDpZKt5tSYacF8AD4RrI=
+       properties :
+        x : 10
+        y : 60
+        width : 720
+        height : 190
+       controls :
+        -
+          name : STC_COUNTRY
+          identifier : 0x286e5f9611f879f6
+          internal_properties : CAAAAAgAAADhAh+TDOpfCLsZfnytv5cbeD6ZMu380mCzSZcjdy7k1/LyuEg+iBJQKDnaarZCSQZ6ekeJP9mI1PjwgAAMRPE9NJtFUUInsegnN5kENhVnenoBe9dgj3FlfVYM1BbCqrNrurdSz2WW3a79Ul1RR99Z07kq/Eg88nSZyvDRgus7o/wArOAIYur+xcnVTJIm6nD/NjojXJ8aYyJ+fCrcF0uYVjdsWP8MgYh7D9+uJZjuCyiZCgzphsZ4igyLJjd8b66h3sKT944uNMMoc8SzofwtTqNVbpu0t1u2QfaBd8zDCy5GyvnHKDa70gCn56Jv+Gp2nmqThyHUqS5Z+ZH0dZPmacq0daZj+PmAgVKrhEncWOEGKdeDQFTu3oQ65lWnGnmvyHn7UDLFBmqSp0Fnsq/4OdNEA6bLHIj6AcKrG4VRF7Kt6u3vnwV9U5VxNQdCdAaHKqw4Qwz7c7EamnO3IBSpkZXrBT5l
+          properties :
+           x : 6
+           y : 13
+           width : 244
+           height : 24
+          type : 3
+          code_elements :
+           type_code : 2
+           p_codes : []
+        -
+          name : BTN_ConsultModify_OtherSubscribers
+          identifier : 0x286e5f9611f979f6
+          internal_properties : CAAAAAgAAABUh3D19qelH1XAFMs6U4B413QMC/or3YP/TEaMt9xUA2tymSI3j7dMOgyZyrLEkPVhmHY/509ZjZrJknBMIamU05orSlN2HRaz5kmAeM9GY97T5WPv3lfgtJZMSakWFn3dQxrMAHcJkaE+tQg6BoBGB6CyHPm8fX98HFhPflrMLXbTk32nYNn4C8P9oj0hvkwan/8kZ6LUEDk315AzX9ouDxsOsNWqFEfAqUYzBbWH7XSpUsWfmRHOM+Qnw9NVyqHmiVOuYO8G5EfQvduh5iqQqVmHPSDW8Rq3QjTW0qy0ZZYSI0Yn0NzWduIdkYYL83fEkgBVSW+U6kTPKgrH1B4VyQtnop2O29YMSnWAdTYMnvucyHO5vAkNa0m5tUAaDVIPyP4A1H7UHZNyR1fh0JQKVVxkquFUGSWWLU85HdfikY34m45WiohxEhFfnTY00tZGXNZfhpj30U3BEOq9ac8nQqxKvgy46WyjItdeNbLWPa9kxUaeU2emOfE860f+f3iNSSAXJDYT3xE/xMA9y+E8NFdIlFrLEsH1n1/lBlyaJJHDnhjF/jEQ4b1gymRIpSi+bXc9FlRwHKchwpJANDJZpBw2mbuYf0gDRb099WwesFP321l/yCgmu0Qx9t2RRam51haFd2mxB4eZBuCHjVD5xjOoRHUpISPdXJNB6LSy3QcyIS6OXvalxYVrUvPJUaFs6KMBYb+sVHc91/snKXJfhtyS1pJsChmDE0M23oe8E810QN2lcg7NsChyDxHtWlz4AlBMatTiLH4wiWvgwC3g9Hev5YigrjoVznA07CCcD/D4ViE9zKnWKmygwAil6g8l30igZL6LQnomu9Jdf3JyvUPPOZ+1MrzqaCSitU2uVC/Uu7p6NSN+Qoj+utrxLmP8EqyQQRGm2hWi/6MI6FKRJpJozDsTzW12ng==
+          properties :
+           x : 6
+           y : 43
+           width : 244
+           height : 24
+          type : 4
+          code_elements :
+           type_code : 4
+           p_codes :
+            -
+              code : |1-
+               
+              type : 14
+            -
+              code : |1-
+               // Displays the Customer data of the subscriber
+               DisplayCustomer(ATT_STC_COUNTRY[LOOP_SUBSCRIBER])
+              type : 18
+            -
+              type : 161
+              enabled : false
+        -
+          name : BTN_OtherSubscriberToMaster
+          identifier : 0x286e5f9611fa79f6
+          internal_properties : CAAAAAgAAABzObzNobPy4pUt7oCcqiWQS9N9aAFMQ/j2g5B8zZxiYYk6fOx1WCTCnnpVDlfEgh82hHVq4ky33GKWikLKg+415h1feaOzYiAGmSS6PLGkGb8DSzqKumv8s/DQreAv8xRBcLoe9vKQcFbfrHEq+hOeUQUD+vRZ2BftKIL945D7OiyN5eJT9dRKeJGhatcWjjTyKoTfv0agNkaOe1y+BkVgZ77klPh4yIiQ3DtinK6YFKLg32KoTCFfMK4cYiuk55xmbjp1uzb/og5gAdeMrc8+6bp/qjuT4rhE0bQ9AU5RxUB5Z5LYIpf9g1V9ft4B92b1u+wvGAg/nzerOXtDJfktyRaaFFem7A6kLPalPGakAVkjWxNBX36Eqc/EkejuV75xHdROcmo6n9dw2w4pSV5zJXlWsF9TYQBAbuc3p4f2dqZNctZeOW4nmgb9FpKxA78fcMvCs5QSV4BE3pC7IWtW7GZOA8R+PUd2ET/qLWvRydrsinj8sSbc6E2uM2j2c3DtGikMxMptYuJpArv693vwCR2Xron+abK2P19Gs1MACR/3uJfSNQ2KK59iGCzhiu988DzhM/rsRG/I5prxnDqzsl2zicfeOmGUThMI9Ys48DkJTRHwUO/zcmJ6UYVzR+1NRpHbxNXPC2rkZrV25eKCdL0TVh5rAA2CMr8AH6hGbH6ruhI1UELhcaEMs+8QyE/zAtfm2BDkSgnpiQBiiv92sGe5JF3aG/yWjsyQl5FbUWiOZrWwlYY8F+NVL9z4/WClXgZDwlahePq7isVDNOlj4Uur+IiqSQEcLWNekSpaTCbxuTUUvh4sKI+DILqwI6d2Ut32dyCgpYyUfv+DuahsWkAhWdJvl0cGqli9vCatXCR3jjFM9ZfxwL5Xr7ljpH6HHKFQACcmki2csg9sD3l7/4ILUb0NJVjf/S2qK/AelpdG+DOdAanM/5eGS5GDPwNPHtu46wotdKDAwlBtFle69dwMuTS6cUG1acSWPjp+kg988A==
+          properties :
+           x : 323
+           y : 13
+           width : 314
+           height : 24
+          type : 4
+          code_elements :
+           type_code : 4
+           p_codes :
+            -
+              code : |1-
+               
+               TransmitDataOtherSubscriber(ATT_STC_COUNTRY[LOOP_SUBSCRIBER])
+              type : 18
+            -
+              type : 161
+              enabled : false
+        -
+          name : BTN_MasterToOtherSubscriber
+          identifier : 0x286e5f9611fb79f6
+          internal_properties : CAAAAAgAAAAazZsUYhVg8XXUErig9KlM4uEKCcAyl9TPAUjwGWD2/zzCUQeQZ+Au80GUC6tq7xUlPkr6MKPyV+cEkfZNfNJ83wzYbOngeyn6JNwtpuCI2AMZmGe3l/5yEiOjf0FxasDF1co3y/lyZeZdrQaF1QjVw78EgDYyBnNZP9Akcxn61bImOHvgkANy/s9Z6rIUrGHcdaSsrPOFa4KVKwFpjPNFgDaFIFb4VjypBKWENSRuhNImWH7j0fKPf+wzam6u6JbRNCWJMauN39FnBkImK3DI7EgiThITEJ2AE69vA2pvBRIOt43D5FfLralPb01s08iL4mxr7rau/4tXtOEUnpEB/DdDrM7mmqFld8jGAv3VujJMsKtcaLnOyeGQ4+h6+niMvrBf3vu/j85SUjMdepsWF6XD3yZ9xHRWOZvKLKToFKUrrs04eyIdXcHIgrMc0/HDd+2bxx0998Bba8yiluvURkzyfzrRUlhbY5BbzIYEBpYG22GRdMj73RRqFZHaBkhqVYtY56z26c8rIHHZBzr4B19mUmA/kNGM4Fjb0Iji6xdmpgFf3lVNwsfYYcUDKxyIjgm8XMwrCzhS0POrYe2WCHX1YwdgW5QK10loww3FjO1faZrx7QQUpDoG0y5HsxgenB0lVSM845oGTXfH5rZA/CCFTmoUfTa/iOZ8CSN/TZmqJ2pRmBvZyT4UiOFfpXj2Hf7FCdMwL0NgNmMpuzTWkSevKGBMzvDkODWZZIGPfTdi0za4FuIt53hYJHA2EBhzOhIapNGs52hdZBt+Murtc5t4AZqI1eyJtxWWShK95D9SLwNXDK+LSwxV4jH6yLjDkmSFzohpCIgyJTprTZ/yFIrf7MICXS+I0SWuskvbeQJq5Qg6BPjqEP2WiSG+kNb9wMzHgPQ5fzxWyPmZowzWTf/ytObOqqQJmHByBKhT6TcwCJdnOlWeeuHypTKk6qWwXEwW5D3jt+w/exsz8uiM2tsdEmDtllTA4dJgH1dCENzGJd4=
+          properties :
+           x : 323
+           y : 43
+           width : 314
+           height : 24
+          type : 4
+          code_elements :
+           type_code : 4
+           p_codes :
+            -
+              code : |1-
+               
+              type : 14
+            -
+              code : |1-
+               // Synchronizes the data of the master on the subscriber
+               SynchronizeDataOtherSubscriber(ATT_STC_COUNTRY[LOOP_SUBSCRIBER])
+              type : 18
+            -
+              type : 161
+              enabled : false
+        -
+          name : IMG_DatabaseToMaster_3
+          identifier : 0x286e5f9611fc79f6
+          internal_properties : CAAAAAgAAAA9dqoKljoESkdNMBdxowEhaSdMxYAm/GLhBPPS60VophUwig4w4qwFIbWB1piiEz2wLp4as9IgpIY7oEoq6dL62TInIPxgiheS4jxNVjAbVmy3stVLsyzCq5V9KPiX13Ry2sud2NtabShYG3YtkevjKa708Ge/M/Ksj5kAn43URSQAgJOQJUK3l0maKi3IpTRy1sNLkpqsNpYgRAToVeDeuNQcZ+ulUP5236lxF7f/n9amiB3HguK655ITLQ6n1Eh2BlYVdHyNaxu+l5dUGLEdUsv0G6ROLjX5+/D0GO2G2b2sqDA3kHHW0uJZPa0U9GxG9jWM0af6wlKV7jdVuJaCEiXnATf5U+Vs/QFnkGp6YbMwTDKL/DoHVqaQCRV4B2CGg1FfaBNib5y4BqW2H0WO4PU6WQPfrMBfHGipaM74aDNteaVRtXPRA49JsnXYUjDMkXNbWv8XCCEIV05RuK4yIeRVzQV9UI6+AmQILbcCVffPtQLg0jvAfOcsEwoFeJnuJT36NDem74ABZ7g7+0+EeN+CII0/4nla3oWKbBLJCIG+tKlFseWr1YmkuSkWSY4e/g8kKXbhec3yZsv69sL9HswzvUIi1X9/5jKBMMNtRo+5wOtYi9uwbKaHFqsPcqeaDqRuv1rVdWnFBypv1Qjf9im5cR8AOMwh0CKd95mqM7reAfMYRDj7Yle23jKKdh4A14JNZX8Cy+WPbTrZx4qFwqb67vVhzUvrvDTH8Fkf0HFVU6sM5rsS8sBdQjSVbclORZG6cBe8iw90XSGdx3FW/5BfbeK0hccASw9hmiZTPrsn1K1+6eOVkdqjPMv33YbwFK2P0VbgY7dolhgs7sGSKewvsaOJMiGr6bac+MhtjW7YcvTd8aPz1ikEKa5cRhGRz7zZZzSj66x+YpWiEHRhYzhhhFI579Y/sADmr1QjMSQM6+0SVmyxqQ9Gw8mXB0FAc6iYaAdaFrUGT6bGVW8qL9MeXqsPSbkS8hn/hC5//cnKtLE61qU+cjxTj1ufFxBD0bsTHhkZE815VI++hJ/reK99oRgJY8O95EOj3iMQy5Is2o06CD+DW8/IhnP8eCZXEqezOP5FV1DR5DFsuaUYiRVE6Bc6+icCMDx5BiEoXo0pSBeDu4pXDQ==
+          properties :
+           x : 642
+           y : 13
+           width : 54
+           height : 54
+          type : 8
+          code_elements :
+           type_code : 8
+           p_codes :
+            -
+              code : |1-
+               
+              type : 14
+            -
+              code : |1-
+               
+              type : 18
+        -
+          name : IMG_SubscriberDatabase_3
+          identifier : 0x286e5f9611fd79f6
+          internal_properties : CAAAAAgAAABhepuc7gtVPV9G7vvcZK8yEvnphCnbvRiJHJtF/DSGti4QTdz29487dKRYeTnz4P5e9y0KOCA5yEx17VXaeVD60XI9uM8BCTVo2vzW5yQYNHy4MW2jpqsC94iFP5KBgQaYT8HYtF2mNa2cGutnZuXAH+vx0QDD7sSMoa3pTLc5qvOoXL+XnZHShIAXgYi55H+KwjENYmv7Lhi3rW/ja9mK8Si2KE87KgJIX5UTNJggwqTJiz2/DU42O7vXW8xuXOON8HHdzS2H/PVB/vsRgHw+3ryjUQumqIKgz918QCBCL8x0B83yzSFS2OB5y63kfB0lqy/T1mJ3H6R5r/L15DA5wsjveJ5h3o8nq3VmQy1VWoVgrK+ww35U+x2myX5zS2COQxrohhvfNovzI6QDmW1LffeZu1YAv8R4sZbpWjV9lodxwOEBFjn2eEepf9KoOeyv9DZVqu6XgOtgqC0GKkgcrfftv3Z7gyY2bvesKOFXED+5Ydbg1QVEWkLkHWTfUhKnjLTQjwmfB4Wb4pNi8qX51ZH/ccu79baYIq3HtMpfMrxXcqXBDmza0XyvIdX+wf+pVWl5O8VA3iSZHvR6dg/fQKA+xVmP2HB9tUL2jrKJrmgghRgd6tqVPH+DF47FvuqmvCgYjCxWExetPQXmXimPk4S8zDYnTd+6XjtWgP7H9geFzzR08D1fAnaata5GIkwir8Mwn5+gpO6gtEubOJD7KCMoWLMXgdSq7XPqn5hgWmIQFcTg/SGMfh82sUERVDk44TI4jy86VEv+gBzy5FaqjY53xnYgs118MaYE2gFIFrnb3o+IKg2XHg57NaXMxjHuapv5K68Bc6o7e1i59/vl2s4uhynaOmwRJuI9sU/vZPQTAVqn8R0Jguata5h3Y31r+NPFNhw2PhY1YXDKcbLTsMIk9Eu0LvABZCl0M3ji/2jHkdNW+zPtcDIgPh2n82rppICdYLqvXtuoHOb2cJ93QyZlnEaUsAr5d/m11UTRIUIgSG6IopUJpR92cpMrUPCs8HjP15sjygFUo6PFnG6tDWXfOeikdErrCrTUTlrSPvUrygsN5o12Ku+kiDgG20WX6wAIP3XOFP4S1qerUnXH6jrjlNrYm0cCHJBEe0y2WIt8QuE4WTp/NPhfIzEYXtVm7g==
+          properties :
+           x : 264
+           y : 13
+           width : 54
+           height : 54
+          type : 8
+          code_elements :
+           type_code : 8
+           p_codes :
+            -
+              code : |1-
+               
+              type : 14
+            -
+              code : |1-
+               
+              type : 18
+       columns :
+        -
+          name : ATT_STC_COUNTRY
+          identifier : 0x286e5f9611f779f6
+          internal_properties : CAAAAAgAAABW1jlD3QrmEFnt0ZXeolRomjhEyYdZn56wQ2WxmLnAxmsNJPrcAoiY/AIQ7BXT1p9+mALRfpRRMkPMs+dw2gfHg+ZGgCtbvaqy0hgg6e+zrGa+5xO1UdR7iohfpvfVtV4pq76QTyHGJZIfoAwypxN2ZNDZpy6sBWDBk03JLUkBlZtJ+ysAqi0=
+          type : 3
+          content :
+           identifier : 0x2557aa440319a7bb
+           internal_properties : CAAAAAgAAADryTcE1wdYvD3vRXveAy878MY0tBGVtRJFCKec9ONjoMSjdXko/BUQ7/aa5td4J0QGwbNDZ7u6HVAmFeJiKUW3AIZke7mPEa6O3T80XKwyKxqdz/+IMzq1H7wKTkmLCftmXeih3L2wxA9F34R1rzMUewXfPfNhH+yFL0Z0QK0+gscBykmAbH8+KcjlpZVlWXf1O2O2UpXFTj2e+Oh2XQ==
+           type : 3
+          code_elements :
+           type_code : 46
+           p_codes : []
+       type : 30
+       code_elements :
+        type_code : 42
+        p_codes :
+         -
+           type : 35
+           enabled : false
+         -
+           type : 22
+           enabled : false
+         -
+           type : 24
+           enabled : false
+         -
+           type : 23
+           enabled : false
+         -
+           type : 25
+           enabled : false
+         -
+           type : 230
+           enabled : false
+         -
+           type : 241
+           enabled : false
+         -
+           type : 222
+           enabled : false
+         -
+           type : 223
+           enabled : false
+         -
+           type : 224
+           enabled : false
+     -
+       name : BTN_SubscriberHideShow
+       identifier : 0x286e5f9611fe79f6
+       internal_properties : CAAAAAgAAAD7hFnl5umVRvEZITvRF3qBF2BaikufyrAh77r26tCuw5/s/GAxTvgkIiXygnsao2aO/7sK095VqP6/rxKkVuco82bAXVgVPIvBCuduIVovbzkPmxuUwl0tCXAT9cnSHp2XSc30HltrMcs7cnQWwgxivHQ1rUgFKupJUm92G2hGvaiQjxb4ZX++iKVIetSgAtqJJ3PJMd28juqqeYgd7KyMxGADaV/Xj4/q/StITpKLU4dJy/WtTKtOSyA7kkSMprKGM0bA1WNcWLHUb67sZ80qp2C9coWLAYEyl5XJC22QrzntO54ChC+EKa1xZQk6gXbYvg+aKxUQOActYvD+I2WB9SXeXGiJfdt7G4qyF+DFQthBG3sNK2S/zLeyvRuz0ipaVkvEycNyw6BurLWxJvxS0uW2Mai3aC/uh4WixvLIpbDrQ6T89DVJfIGeFRmrIVRigAnZ2l0zdsXRPVUzQtbnKrrmUVcDUJCYCoX2QfoXPxZffGWKxk/k/jV0uPtYM0a+xjsE4d8AHueQbM6ZsFl766X+NJd2VZxD09bh+AsvSu+skHoN+yQS/Ld0jq1sVrUcnTXHyl3FfQkCBJ6seVrslcrXjGpozSN/o9rO0/zC2LZ1Czncyf1Z6LURc73hcczI+091jAHEjuzx1IEqL3sZRKAuMqEz/f/TdLSeYTd+EktUs70J+RiXNWuutXMRhqPrlvYzZ8D/wINBXiRNLNetpD1Z7Wr1ADSb/Eu3Q7fVgnOXty+C4Jq2AkVnA3Z7/D85IcfcBfYjo/FC3CueWmkm68ymQiy9R9g5028JLYrre5DbI6RZTvXlgrgGrp/r9f9izSiawFCJXGk5AP4UGGD6I4P/1hfQmhTdPkiJIdnrzSr+XeOEzTccoMNAWIJsDmx6K+HDATCoXd1t3vJ4aXIDWJ39yhJRXDqhmLDIhh5dsPQWCvUPgsdETrcX7WQW0Nek3IcoZLm3SQnq+dRWa+krQzgCnyCoDWjKr7TGgicn6BbZbNMkfw==
+       properties :
+        x : 183
+        y : 6
+        width : 298
+        height : 24
+       type : 4
+       code_elements :
+        type_code : 4
+        p_codes :
+         -
+           code : |1-
+            
+           type : 14
+         -
+           code : |1-
+            
+            // If the HideShow is opened
+            IF HS_Subscribers THEN
+            	// Closes the HideShow	
+            	HS_Subscribers = False
+            ELSE
+            	// Opens the HideShow
+            	HS_Subscribers = True
+            	// If no additional subscriber is found
+            	IF ListAdditionalSubscribers() = "" THEN
+            		// Runs the procedure used to automatically add a subscriber
+            		AddAdditionalSubscriber()
+            	END
+            END
+           type : 18
+         -
+           type : 161
+           enabled : false
+     -
+       name : SHA_Arrow_7
+       identifier : 0x286e5f9611ff79f6
+       internal_properties : CAAAAAgAAADDuedBWyrzlQ5g7Mixx6WQmH4xssun2yB2BSQ4ZdbmfYP7GBy+o4syMRQOowWNkIDjW79k46m5Nqk2laESkQCpyrt/8FbBwjuZpyjoTJyEB5ehVbjMm6IBsqQO1jpozZn66RDt/pxJebi7m+2q+7OemdXbDy/KSrJpUz+ARRkJLCUPBURQu5+UI73gorNNr8qjPRUuumdOfbV4j5vVx0HMxN9XcjM0TKOPC7ZSzfI1BPo/aDmEWi8tKli9fYpmBXiHaaOwlypqSeXGtMRLlCsUMl+lenxeEE5lgaj0mFU2+wPPwfXYiUIaLfnQm8n9T8aAxA8GsYGmDHqxfDxbfeE9eLQ8vEulwRc4rrbvyYJrw15b/d/nB17zdtYKXc2nVZTzkl5IQGQOjS4T4t1JktTOcq8fOAmCIlAk4bvWTQx1vl/sIA==
+       properties :
+        x : 326
+        y : 29
+        width : 12
+        height : 34
+       type : 20
+       code_elements :
+        type_code : 32
+        p_codes : []
+     -
+       name : BTN_SubscriberAdd
+       identifier : 0x286e5f96120079f6
+       internal_properties : CAAAAAgAAAAD7HOMJz9QNmS5ESZY2Q6pEudH1BFiBbW6dVA9zAdqVdIlpJaC3SYNMtcAIVRtZkcDDwwFoV9PzEMz5uzfaeD2JlluSA+PK0v37JcNIQILzDn/JvWVMdBLmehj/dKofA4tmZ/HEjP9MLwb9f5w5y6HzYNDxDy14FTUroh9Py4nFETV+9CMrg8574/hh/Tj/ucTN4/PMOWeU4RA6kXSlHauJ5RhsTKNwPBLnzhG8fuM4ewyqzrglSuGwvUEBfeb+5eIGqJ1LX2LpXoUxLSMh9vltzlxI+WLYduuaQEmSux+djPG7uUjbDw5uXnDEfgNBChKxx9QN46AZli5Vw4BF1Wrof/7m/Mox8ZY1Yu6GCpGRKrrRSfjlefrpHqbWYI0e1hBaWmOXQ8sUHErLYnd6THBsZ01puzg8F1uScXwO1RNEh9vTVg5Nvv4GjmEBJESkTRxMt1Ra4H5CytrAyhKsamBXExR14dJv9aICW0EZ9iju2J7QfA7yciJmoUCQp9+2pAbKlZB1eGWbBEiyv4GQ/v62ylkUTGnFREr0r3fyM8Z41cAwW6ko5cWaYZltgm5/1fDQnV4sUeMvn9x8PNJE5K6rmG1TtCQE4cWa+KxN4UYSjZpKHfec0kSnX0fOlpSUiEr8oVBsJ6V8H6U1Ywc/CsEesmfUQpiy5xkuRQkAvJQFvNehmilZ766+7lxC7GrZBTMed7YKn7Df2lKjGFviJrC43LQBmuZftc9XXAyTUTaVlsZYC2aYtTchFVvbREVYSM1Sv82Urijyw4rFqjBW6Pnx5oy1ZYLU3UGLGJGxSdAcagC++mzmBUNsh12JOYLCX20anJ/2UvC3Phia/PPdsc0sNUuHYXJH+ujdl07idVxD4QRGKzIMdw8o/8+lCrGMoVoBoJ3EmawmOjeNmuNOXVZxG328Q==
+       properties :
+        x : 183
+        y : 34
+        width : 137
+        height : 22
+       type : 4
+       code_elements :
+        type_code : 4
+        p_codes :
+         -
+           code : |1-
+            
+           type : 14
+         -
+           internal_properties : CAAAAAgAAABYxSC3Cp1yBTyrJ/2BTkhMB4j8437pso3GJmARvJbefoMzFHNVs9rPLVES9eVbPfgC65HHpasFtl6ZO/kjk6EEFE5DrzcSkvELUv2opdnOY7ofHWDpuTnI
+           code : |1-
+            AddAdditionalSubscriber()
+           type : 18
+         -
+           type : 161
+           enabled : false
+     -
+       name : BTN_SubscriberDelete
+       identifier : 0x286e5f96120179f6
+       internal_properties : CAAAAAgAAABdW2CCKNCKLGzB7MqGCKuEfgP7n+6GtHTV3z5ABwA3P4iYK4lZqdOepPPMwLH7IUZcHmhUw3fbSzsfgx51b2gixTf55X/VRdFkfzRvoR2p5yiD0nea3xFTl35CGTD8jjywehDX3RD3ISY2Xc5+iOPoALr99wGIToysN+yFjlSAR1/4sZKIOWOUKdB3ydIDeHaEF76gvy2ttn4oHE1splW95nYu7lI88mzmPk55jykexi5aHyOrx4dq5KTQkrzMeQ7faojSCm33wVXozZZmOFvi518xVtR2KX7t5jBR3rE5hjFiRA4I/ba1g92470r8fY40PtLk9E14xJGATO1Mx/4DIba4C0ZCmGIIKwOSYR5og74NvoNoGo4OKLyUZYUQ6/U5ChxX0jR2Q7inFTrzxkzSGX29Tn0H7cVqHe9VGfK9pXepW/vn6ETmBpmaoNQ1t5ByKNqRrLj1VuQO3kLbQUFJm8ob0ILfk3XQOZvNHa/QU/4fSArN0O+x4qmz0kSyGryAZOgz5+8+q0Plfps5v+965Sy8V1cOolxA5UdrP9ndL1koD3g2QTdwh6CarR/Bn8ekmRa7PjyJ4Yp/WpCQRYKURQyJ1XNg53daf23nhzB565T3wEXNsC8LgU+DuhnfR4NaKsPsBhD7l36T0SDThv1Bi8cegsbmTW3IqczO/RjTue36D7hkor8hcfnt2QTQ6VgKfxC4y+TU0nuiUX4larePNMqrIisG4CgPfy24WtJp3aRIUOiwhMBWB9C6NsRCDi50Hs4fR0Dhi3lGLDsZ7YI3YpxOJQ==
+       properties :
+        x : 344
+        y : 34
+        width : 137
+        height : 22
+       type : 4
+       code_elements :
+        type_code : 4
+        p_codes :
+         -
+           code : |1-
+            
+           type : 14
+         -
+           code : |1-
+            DeleteAdditionalSubscriber()
+           type : 18
+         -
+           type : 161
+           enabled : false
+    type : 34
+    code_elements :
+     type_code : 86
+     p_codes : []
+  -
+    name : SHA_Arrow_6
+    identifier : 0x286e5f96120279f6
+    internal_properties : CAAAAAgAAACoErqQ+RlJO2j3iP+DhdJsAmrfDkoBOXwnZKVLTCQ44Gy1pqJyDXrHa1HoYQdxYd/HqyrvZU5QHspGmoUcBIaiYAcq1LmLZUmDO2t2I65BYWVNtjYJHyp9aKKgB8TaISxXGu8F6sRLONP405W3Zp0SYY9T6TKYe1rdK+efRhythaFrv97aRdlWHasKYG1X5iArhrWOOkdO/XXYT1t1JyGMZM9nAiMEHBPfu8aiHWKldIq6EYYa1OWTHEqvQ1DQg/o5rw3FcQ0XtUmC8Eg/eHlg8mV32CZE/IDsRF9/tiMgI1Vp27wBvZ4JWLqf3Ni8m0pohRjXQxEzI2Rvh5ASucX1j737xKMRfHtcjMm6vJEshJQXDU02LRha4PWrd0tSk8wr1md+uupncOCoIj8DtDEr/zQS8y1wjpf3bz18M6DOm7pHiw==
+    properties :
+     x : 341
+     y : 413
+     width : 12
+     height : 69
+    type : 20
+    code_elements :
+     type_code : 32
+     p_codes : []
+  -
+    name : SHA_Arrow_5
+    identifier : 0x286e5f96120379f6
+    internal_properties : CAAAAAgAAADHKGq811Zg3z+3oID2la0UvaZ8u/NRYb6DCvFBDiK8QhuxmeZ8oujsv2X85xOxxAM0Xn0EpDhm5kugZO6NrjUoX8iJ3Pen3Mcb4HKLm5lch+hx1gJCW55OhSpNr+TveRlBglvDBo7xetAaM94t/s3ZBDBr4uLqIfizoMrhTCqreWKWMMTdKiGTugcR7fu7yUNBcIz2Ovc8w6LIeZkteUJGvEQKIm7Nv1X3xsRotmdCmfUK8Jr3+SybwvMtgdPDiuuUKeTjNLpmEzk/1oyIRSYltU14itfD2Q6gpY2X08jx2AzFpL7QypWvoGcjsFFnul2JC7u/FETMCZRaSV51CCBgrE0eEPTSl0P6J1sutZbdLat/LvGjlhtsvANUOqNUpciDh21b/mqz212SGYAlBEVLFSO6HBaotEFPAr2ulDvGYf/XtlTg
+    properties :
+     x : 327
+     y : 414
+     width : 12
+     height : 64
+    type : 20
+    code_elements :
+     type_code : 32
+     p_codes : []
+  -
+    name : IMG_MasterDatabase_1
+    identifier : 0x286e5f9611eb79f6
+    internal_properties : CAAAAAgAAAC1s21CEjG2I+OEYbTZd7gXbDTKB0vMfs2Yglm2Jo8gS4PopumSOCNAP/E5qjiJNJyQ9yeXWUzf3xsX9YCJc0B3Xli2f9axExSmpQDyNMEyQaYFKNJL0+OKHo5zbeR7juNzXKWxuPVFRdMdqxlnbxdQ0bW0Fq9rv+2m1MTixO4mmAEAatuXK9rRQmhaHWA/+HM7bE5tP9oQE646wDLXfPKsZ2pPRrzhOINsAHglAyeO6O3WTFGHDtrL4c6L9+541rneurlnKBuNjdRKL3kc1F6TeZFWwbRAqrLAwp4ejl9NaS9faeJYAZny+DL8EPM978p7EpfLAkv5uuF5tYgsb/3EQr0L2DdJ4ygci6dNSnD6XLhpVUPIZIM1wTyrVwxtNEYTZ40s/XOl4wTkCXj6+f8sj2mnmCjrSZctdmShGOINvDAdlZvUYaMvGT1LdI39LgykHyYnCNHGXsHb7ov0658LoDY/8xf2B6Mgb8hoYCOK/EecuBQVnZxEy1yRbaAmJIlcN0cp8vCMKXsioUQwVHthZSUd50mO+He8V0DNAPdbA9y/o/qEcWk+/ySbD68PmQ6TZoALfVieIjuJbh8z3SK/U26kuflv7MyLNpKfm3uCJ+7tCwxAQLEEYGiozLBUfRCcj/zt+r6RPKL2lQ+5GKrcGRaeoSTjGDiDyNekIteHeCA5qc3S4CQxdB2Om+/C2F9wnz66qt7Vj/tC3NZ9Qj6v32szKJzGTDA7kwU7YVUlWTNKz0Fs2w4SLN1AgBDZH1hb6+YJ/hN7sev43P0GpshtTp9a0YoWeTsQgmbPm9yPpTuedIBHhlUsZddQuDjagdYXy/SdtboazD8ia+CSchesnYSUpV5mRBkRFzuBZkx+eTwAk7w8EMiwa3qzFDJbdXCaI5F6G1I+tL9s/VSg6lOJEQ+hLW7+Ymrib1Gh7dCFqLO0+FQ3Op8oNluWE7mJ/fy0cuRBY1/s6ZUfHdQCZsUNyd+VxQHQq8qDYqthdvA6zFnQrYL4fNZKU2zfxKK6yuWN/GZH0xqh3ejqJLd6LtLzBk3LMCMnBbQdaTe49xWSgxgMT4c+ji7a/zFQLxCU54tConK2l3nvRDxoV1P0qvD+HFS2TQ==
+    properties :
+     x : 103
+     y : 306
+     width : 80
+     height : 80
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+      -
+        internal_properties : CAAAAAgAAAD++bqEd5pFmMM+sy7SN+z/G8ABPZQFhK4ZA7djFU+2D/co/LkNTVdPbnrb+TWib5SXgG9/o+2VFB/wwg0/QKNbiPNah8o+EzClCWJAZWDJvd6lNF2V/YVLhx1PXpwPzsHyuev/D8mUnS7Hbw==
+        code : |1-
+         // Opens the popup menu named "Master"
+         OpenPopupMenu(MENU_PopupMaster)
+        type : 18
+ menu :
+  name : _Menu
+  identifier : 0x2b4360fc307af10a
+  internal_properties : CAAAAAgAAACCv199ARoPUfG3WAPSG9eefhOOjWMQrs8CrX6cGGGJPoSHWBq4PXhStOWc1YnAZMZ5+EFR1WTDn8CTOTiyLnXPpAR5X8rsRkPZrm1yZeYDDt4kRzDPLbUf4Sh/mD3kd1D8V2drCFLmjeQhgpw7GKGwHRga+ZdjSqXGIC3LD1RracZ230hOmUJTj+ABDW4IHrw4PflmVGgp8E9KnAf/gselRrzEY90l3Cr9N00QijFYYrbrl4qF4kdim1YX6jYT4ezQhbJsU84ENZsxzq+o0JVHYQ8rxck600VhGV04/ao=
+  options : []
+ popup_menus :
+  -
+    name : MENU_PopupMaster
+    identifier : 0x286e5f96120579f6
+    internal_properties : CAAAAAgAAABsFOMhOyzK6/cB558ExBOm6YRRWwOv38EN56tSzkQG4oIQZ0fsmu6x+HutTA+abrswaj7zS6cwC/pgSTxE7ceqAfZRWxkAjXRBE3qPVp8k98/NhR42r1oYxlSnsE4E9HAA+j0eyP2yRx5yP8sfY+mNx695m5q3TIXF8VD8G6fTYbgkOrzrSPuQvIcJKVSzEBWCevB4m4FNkUhzWyqzuoofoRXqebkcqTr+g8ywbtFe8GshMi8Htvq/r1VirEjQqUisi3VSmFCfg1d3JlrULHvdHVRrvifaPhZRs8VBebXJ99rU+laRQfAueCOuub71HhhjS4uhI3dFdBh2oik2fekCTzaA2qmfJZB7rl7ENDoRX5EyuGPURQF+RHA+sgsjkzekFgmf8wT88qTfsCs=
+    options :
+     -
+       name : OPT_Consult_Modify_Master_Database
+       identifier : 0x286e5f96120679f6
+       internal_properties : CAAAAAgAAADC7MVGF4IhF/FtLEih198LRXddV3XZRfeckKELLPRab3+B2zGtxD7NBX4NWAlvfK9NyVpDjIcUxDIDYpiB203tZpWj6zCxGdwhFHe3PIqzCN486zAtnri7sQplFComS4zctTjvi3nDWpLhTtq7ttzneZsO6yuLl3XYjtaMEwEmgTWJWj2f6YWuZlxCElh8DuAjTV02rgPvI6Rt6hesbVLD6DTJRyq5SRER08TPnQrw5H0y89y+il4KW78heAeGgDS+oKg0pr9wkYlWFMZLz1fGPGLVUzuyruZxH5JdK88ay3jnKIiVfn4QZ1L3Tz73ObmkguqAYaPBkMtj9OFAxFj9D+oWK3FT9Ujm0d/SaMSMgfBGnFXz1m0UL7F045/C3Smr5gt9DvWUOyV/uFv4YriYF3OxI+qAaHXowwudJ+S9nSevhQPhN1U5nEOpPBAhc50G9NkQGIf322Bbi8+3r0snfKu4RxvLZHod60ghLdmPQTixt7A=
+       code_elements :
+        type_code : 26
+        p_codes :
+         -
+           code : |1+
+            DisplayMasterData()
+           type : 32
+     -
+       name : _
+       identifier : 0x286e5f96120779f6
+       internal_properties : CAAAAAgAAADp0n/qtbn1Iz3GIvdBv9W2xs83qCn5RqPiDYUMa1lsGhe0QwHh6a8iyQe2F4ulMaG5VTKONOrymsYWvuh1t99rLMe+gB43qdAOo6lTumfFNYXgx0iCURkGAd85A1x2PeBigOxZTajIbeXC+TH0n61MLsV6CJVvmgGgN8hMGjdqWzOK3iCMlpJtFgcrkjdDJma6CdofL2KdjvrhDE9823hZsdX3bJ92nkVqLi5z8M93gTrK1msFenFvufy/R5qRcboEk9KdjLUrdWrP92P2JUVDQ4pnY+I2G+BbdmkTuFB81ap2kaf3LFbK1Jy+9bvFlFSeV721ebIno+nXdzTP1qp7pDlU22bYqOh3772kRi8l2E5cN8uXzN7Jns7jPlHYmlXpn8GPmDOYTorMEK225Kr8bQ==
+       code_elements :
+        type_code : 26
+        p_codes : []
+     -
+       name : OPT_Transmit_To_Subscriber
+       identifier : 0x286e5f96120879f6
+       internal_properties : CAAAAAgAAABNsjGYX+oc07CiX7ENw1DvFctWuRjhQCfJkO9NVTS3n1elA1ggiX2YuTsEWlKdlKhxL+bPo/IaWfdozOdf7CEnNOBUMXlS+EXkIObZhz+5fD81rVkow3N5I54NsJirtmcBCpFEZ2/ZeEilmxGTSX01NDB7A8OvOfAUmDg0v/SiLmCl5yLb9emHLPUPKD8L8olWCI1scWtnXbJJnZPlC9Q71ohxpy2dxWFVYCdHk7bKLX8AvfJ6AENrn9NmAJEZZ5lV3DyG0vxCrPnLA2SO/WzoXBUWn9MvkUIKWNQFYmAU/ikL0/6P2YK2MYJTkRm9c8csO1mGFFI+vEFx2QqakuF536ChdyMwFM/alPp2CgCkxNII4plcaRIjs2NXguGyW9YWZ4fu1JFWEZPX+BoHB8GwU+pwqMXghLaghwB35914/lZnJ1x37WgxYaYKMmcElibxaLPzGBdCNCWGdVqP8jWFKgOXkNk6mGyyjutd0TyOr6A3E4LnhBDcD230v8VgXNmcr03QFl5tMzdOrVl8AbzAyxVCISSzidnubrqCjeUOlBGQ9U2qIQ==
+       code_elements :
+        type_code : 26
+        p_codes :
+         -
+           code : |1-
+            TransmitMasterData()
+           type : 32
+     -
+       name : OPT_Retrieve_From_Subscriber
+       identifier : 0x286e5f96120979f6
+       internal_properties : CAAAAAgAAACS9YhHOHb8yYvzLs31p/x4Yrwi+WjVakNOeyb+4iVu3bAZ+CtrYj9fcaniOAeWaeBfLVF3K0XqQKFNG9JxD99u0v7WNM4MjzTPQdnyVPgU3TrjvGJw4e9OWBPHxGfXIT2EIXqMRdzssL/irn6yZA2BaWn15UZxaQrvsJwb2MriZ/bvIArodAc9ztMD4TAmDi+1Ifhyn6ff4APx4/N/GNKozz1sdUHpWuTEYJPCgUBKl4h+jDwNVRIuSnBbKXRvj2bTW5FaIo70Y8pZVHTGqnpGls69QMxsX5vzzgL2Uqvjl0Q0OhocFS6wvBoM22zzzo1RzLUm1/PC66/p34DOCHat7LNZ+ZdKxGVqKaDoYjPSyWdHSdYP94M85S9ZXrqY63azMuiXe96M+6bWNVm83pCl8Mnu4tu7s7IXa/tp0jtsB3s9S5nANJKpZzBT8NFm++8+AtUBwLi3e6sz8mPcjNw7GQwxDXAwXb94ZYY8GCC4vDkjx+0kCWHi8CFzHtl8ari8rcjJF3BFSua/hU+/Fm1PCjv5X/L8eqOkQ4tqeQD2Dp55nlOD5W2VQJHjfQpqhZY=
+       code_elements :
+        type_code : 26
+        p_codes :
+         -
+           code : |1-
+            SynchronizeMasterData
+           type : 32
+    controls : []
+    code_elements :
+     type_code : 26
+     p_codes : []
+  -
+    name : MENU_PopupSubscriber
+    identifier : 0x286e5f96120a79f6
+    internal_properties : CAAAAAgAAAAVL3j6hMU7xI54n9RReWzvZs89QgctokBKSNgpT115jQmB6t7OTVNuebV/t2QhxbKv4+W49tCSn4zjEvL3bBq2CwiIJPrFyNnx6O4MsiY/IxheLEDTEDNqhfEto7Lca/vMYpDHvTAX0KZJDJn09q0Y/xpS8iMddyBcCNh7ncGwmdUg6uSmHNJBYhjK+KcxntorEJIn3hh0p++KHc8/WNog8oI6iwCPxC63Oj2dUPC5QeJMReWPMPKg3uMI0VlXsRjVSMy+aM5BxdUT2V7aDu5tP2Gey6/sHso2aj6U9WE7fqOEonmuPHtZbazmbgh7GgQyULx3WCGDxriufucO5QMWZ8+EEGXTA/GAo0/Pc3tidkYjcS7r1l0nraoswl1xz/uIx5oOgq2TK+1oydI=
+    options :
+     -
+       name : OPT_Consult_Modify_Subscriber_Database
+       identifier : 0x286e5f96120b79f6
+       internal_properties : CAAAAAgAAAB0DGy0T5nKFZt5LCePeAaFyM9Xw2Q3KG83YibALuPOA2YT9OewF99/3xQ57WUoq4amgmioUGG3wOkAsSmS63S1WVTOe3h15CZ3Ty5YiMU0yK/p2cUZ7TiluFiAUKmthwkRRJu/MYuaQEmH1wGc/fUb4/1qpUf4mPnrZAhEGPva6XoWC/PWgOz5cBfbQz53gfRzfHdJ7Hr8bmGQE/qUhLAaknZFMwap2dQOF/LGBQrgTUR1bk+/hauuLbayM1PTHnt0PDmlSB5wxWOhwU2pzuMVFLCktvOV2p5wqGPiwaClC0M40JpsEreH9DKpU/UjpgG9heRylrV0CV5ToPtURkuho2Lh5H/HWL2MIqsD7plyoRHjZY9c30677+hfx/CX26i86YY0HBtfBGD02oF+rVFaMC7741wphh6jBuBWTtRwA+Lkd+9MUOURT5WPK3GJvr8RoXmI64WciqHLsymekwg5Az0pOEEsQwm8T7dLHjCkgY519Q==
+       code_elements :
+        type_code : 26
+        p_codes :
+         -
+           code : |1-
+            DisplaySubscriberData()
+           type : 32
+     -
+       name : _5
+       identifier : 0x286e5f96120c79f6
+       internal_properties : CAAAAAgAAACzoUR7ag+U22NgvInEO6ZG2DjraI1XmobwXwQT8mrD8iYv0IHn5be9Pmo2UlyNiaroOut48ntEDIl4i0O/IUO2izl/OrxIJ/t6QnAeTIhRwcMRf6O0qqsl+WpX+kgxaJE25O29dSALv1XDm8CyQjdMNBA9AWg/AWBsOLHaE+tCeGEzlQePIjWoo7Y3Iv3ck/PcgBbB4weDmvJAQr4N/EpF2aiCKg4iVx/m8wowMJB8cmsqhhJ9jW3Q4o3eMs+EkBEdXrs7mplGmn5KsrKvBvWhNFc7Jsb57SPWRkAFFHS9UI8PSl8QwPVy9NdumWaKy6eR/X5WAmPZhIIU9upDMCXsG5u1/5r+CYKLtqKeP70SbNGYYwhr4qdxkBbulXwPni3/J0MMmjReIoNWaM5Ifw==
+       code_elements :
+        type_code : 26
+        p_codes : []
+     -
+       name : OPT_Transmit_To_Master
+       identifier : 0x286e5f96120d79f6
+       internal_properties : CAAAAAgAAADLOFIoGRMfi08VIYleeViQHtMYvX4yr0WqecC2L/lIknWxbw03h7DBmYHaT3B4cfumDil7Z4Jm4mSK7o9idDxxaSS6pYLjWeqmX/Ueg4G4H5NuQ4Q6irqK64ebX76OBR+n1UHhmzX9+AeFphIugF29ONui++IaX/a/ixOEZEdyUtiqfl5rkF+1Gq/ybQslg0RyI0SEbPy9wfcLe7nTbo7IY4tQJoN3gzRvuWATWbb3aOuvzrKE4yWw4+FVu6j624MGoERJsgnjvrCgc94J7kp7ce6b7MrdDs+j+/4eIRKZ1fj/igOQ/ojC6PuFxqCvOihPi5O1EwqIQzC17luWdXwzgkHUGqBAyvaTRYGZnPszoEDPSllSEvXuw0aP9TSxvadrBzulRYN5y9JGIVx0QZG3XPI2FyMBH4bcHMnR7e5YZBjREzrFglozcSdXCePRxFgh11B9mAwiOY/GsuT3P21o3OLFMTAj8Ya1R6EKUn7Lt6tgSaudlaqbmW3sqwa3c02PPQ7NyKTaIDQNlEk707LsK69yeKwbqPTLSCHglyHsxkc=
+       code_elements :
+        type_code : 26
+        p_codes :
+         -
+           code : |1-
+            TransmitSubscriberData
+           type : 32
+     -
+       name : OPT_Retrieve_From_Master
+       identifier : 0x286e5f96120e79f6
+       internal_properties : CAAAAAgAAACiEmr4v0bGirWd1Q1yBIzrBy0t4/oV/6N/2h/AKuG+6B8oG5DYOkGtlLgXChK/JJT3iTRXHlnO2NibbGbDU2msKoSGgU00XVsy9aJ/CefrepBbrEw6caaQQieC+QnGovJakVBJKktfHtwg0r4k3zphQuYpffqJe9/klcXEqbXlsRThug4puTIES7qwA54/fs1bH4GpqJkHJqMhsjJIdwaJiK9Cj+clPTYBj32p6nnh/XOmxUflypIkjjCs7mN5JfJbnfHIOg8SiSfCHvzoZUAlRQWi8QDbds3XeQHbQ7vAl/IZ79Q/Pnx3DmXxFu36HlcRaYZdCF90TNyedTSKkYLM8ZjGk6zNXoIe81pK94tWE5mMR7p8uRtGTVTQq7xkj3OpVGlMNtHoozE2r5HVstI1ahqZT5k8V86h7zB1vQtgW0aa9IlYxsgr/N8cuUY378QTJDc97sI0K0gIOCLemdA4EkA43kvWmOhsj1w8XAS6L6bU332tZA3J+jXw96OcRXI9lGl7x9/MY5jGpJXrNOAOhclOGAwF0rykt3bPy9fTLzWQgIfBoc6jlHyTXNG9eMkJyf2ZfSY=
+       code_elements :
+        type_code : 26
+        p_codes :
+         -
+           code : |1-
+            SynchronizeSubscriberData()
+           type : 32
+    controls : []
+    code_elements :
+     type_code : 26
+     p_codes : []
+ languages :
+  - en-GB
+ message_bar :
+  internal_properties : CAAAAAgAAADA+LgZPsurZGCf5bd5GI6JKasBP16rbywcizhA1xZQZzdzj4B0oxdoCrW2o0AI1Qon5CODKcPhOjVmCLw9fHLVHbwWOVBRI9+4Yy5fyu3MkqT0t4t4BzqTj8x+IlJz
+ actionbar : {}
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     code : |1+
+      PROCEDURE WIN_Main()
+      
+   -
+     code : |1-
+      // Initializes the information (directories, connections)
+      InitializeDirectoryAndConnections()
+      
+      // Initialize the cursors on the images of the databases for better understanding
+      IMG_MasterDatabase_1..MouseCursor = curSystemHand
+      IMG_SubscriberDatabase_1..MouseCursor = curSystemHand
+      
+      // If the initialization was not performed, gray the options that cannot be run...
+      IF fDir(pGlobal.gsTransferDirectory, frDirectory) <> "" THEN
+      	GRP_INIT_OK..State = Active
+      ELSE
+      	GRP_INIT_OK..State = Grayed
+      END
+      
+      // Lists the different subscribers that were previously created, other than the default one (Spain).
+      DisplayAdditionalSubscribers()
+      
+      // Display the full window if the different subscribers have been already created or a minimized window...
+      HS_Subscribers = (LooperCount(LOOP_SUBSCRIBER) <> 0)
+     type : 34
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     code : |1-
+      
+     type : 2
+   -
+     code : |1-
+      
+     type : 11
+   -
+     code : |1-
+      
+     type : 12
+   -
+     code : |1-
+      
+     type : 17
+   -
+     code : |1-
+      
+     type : 13
+  procedures :
+   -
+     name : DisplayCustomer
+     procedure_id : 1760449602222848502
+     type_code : 14
+     code : |1-
+      // Summary: Opens the window for viewing the customers of a country
+      // Syntax:
+      //DisplayCustomer (<sCountry> is string)
+      //
+      // Parameters:
+      //	sCountry (ANSI string): Country for which the data must be viewed
+      // Return value:
+      // 	None
+      //
+      PROCEDURE DisplayCustomer(LOCAL sCountry is string)
+      
+      // Opens the viewing window
+      Open(WIN_Table_Customer, sCountry)
+     type : 458752
+   -
+     name : DisplayAdditionalSubscribers
+     internal_properties : CAAAAAgAAACio311W1SMnY5O/xgnfQMeGBUqtToHgcgFL1qUiHWgb+aPtelvO1l44TLL+TD09pGEL7EQGsxTVoF5Vlg9PHt+29lBdhbMcaBp4lhTkWyRFsVKCSDT/pHS4IqPyDFEMei1upib8IUgZVquhh15
+     procedure_id : 1760449602222914038
+     type_code : 14
+     group : 5
+     code : |1+
+      // Summary: Lists the different subscribers that were previously created, other than the default one (Spain).
+      // Syntax:
+      // DisplayAdditionalSubscribers ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      //
+      
+      PROCEDURE DisplayAdditionalSubscribers()
+      
+      sListAdditionalSubscribers is string
+      sDirectoryAdditionalSubscriber is string
+      
+      
+      // Clears the looper of subscribers
+      LooperDeleteAll(LOOP_SUBSCRIBER)
+      
+      // Retrieves the list of additional subscribers
+      sListAdditionalSubscribers = ListAdditionalSubscribers()
+      
+      // Browses the list of directories
+      FOR EACH string sAnAdditionalSubscriber of sListAdditionalSubscribers SEPARATED BY CR
+      	
+      	IF sAnAdditionalSubscriber IN ("", EOT) THEN CONTINUE
+      	
+      	// Deletes the home directory from the tree structure
+      	sDirectoryAdditionalSubscriber = Replace(sAnAdditionalSubscriber, CompleteDir(pGlobal.gsHomeDirectory), "")
+      	
+      	// Adds this subscriber to the list of subscribers
+      	LooperAdd(LOOP_SUBSCRIBER, sDirectoryAdditionalSubscriber)
+      	
+      END
+     type : 458752
+   -
+     name : ListAdditionalSubscribers
+     internal_properties : CAAAAAgAAAASwTNBDrdKWrDgu83drZvNCCypFygL482LGcNcDyKNnbfMO+bUnTOTwFnUnox+LYoSGL9TgZ7SsCCYbtvVCvPSuVwHnFulsH4rJ9Ni0S+B6OhWrVXxkEWxkEALHKBC5DZFDY0T+DsHb8RoU29L7lLW8NaVwAlTul5Zgfuc8teWd4R9FppPqXVwPTLglfQmZulU5ueWIdtdebtBU/tZE1k=
+     procedure_id : 1760449602222979574
+     type_code : 14
+     group : 5
+     code : |1-
+      // Summary: Finds out whether other subscriber sites have been created (in addition to Spain...)
+      // Syntax:
+      //[ <Result> = ] ListAdditionalSubscribers ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	string: List of subscribers (other than the main subscriber)
+      //// Automatic process of errors: RESULT ""
+      //
+      
+      FUNCTION ListAdditionalSubscribers()
+      
+      sListDirectory is string
+      sList is string
+      sDirectory is string
+      
+      
+      // Lists the directories found below the home directory
+      sListDirectory = fListDirectory(pGlobal.gsHomeDirectory, frNotRecursive)
+      
+      // Browses the list of directories
+      FOR EACH string sDirectory of sListDirectory SEPARATED BY CR
+      	
+      	IF sDirectory IN ("", EOT) THEN CONTINUE
+      	
+      	// If this directory corresponds to another subscriber (neither the master, nor the main subscriber, nor the transfer directories of the replicas)
+      	IF NOT CompleteDir(sDirectory) IN (pGlobal.gsMasterDirectory, pGlobal.gsSubscriberDirectory, pGlobal.gsTransferDirectory) THEN
+      		// Stores this directory
+      		sList += [CR] + Replace(sDirectory,CompleteDir(pGlobal.gsHomeDirectory), "")
+      	END
+      END
+      
+      // Returns the list of subscribers
+      RESULT sList
+     type : 458752
+   -
+     name : AddAdditionalSubscriber
+     internal_properties : CAAAAAgAAAB4jQrRlapQ8MpbQEYFz5L+B5r2opymdDireE4pMKCFOwZaR8YYT4hnoKTdng7J/lEVndTYvQ03YRPKvKSkgd2RyPMuYmM2mDeVrrGqoxRqCyl6NA76lqDQaX+/fWbiNqTqtODK2rPXYyV1XVEZb0kuRVGBN91c3TkYS1fqBJ0zzlSAg5sffXO/mspwO7HCSpeIgPjuUncRorGK2yrlafODtsrdJyw7Ahl/IQNMmGpQ5oM/ttbfvKNWgcwHoddyEiEPGP/exO4AUlcfnle623THI1HplWFn5A6pY/Du8CKq1Hk9nlwgvlQLCT1m1Ld+v/7PBLVC
+     procedure_id : 1760449602223045110
+     type_code : 14
+     group : 5
+     code : |1-
+      // Summary: Adds an additional subscriber (replica other than Spain or Portugal)
+      // Syntax:
+      // AddAdditionalSubscriber ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      //
+      PROCEDURE AddAdditionalSubscriber()
+      
+      sCountry is string
+      sMasterReplica is string
+      sDirectoryNewSubscriber is string
+      sMovableReplica is string
+      nNewSubscriber is int
+      
+      
+      // Select the country
+      sCountry = NoSpace(Upper(Open(WIN_CountrySelection)))
+      // If a country is selected
+      IF sCountry <> "" THEN
+      	
+      	// Create the home directory of the data
+      	sDirectoryNewSubscriber = pGlobal.gsHomeDirectory +["\"]+ sCountry + "\"
+      	
+      	// Creates the subscriber directory
+      	fMakeDir(sDirectoryNewSubscriber)
+      	
+      	// Create the subscriber replica for the site
+      	ErrorChangeParameter(epCode)
+      	IF HCreateSubscriberReplica(pGlobal.gsMasterDirectory, sDirectoryNewSubscriber, sCountry, 0, "CUSTOMER" +TAB+ "DATETIMEID") = False THEN
+      		// Unable to create the subscriber
+      		// If it was already created, in this case it must be re-created, otherwise cancel the creation and display the reason...
+      		IF ErrorInfo(errCode) = 180020 THEN
+      			// Re-create a subscriber that was previously created...
+      			IF HRecreateSubscriberReplica(pGlobal.gsMasterDirectory, sDirectoryNewSubscriber, sCountry) = False THEN
+      				EndProgram("Failure creating the subscriber replica." +CR+ ErrorInfo())
+      			END
+      		ELSE 
+      			EndProgram("Failure creating the subscriber replica." +CR+ ErrorInfo())
+      		END
+      	END
+      	ErrorChangeParameter(epDisplayMessageEndProgram)
+      	
+      	
+      	// Transfer the HyperFileSQL database (master) into a new database corresponding to this new subscriber (first synchronization)
+      	sMasterReplica = pGlobal.gsMasterDirectory +["\"]+ cstNameMasterReplica
+      	
+      	// Establish a connection on the HyperFileSQL database (Portugal - Master)
+      	OpenAConnection("PORTUGAL")
+      	
+      	// Create the movable replica with the initial content of the HyperFileSQL database
+      	HCreateMoveableReplica(sMasterReplica, sCountry, "")
+      	
+      	// Establish a HyperFileSQL connection in the data folder of the new subscriber
+      	OpenAConnection(sCountry)
+      	sMovableReplica = pGlobal.gsMasterDirectory +["\"]+ RPL.File
+      	
+      	// Create the data file: the Access database
+      	HCreation(CUSTOMER)
+      	
+      	// Synchronize the replica with the Access database
+      	HSynchronizeReplica(sMovableReplica, sDirectoryNewSubscriber + "Replica_"+sCountry+".RPL", rplToSubscriber)
+      	
+      	// A synchronization must also be performed from the subscriber to the master
+      	// The master will be "informed" that the initial synchronization was successfully performed
+      	HCreateMoveableReplica(sDirectoryNewSubscriber + "Replica_"+sCountry+".RPL", sCountry, "")
+      	sMovableReplica = sDirectoryNewSubscriber +["\"]+ RPL.File
+      	
+      	// Connect to the master database in order to synchronize this new subscriber replica...
+      	OpenAConnection("PORTUGAL")		
+      	HSynchronizeReplica(pGlobal.gsMasterDirectory +["\"]+ cstNameMasterReplica, sMovableReplica, rplToMaster)
+      	
+      	// Update the list of created replicas in order to be able to handle them...
+      	DisplayAdditionalSubscribers()
+      	
+      	nNewSubscriber = LooperSeek("ATT_CAP_COUNTRY", sCountry, True, 1)
+      	LOOP_SUBSCRIBER = nNewSubscriber
+      	LooperPosition(LOOP_SUBSCRIBER, nNewSubscriber)
+      	
+      	Info(StringBuild("A new set of data was created for the following country: %1." +CR+ "It is located in the following folder: %2." +CR+CR+ "You have the ability to view and modify the data of this country and synchronize it with the master database.", sCountry, sDirectoryNewSubscriber))
+      	
+      END
+     type : 458752
+   -
+     name : DeleteAdditionalSubscriber
+     internal_properties : CAAAAAgAAABe4lOT2fTEjiFmyZ6jtOJf5X8a6Wgyg17WVW6iODKgN5B4jJyrCPrT9yDNyn9gUiqZ9qhAeWLUIYgzH51GYlyVsO7E99uRhePrvSS2i9y99pwmDO1zUbWoQpPyxonXIFt/QWkpofSO/KT6PEHMHFlq4wQ9VmSQSusGPEv/J7nfgNyxHvsweG+sMxGbIAdMUAsa
+     procedure_id : 1760449602223110646
+     type_code : 14
+     group : 5
+     code : |1+
+      // Summary: Deleting the folder corresponding to a subscriber (as well as its data ...)
+      // Syntax:
+      // DeleteAdditionalSubscriber ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      //
+      PROCEDURE DeleteAdditionalSubscriber()
+      
+      sCountry is string
+      sSubscriberDirectory is string
+      
+      
+      // If a subscriber is selected
+      IF LOOP_SUBSCRIBER > 0 THEN
+      	
+      	// Stores the country of the subscriber
+      	sCountry = ATT_STC_COUNTRY[LOOP_SUBSCRIBER]
+      	
+      	// Stores the associated directory
+      	sSubscriberDirectory = pGlobal.gsHomeDirectory +["\"]+ sCountry +"\"
+      	
+      	//1: &Delete
+      	//2: Do&n't delete
+      	SWITCH Dialog(<§?1B43701D02D709C9§>, sCountry, sSubscriberDirectory)
+      		// &Delete
+      		CASE 1
+      			// Closes the file
+      			HClose(CUSTOMER)
+      			// Deletes the directory and its files
+      			IF fRemoveDir(sSubscriberDirectory, frRecursive+frReadOnly) THEN
+      				// Deletes the subscriber from the looper
+      				LooperDelete(LOOP_SUBSCRIBER, LOOP_SUBSCRIBER)
+      				// Information message
+      				Info(StringBuild("%1: the entire data was deleted.", sCountry))
+      			ELSE
+      				// Error message
+      				Error("The deletion was not performed.", ErrorInfo())	
+      			END
+      			
+      		// Do&n't delete
+      		CASE 2
+      			// No action
+      	END
+      
+      END
+     type : 458752
+   -
+     name : DisplayMasterData
+     procedure_id : 1760449602223176182
+     type_code : 14
+     group : 2
+     code : |1-
+      // Summary: Displays the data of the master
+      // Syntax:
+      // DisplayMasterData ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      //
+      PROCEDURE DisplayMasterData()
+      
+      // Displays the data of the master
+      DisplayCustomer("PORTUGAL")
+     type : 458752
+   -
+     name : TransmitMasterData
+     internal_properties : CAAAAAgAAAAEizPVtq2oje23gX0WFJHc1r9Da6jq7FEXeJgxo7w6jK1V8ioLYg1aP4Q0ql9gveH9UAdP0/HPe4ehdIOvi83o0T7DhU7hw1P03fg10WAQp/Yr4SmaPpZzclMg8aUWRJS6KXfWDxcvofp7v1U1EXQySpC5WfB+Exw69GrCMIlyAWahoWiopGIk4ZaAZuxHMrnB2E4QzHRRn0sRjqgR4e6MOKc71sU08bez62PxfuOtg4JXX7wQu4PqNiykksnh7pgcBRMd/Z+QPGkNuqjD656P80ADzc8BjrAwzYLZ/6Xl/uVKYy+O6qappk4=
+     procedure_id : 1760449602223241718
+     type_code : 14
+     group : 2
+     code : |1-
+      // Summary: Transmits the data from the master to a subscriber
+      // Syntax:
+      //TransmitMasterData ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      //
+      PROCEDURE TransmitMasterData()
+      
+      sMasterReplica is string
+      sSubscriber is string
+      
+      
+      // Defines the name of the master replica file
+      sMasterReplica = pGlobal.gsMasterDirectory +["\"]+ cstNameMasterReplica
+      
+      // Establish a connection on the HyperFileSQL database in Portugal
+      // Therefore, the program is run as if we were located on the site in  Portugal
+      // with the HyperFileSQL database
+      IF pGlobal.gsCurrentConnection <> pGlobal.gsConnectionName_Portugal THEN OpenAConnection("PORTUGAL")
+      
+      // Select the subscriber for whom a movable replica must be created in order to send him the data that was modified/created in the master database...
+      sSubscriber = ListAdditionalSubscribers()
+      // If no additional subscriber exists
+      IF sSubscriber = "" THEN
+      	// Defines the recipient subscriber as the one by default
+      	sSubscriber = "SPAIN"
+      ELSE
+      	// Asks the user to select the recipient subscriber
+      	sSubscriber = Open(WIN_CountrySelection, "SPAIN" +CR+ sSubscriber)
+      	// If no subscriber was selected
+      	IF sSubscriber = "" THEN
+      		Info("No subscriber was selected, therefore no movable replica is created.")
+      		RETURN
+      	END
+      END
+      
+      // Create the movable replica for the recipient subscriber
+      IF HCreateMoveableReplica(sMasterReplica, sSubscriber, "") THEN
+      	
+      	// Copies the movable replica into the transfer directory
+      	IF fCopyFile(pGlobal.gsMasterDirectory +["\"]+ RPL.File, pGlobal.gsTransferDirectory +["\"]+ RPL.File ) THEN
+      		// Information message
+      		Info(StringBuild("The movable replica %1 was placed in the following directory: %2", RPL.File, pGlobal.gsTransferDirectory), "The subscriber site can now retrieve this movable replica in order to retrieve the modified data.")
+      	ELSE
+      		// Error message
+      		Error("Failure copying the movable replica into the transfer directory", ErrorInfo(errMessage))
+      	END
+      	
+      ELSE
+      	
+      	// Error message
+      	Error("Failure creating a movable replica.", HErrorInfo(hErrMessage))
+      	
+      END
+     type : 458752
+   -
+     name : SynchronizeMasterData
+     internal_properties : CAAAAAgAAABuhkj2pMVokmAeT7I/PCPRTdnj8/ss7CsA3fBAiTYoMTK2imZxVHNrB48TcVnsdVyR3CIvo056Yxhuwmm6h8a5u1RGNatVQPjxCUzMZ33Vgy3YgUaThBhqEzlZA7oqNKWqtKHDPEzES772ejscixN86dKGowT4A3yosOismzRJUkPmdgsVMOzep4aSlNCjLj2+bt0oLB1D1xEVhFzNLSq8QFRyL1yD1vSAuVXne25h67coVjX6wIQZwhbeCxlot/KYhDDwysYjp6mD
+     procedure_id : 1760449602223307254
+     type_code : 14
+     group : 2
+     code : |1-
+      // Summary: Synchronizes the data of the master from a movable replica
+      // Syntax:
+      // SynchronizeMasterData ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      //
+      PROCEDURE SynchronizeMasterData()
+      
+      sMovableReplica is string
+      
+      
+      // Establish a connection on the HyperFileSQL database in Spain
+      // Therefore, the program is run as if we were located on the site in Spain
+      // with the HyperFileSQL database
+      IF pGlobal.gsCurrentConnection <> pGlobal.gsConnectionName_Portugal THEN OpenAConnection("PORTUGAL")
+      
+      // Choose the movable replica
+      sMovableReplica = fSelect(pGlobal.gsTransferDirectory, "", "Selecting a movable replica (.RPA)", "Subscriber replica (*.RPA)"+TAB+"*.RPA"+CR+"All files (*.*)"+TAB+"*.*", "*.RPA", fselOpen+fselExist)
+      // If a file was chosen
+      IF sMovableReplica <> "" THEN
+      	
+      	// Synchronizes the master
+      	IF HSynchronizeReplica(pGlobal.gsMasterDirectory +["\"]+ cstNameMasterReplica, sMovableReplica, rplToMaster) THEN
+      		// Deletes the movable replica
+      		fDelete(sMovableReplica)
+      		// Information message
+      		Info("Data synchronization performed.")
+      	ELSE
+      		// Error message
+      		Error("The synchronization failed.", HErrorInfo(hErrMessage))
+      	END
+      	
+      ELSE
+      	
+      	// Error message
+      	Error("No synchronization was performed, you must select a movable replica.")
+      	
+      END
+     type : 458752
+   -
+     name : DisplaySubscriberData
+     procedure_id : 1760449602223372790
+     type_code : 14
+     group : 3
+     code : |1-
+      // Summary: Displays the data of the subscriber
+      // Syntax:
+      // DisplaySubscriberData ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      //
+      PROCEDURE DisplaySubscriberData()
+      
+      // Displays the data of the subscriber
+      DisplayCustomer("SPAIN")
+     type : 458752
+   -
+     name : TransmitSubscriberData
+     internal_properties : CAAAAAgAAADtENmvudJz3AeUGBVJv62fv/GO6qXoPOgAm1mxW8j75oh6jQUuc3U9XmkFw4Ddk/Ax9v4oZIjWu93puq8ZJmqUteCDzHTGCXGodev62bAqercB1eyLs14CQKrsxxhaHzg9tVCeYcKA/cBiljEYCyuYbM6E1Wk6pLxMG0u6GxtkbZUQ1BBfXOXOidlbdDOjEpvkxlKNgt39wFI/eG3j1icNcDGr9yHDrwrAhfO60wmJExdfvS8aQfZa1DktUcOJ7xuQ2u+aqQqcaUy5Ju79DDucRpqBAbLgGGkMi7m0kbLK+hI3SVVz+y2O3aSs
+     procedure_id : 1760449602223438326
+     type_code : 14
+     group : 3
+     code : |1-
+      // Summary: Transmits the data from the subscriber to the master
+      // Syntax:
+      // TransmitSubscriberData ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      //
+      PROCEDURE TransmitSubscriberData()
+      
+      sSubscriberReplica is string
+      
+      
+      // Defines the name of the subscriber replica file
+      sSubscriberReplica = pGlobal.gsSubscriberDirectory + cstNameMainSubscriberReplica
+      
+      // Establish a connection on the Spanish Access database
+      // Therefore, the program is run as if we were located on the site in Spain
+      // with the Access database
+      IF pGlobal.gsCurrentConnection <> pGlobal.gsConnectionName_Spain THEN OpenAConnection("SPAIN")
+      
+      // Create the movable replica for the master
+      IF HCreateMoveableReplica(sSubscriberReplica,"SPAIN","") THEN
+      	
+      	// Copies the movable replica into the transfer directory
+      	IF fCopyFile(pGlobal.gsSubscriberDirectory + RPL.File, pGlobal.gsTransferDirectory + RPL.File ) THEN
+      		// Information message
+      		Info(StringBuild("The movable replica %1 was placed in the following directory: %2", RPL.File, pGlobal.gsTransferDirectory), "The master site can now retrieve this movable replica in order to retrieve the modified data.")		
+      	ELSE
+      		// Error message
+      		Error("Failure copying the movable replica into the transfer directory", ErrorInfo(errMessage))
+      	END
+      	
+      ELSE
+      	
+      	// Error message
+      	Error("Failure creating a movable replica.", HErrorInfo(hErrMessage))
+      	
+      END
+     type : 458752
+   -
+     name : SynchronizeSubscriberData
+     internal_properties : CAAAAAgAAAA+cVDmGxmC89TvThnKTOS8c2ktUQWIVl/FXOI/PcdcRpA7LvmauPVO9A7EYnle6g07W2Ehji6EoWk7hj/XC1umN7Tlr+QXKamie6gva6rCQdxlz4s0oHjlq+U0gRGyLu7gtWPyC+PHucBT9/3pxb5ssNRtreh5AmULMysRfRzR0leQrkOpu3EdkuVRRZGi6f4UtrimOsavfRUrqFbHWwSsuC/30o1sKbcXc+dFNBMnYfjVFfG60obDhCDUjd5451Xxv3knxUIglDPyTe0zk9YzKR7dN+E2xyv7y37QKIREgBuNRGY5svsT3DQ=
+     procedure_id : 1760449602223503862
+     type_code : 14
+     group : 3
+     code : |1-
+      // Summary: <specify the action of the procedure>
+      // Syntax:
+      // SynchronizeSubscriberData ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      //
+      PROCEDURE SynchronizeSubscriberData()
+      
+      sMovableReplica is string
+      
+      // Establish a connection on the Spanish Access database
+      // Therefore, the program is run as if we were located on the site in Spain
+      // with the Access database
+      IF pGlobal.gsCurrentConnection <> pGlobal.gsConnectionName_Spain THEN OpenAConnection("SPAIN")
+      
+      // Choose the movable replica
+      sMovableReplica = fSelect(pGlobal.gsTransferDirectory, "", "Selecting a movable replica (.RPA)", "Subscriber replica (*.RPA)"+TAB+"*.RPA"+CR+"All files (*.*)"+TAB+"*.*", "*.RPA", fselOpen+fselExist)
+      
+      // If a file was chosen
+      IF sMovableReplica <> "" THEN
+      	
+      	// Checks whether the movable replica comes from the master
+      	IF Position(sMovableReplica, "To_SPAIN", 1, IgnoreCase) < 1 THEN
+      		Error(StringBuild("The selected movable replica does not come from the master site. Select ""Transmit the modifications to the subscriber site..."" of the master site in order to create a movable replica that can be retrieved from this country (%1).", "SPAIN"))
+      		RETURN
+      	END
+      	
+      	// Synchronizes the subscriber
+      	IF HSynchronizeReplica(sMovableReplica, pGlobal.gsSubscriberDirectory +["\"]+ cstNameMainSubscriberReplica, rplToSubscriber) THEN
+      		// Deletes the movable replica
+      		fDelete(sMovableReplica)
+      		// Information message
+      		Info("Data synchronization performed.", StringBuild("%1 to %2", sMovableReplica, pGlobal.gsSubscriberDirectory +["\"]+ cstNameMainSubscriberReplica))
+      	ELSE
+      		// Error message
+      		Error("The synchronization failed.", HErrorInfo(hErrMessage))	
+      	END
+      	
+      ELSE
+      	
+      	// Error message	
+      	Error("No synchronization was performed, you must select a movable replica.")
+      	
+      END
+     type : 458752
+   -
+     name : TransmitDataOtherSubscriber
+     internal_properties : CAAAAAgAAADsc99ft3rFrj++x1ZPoGKTJTp535GliYZLcmGIW+eIO2YLMa3kb5oll3c7uvVq8k66J78z9xBwHoD6np/m9L3FLvlfgO+MGet27LEnhimuFFvq9/ylhtOwT/5Q9Ktydw3H8I4F5Je25fHhykFPlr2t/L5QRWLe2pyNZjh4Ch+jK4FAnKGX0q0i0kQ0hj3YTH/4adO3vw7VRnk9QTIkfEFePuoX3eQ1nyd7gxFDjANNBKadvBWC/dMTKr3zmgI45Zw0YswAVqDeKPToQiyPGC9wp1qpi7ZThUQ=
+     procedure_id : 1760449602223569398
+     type_code : 14
+     group : 5
+     code : |1-
+      // Summary: Transmits the data from a subscriber to the master
+      // Syntax:
+      //TransmitDataOtherSubscriber (<sCountry> is string)
+      //
+      // Parameters:
+      //	sCountry (ANSI string): <specify the role of sCountry>
+      // Return value:
+      // 	None
+      //
+      PROCEDURE TransmitDataOtherSubscriber(LOCAL sCountry is string)
+      
+      sSubscriberReplica is string
+      sSubscriberDirectory is string
+      
+      
+      // Defines its directory
+      sSubscriberDirectory = pGlobal.gsHomeDirectory +["\"]+ sCountry +"\"
+      // Defines the name of its replica file
+      sSubscriberReplica = sSubscriberDirectory + "Replica_"+sCountry+".RPL"
+      
+      // Establish a connection on the database corresponding to the subscriber
+      // Therefore, the program is run as if we were located on the site that uses this database
+      OpenAConnection(sCountry)
+      
+      // Create the movable replica for the recipient subscriber
+      IF HCreateMoveableReplica(sSubscriberReplica, sCountry, "") THEN
+      	
+      	// Copy the replica file into the transfer directory
+      	IF fCopyFile(sSubscriberDirectory +["\"]+ RPL.File, pGlobal.gsTransferDirectory +["\"]+ RPL.File ) THEN
+      		// Information message
+      		Info(StringBuild("The movable replica %1 was placed in the following directory: %2", RPL.File,pGlobal.gsTransferDirectory), "The master site can now retrieve this movable replica in order to retrieve the modified data.")
+      	ELSE
+      		// Error message
+      		Error("Failure copying the movable replica into the transfer directory", ErrorInfo(errMessage))
+      	END
+      	
+      ELSE
+      	// Error message
+      	Error("Failure creating a movable replica.", HErrorInfo(hErrMessage))
+      END
+     type : 458752
+   -
+     name : SynchronizeDataOtherSubscriber
+     internal_properties : CAAAAAgAAAAYo/7rm5r5mzBe6IOOagFZmDDU99NzKufJxeDgVVcXtOt5bHkbVK69DzIImS4JaBFiX2tVGlMT4xvr4cOYUJK3hdyWQVuWDVp4Zbpy/YaL2aTXHuN2pnJ8KDw7YI1i7LzEvTKdCFjqnbIWfLtauvPWQxGfelT95o1Kj96sy3dx5PbRP5qf+cO7pXvOnpBw1pQ4NQeKWbk3+SRMk26zjPUTnW3XN2D6lK+BJRakqvI2nkqF3bB1wvXM1UueXUJEO1FPODEvkE/8cDFPChK26XXvAo2PJN/0
+     procedure_id : 1760449602223634934
+     type_code : 14
+     group : 5
+     code : |1-
+      // Summary: Synchronizes the data of a subscriber
+      // Syntax:
+      //SynchronizeDataOtherSubscriber (<sCountry> is string)
+      //
+      // Parameters:
+      //	sCountry (ANSI string): Name of the country
+      // Return value:
+      // 	None
+      //
+      PROCEDURE SynchronizeDataOtherSubscriber(LOCAL sCountry is string)
+      
+      sMovableReplica is string
+      sSubscriberDirectory is string
+      
+      
+      // Defines the directory
+      sSubscriberDirectory = pGlobal.gsHomeDirectory +["\"]+ sCountry + "\"
+      
+      // Establish a connection on the data corresponding to the selected country/subscriber
+      // Therefore, the program is run as if we were located on the site
+      OpenAConnection(sCountry)
+      
+      // Choose the movable replica
+      sMovableReplica = fSelect(pGlobal.gsTransferDirectory, "", "Selecting a movable replica (.RPA)", "Subscriber replica (*.RPA)"+TAB+"*.RPA"+CR+"All files (*.*)"+TAB+"*.*", "*.RPA", fselOpen+fselExist)
+      
+      // If a file was chosen
+      IF sMovableReplica <> "" THEN
+      	
+      	// Check whether the movable replica comes from the master
+      	IF Position(sMovableReplica, "To_"+sCountry, 1, IgnoreCase) < 1 THEN
+      		Error(StringBuild("The selected movable replica does not come from the master site. Select ""Transmit the modifications to the subscriber site..."" of the master site in order to create a movable replica that can be retrieved from this country (%1).", sCountry))
+      		RETURN
+      	END
+      	
+      	// Synchronizes the subscriber	
+      	IF HSynchronizeReplica(sMovableReplica, sSubscriberDirectory +["\"]+ "Replica_"+sCountry+".RPL",rplToSubscriber) THEN
+      		// Deletes the movable replica
+      		fDelete(sMovableReplica)
+      		// Information message
+      		Info("Data synchronization performed.", StringBuild("%1 to %2", sMovableReplica, sSubscriberDirectory +["\"]+ "Replica_"+sCountry+".RPL"))
+      	ELSE
+      		// Error message
+      		Error("The synchronization failed.", HErrorInfo(hErrMessage))
+      	END
+      	
+      ELSE
+      	// Error message
+      	Error("No synchronization was performed, you must select a movable replica.")
+      END
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : RPH
+resources :
+ string_res :
+  identifier : 0x1848e4bc0072ff99
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+ dialogs :
+  -
+    identifier : 0x1b43701d02d709c9
+    internal_properties : CAAAAAgAAACqSxqAj2y6VUfi5dDo78XmI61VHdjoh+gpsDYm3UIVqcUStybdrpRejgtXwGqv5ULp+SjLyGXzKsZcG2WkzRlgpRBDgRKUISjC
+    label :
+     fr-FR : "Êtes-vous sûr de vouloir supprimer les données du pays \"%1\" ?\r\n\r\nLes fichiers de données du dossier \"%2\" seront supprimés"
+     en-GB : "Do you want to delete the data about \"%1\"?\r\n\r\nThe data files found in the \"%2\" folder will be deleted"
+    image : {}
+    cancel_button : 1
+    buttons :
+     -
+       label :
+        fr-FR : "&Supprimer"
+        en-GB : "&Delete"
+       image : {}
+       value : 1
+     -
+       label :
+        fr-FR : "&Ne pas supprimer"
+        en-GB : Do &not delete
+       image : {}
+       value : 2
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+associated_test :
+ name : TEST_Main.wxt
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

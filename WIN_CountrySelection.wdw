@@ -1,0 +1,198 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : WIN_CountrySelection
+ major_version : 28
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : WIN_CountrySelection
+ identifier : 0x286e5f9912798282
+ internal_properties : CAAAAAgAAAA3nl1mB6/yCCUXLaa1VzxtjE7Iw/GF9xqBWeuvdHRJ3r+EMA6hgr0dtqCPBKjEBzMs+VQfDmewI2oytPmiZyGy7JYitOu7vv9cFXCrDg4bZ23lNVLxdLZCbPle1WI54/2XYtKYhHtAX6z/Ve3wWVXSWsob1aGkqEhy+r3cQODDtNRx4jJixOqWKXitgic+UU634M64RpnzbuQ6spWc6HC7xB107NUku1QKaGmdayVku7KSYc2o34lVHhrBuEzU83Txj6FPEibzqwQBLP7mH1m1UT8IKnTLqeLfMzWR9jgraLYhOMYBnaxGLHxrJSqW5AWBBkjpZjtY1wShzh723ekqxyYDAdEQc5Bnr/TqWkUfH+DS5zFit0HsLm0UquDJyHvFdvlIyN4XD/xLTnODdx1Llq/MKQUA4a3dN1CKxoiibLrxRp67xg+b8wUm1v47wqD3KpPNQwRmk6NaI/EPticOEHSOeozTMkZeelnEp5kC27vMbTCj4233hxNgQL1OyfQ1SkhmltNl/z1js9CNHV+nLGGnrmqjFclt3P4Kx/xw/Qdz1QPvlSpsEKN7LYLa4uXz9Bo4rqaRP7cmUqSmCbFpQMkAsuY3isCE8mMAk21DSMNIcM3jBNMsBdlI2kBc/w5HCoiDWQPHV+rI9evQOexqsal3b2vvtE0TinTmfRNbPGPavfVyjy7AMj48ewrPJB/RfsQdQL8VJXfPw+mCcQAy0HPXnd2CR4A0YDKWlZI5r87j/a+X+KFwPAFlfHscsvqRpKgMghL3manQHj56AJY5aKP6JP/YcvK04BE3ZDUlGB1tBspggcB37lJJvcV7Hf6FD7jn9Q7HrLoOP+4gguL7Wt7sivgZGZzkO5MuG/QRKUm+1TvL0pAyb3QwI+hvT7w8jwTftYB0GR7hG++iAQ==
+ properties :
+  width : 332
+  height : 98
+  widthClient : 326
+  heightClient : 92
+ controls :
+  -
+    name : COMBO_COUNTRY
+    identifier : 0x286e5f99127a8282
+    internal_properties : CAAAAAgAAAApJEZ6eSYfUuadyTmTdCkl6KdGW8tws6Yv/Ce+AWpaY8fsK3rU5leQARDTvzA/26Bi7AdvJBsSTuABqQmp5HKWgkXn2bT/fIqua2oASlpMeUXV6BHRiAcBqjyWmKecmLqLJTgF4DL1SHDA83/FeJ6Eo3czlVMO3eBv84kdJh5SxG62LQxZX5gMDKETUr+KtoAngGXfNPE2n8CgffQpNkPFOMmezxF+0UF6uCMzETGe34dMVynm5eqOLp9V2bqeSZHqoaryxF8chpPQQOvuk8e/PITfWT6PrdYtcbMPAKYt6iMmvy0E4OJ2jZ0J6OWLMAOR3wrkO1BJDFAWbgZ7zaGO+4L2nYRNZNxDQH9bUDxaXBLj7weaS7zbghZmsUMKQHYi+lC4Nt4qN6TJiJPAslSyen6aUZQ34ZeLK5zDcHEoDLM2+sJBJ8bt+hiU3xvxnCzTE2FQkN77wnaE6GSlare6T4OZth+yn9tuT7AroKf+46IVkc4j6P3ZPtvJMcZQaNbrSQjXbubuW5mH8GeaM5T0957zw7bpiCHgAaCHDavUNS+nXgV3TrnqMPUI99yWJddwMa+wyocuuxXv29lRqpIjssDuPVSVLwEWwH/s32aalJeMJp9BYoMLzdkzUPgbS9IcwIghwo3uMrVn7oxG4kSyfmwJPXfoPYHyc7bK+Wh0oX+ridWeomu3D1I7c/nlTtcw/a2UosgKyaU9nWkcmDJiHdkuLirhm7cP3GspVxZJ/q69H+T59YKoV8i4i09lBI+TTB5hg48OrPU3iPTK+tieANbGbeTw8t1+2Av3QrJumKbbBNfTpGh8Cnf6OkW1Ztq/RKAbtG8qbFoxMj2uqvG4GTqEF5mEb0ebmKZs4O6KMjRYZF6nIrMh7ZR7ij+A5Ziwk7p7TIhGONyHWBmeypHS+Rg07PeTc64Bqcj05ZOhKUL2AMy/8lNX9/YQVlzGosWxSD7NBl7ltwKt3YRL4/RSjwFWdWFLRwfQVMZmSmzqoqzJRDKm50FSrFWkoh0eH2BPWSTkRxh/duKZef+7g1kPXAvi+LGevSA5xk5j75OljumwGfZlCdI3Pg41s+QaTv+NFT90jTZswoc//j6TzEHVRirfQ2EegMGMFyAFpJp1+2+afuADW2B5gzutAoB3ztxplKNDyMBMpQboRPPvHZ3m8fh8/ZGuLjT1joLekq3aZCuaL+rO+JEn//ta5mVmP8vHxUntgWxc3bKkTGVc4nBHTDDDdr41cOIF3phk6FKS9p8XXeZApnLg8O9G3usliqkY5Ukk78kGP/vRa24L73HuJaqjcZZkdxbYpjmhQcemZMWZafUzrdb2mJJkuVQtBEWhqPdAmg3+3v9rM4jW+Rt9/VB6XydH7lpm3VUTWz2ci4y2RsJPXBX7CvDs2m9NOtxGinZOAClntjUHQKajYFDiiOHIMSlkklLWRju+NA0JUYwSBk9XGZjtd2MhNzaSEw3pny8q0OjhDgg537P8Oxspm1lY4OUexM3YgaFoh5SdOAay0d26pmor83ltnxhgW7SaWgoQUEn0FPMmEpim0W9tq2VnKtbTvvk6NFzGYf9HPXNYrvgtn/E6b9G/VV2DBS+O5zrOmAQTafs1Gr8lCxHQ+S1HnvzGWs/zkAZCPH9nYy8W44bKZc+oDf9aMOpJBH3hAx1LRHsVI2mnXxDYszk2c/ku/jSsZbxRL3DuPkZcdYvyVVvMglx2zTEX5d7SNNnjHXT0MVEANmn/3UOeGNDQvr5RptMJOPRUpRldAZdzJSQw
+    properties :
+     x : 6
+     y : 58
+     width : 265
+     height : 24
+    dropdown :
+     internal_properties : CAAAAAgAAAD2g6WY25Kkth+vN/VORBnCNb6f9vxmbqwVJk2l0o9uzxS0S6xZZztC4xW7bff2xWbAGmFr4dzzDeHgeWsMYygC1CtO/oyDTJTDWP/V47pV+AwHuAKwL1mVCH6MFuIZca5C+sIdxPAv3Z9Sghvkx+AH0Y7fNbgpVQo1PiBcqBZkclvBr+3p8/23bzi+T/q4XTuCifJhF4orQvz3oJWp24CizntnyaY92ab2gltvG2O6YrNGwKsOy6azZPgWtaX4H34mUV5ZDXN/8GPvfsMv6uOidek18gI5rrgX5sjYzELi89pwyU+nJ80YUQcuK1s1E+EH/3iaAxDg/PPY0annbSnPWtDAUw5ExwnZOibnF0x3bpAO5abIxGEoiuDhY7W9UnT2mluEV+NXdgHMa8tXIkn+84MyOrqV0bN9A3356hpNnMCcSpWt7fX8Jm0aOp8Lu6Y3+iaz0rVAiCgZ4+IA0tm9fug5vqjoFjVtSIWoFWsFlEdP9zbCJmipIM0ISq3tVzU4mzsgakCNWq3Hr02LM6XGLQfOyuPn3gOed/EseX5/vD2ztFKlE3X3KsnSdiIyOcn41uy4ab5ftoLTpv0rmgKZubG16bP8lOFTBMvs1qhUPKCvS9VvZF6SPUNGOt17xsOK2hIMYuTusdb7n0JH8Yay9cSM5iUrm3qs/evVq8dPxaF8FMsB/ktKPL+JGETcrazcP3zCaARVvNF9AT4ms+jrUrM7K3nECy3HTnj5eT/vLxidhG1+QBHCvw1RwwYi93g=
+     type : 7
+    type : 14
+    code_elements :
+     type_code : 23
+     p_codes :
+      -
+        type : 35
+        enabled : false
+      -
+        type : 17
+        enabled : false
+  -
+    name : STC_Text
+    identifier : 0x286e5f99127b8282
+    internal_properties : CAAAAAgAAACVHh26GnJolLtYnRAQDQcN3W/Evjo4ipTNyvXPvIfaiZJHlI3a3GzIHYviTc/xR25FdD3u5Aa+rtwNFpIliUBYsXX03OEQzTTdAl/UenCu1FPaVjqULKZS4WkDbXIncHfhAoP/FUaXVXdehPQTgnWeTNGRHkFuoevT25azEtGKTRogs/DCluMLq/IgCVYUii4DQXWsJ65+HCPcvR6BXRvOxjHU5I5MtnrO/bmsCbvBKSbuL07V/WaJirvaavQouwf04DuqoVUckOZNh/xYIPpOxzh5j0GIgy5ErQ+c5yjVQJPRTjMB2NQST24s3URjos9NQNfcdrZXM4ob6w9F2RcdBSWNlCGkJkOaurIWv5TmJgoQyK6LvDkxH+gIg/XU5L1aTrtdI9ZHqobJTDZRNOhcl765JEfh+T8Ne/uFveXPvBmd3XSegvzCtGWG7iWI1nE1TuFPdOw4rggU/dDH88HAsD9oy3RKvheXJtanWEpnkuDFrYJGfhy57nFiohV0G8IYxO7eUrSF8Pakrlx4qMDNAJ9Vo8raPjplFqZioL7mOKgnFVOZiiZ1CcitDl3DO4f31lDbF3qcnQ==
+    properties :
+     x : 6
+     y : 6
+     width : 314
+     height : 50
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+  -
+    name : BTN_Validate
+    identifier : 0x286e5f99127c8282
+    internal_properties : CAAAAAgAAAB+SsUH66mwmzegHXrFcFZTBwtsxR+RPOL68qQDw0u+K/bFAj8HXs9qE5xzq4c/Q/5lvafnxQGhLQto7VB/jg+1iPnaGzcb5qgNSy6b7bE2itV4XGolVpgQ+eKNL33bLPunrtHUNo7rWm8FBlMJ5e0l2auus/K+TtZ5fpaFLuOEePAASDyJGFBhR9kBjfxFXnrM1fdmAIaDGXg9LEokeda9oTZqVElt6sIziYFbsrycfF4ZmmCMoOEWuQz1q1p5hGLZm9+ZtLVvOTOtYovs9cvvfW1WCvER0DM1ZmowVdY8DPKXRnTjZqphKtozzN+l59YnNTsaHS8Lrw9LwknxgPhL3TqKOJALaKjZeXP2SubVOkjErLAH8wj5iH4NnTALTnNAk2BdJtxdxWwcBBQCPY1U11b3rGd8de7jWIRBYMf+CNKiAS2XMQKZzcgOsJyfcmCUCsoXhgvnQAMDXYJfSBleGMUvNK9YaLnIw2AQRGZalE1Uu6pqBK2BGGSjqib19GSblSLCCUrdokxYOn9NyNtcvdsIwHibg4qTL7yvepLAc+zh8vnbN3E56kb99u1QLcfUFryrS5qZyzbIb1TzLigj9dqG5nsUZEISrIvg3oNkay79DqzraI/HKFzmf5H2sA29+5KfmG5ez4hNgToBo1KLFpWSIVAwCDsHp4PzoS6BMhN0baZvRZlBMHja/az1lsViWPLZoidq9/Ykvnk3fSajN5N7WEZsU2wmDw4TJiMIIftMWU8izc5Exckvk6Gizme49R1+4e7Acj2nh24MWaK/ygGrYnMF8hnEs7AyRn8exxWbQflMQTkpwZWDFENBcbpMjKLhL0QbHruMEF6GmQexnihDr/H14r2bFK81HSBcVQfjVU7hMwmJ9kBDvi3VFjQo1ZOCVaY5+J64NFyFoXgxlHP7
+    properties :
+     x : 277
+     y : 58
+     width : 20
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+      -
+        internal_properties : CAAAAAgAAAAVBoz9GyLxV/cpZAP/ixHth4ZTK1Vu3D9NXK+sXV2BTZ1dCS8vV3emiqd4wQzfixWNSYyccUGkzaiG+91Vnkhz1s0z8q12+B84QW9aoZy+G8kj6T/4yE5f/Cr2ewxq1mHaUE+OL0iN
+        code : |1-
+         // If no country is selected
+         IF COMBO_COUNTRY = 0 THEN
+         	Error("Select a country")
+         	ReturnToCapture(COMBO_COUNTRY)
+         END
+         
+         // Defines the return value
+         WIN_CountrySelection..ReturnedValue = COMBO_COUNTRY[COMBO_COUNTRY]
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BTN_Cancel
+    identifier : 0x286e5f99127d8282
+    internal_properties : CAAAAAgAAADJuy1+SfVMVcclDtnk5D2ilXmFlw/2OdkPJ7dmyBS5OfCcETfHjIfEp9oajKnJ3ynLtrgjGllEsmlVIdsXt1EHXiJUCtHmRozcI2MVWmDC8WiAQ2TVuoPpeJYwM+q4bet7WPGFqluWVLnLU7X0q3hnGD7iRDas/JvDewAZMMg++zmDxUdg/mg8bqTIq9OFwiKQ4KonB5wemDXyRahWBwigKfZKSEyqrxnZocqJW6ZwEMsq+yctOHPvDMs+N4I9LlK6NQ1JjMeDQtblOcTn5VeKmyXvkJA6y0vCupdUdqg48jtHCIITbOz9JBuzimMW4py4YToVPqNwDOhMF7ft/YlSRh1b1kJ5n9IILLZFx3PpHx4+pzZlAD1TovUWUDVW+Pg8ypu2PGYCgSPG2Bxz3mEBfKGA+wLrFwief95VS0bVNKK84rr93NUCScIVKqQzT9qqLsmLhlDkgakzUW4XxPj4hFLzuAT3PTG7qvQ344FPzjwAdimaDnZ6UWtZXNUDOvaJUv096ySn0miKn4X4qgiqeipNswjsZaFtuCIIjxGXko7uZLrsVbEXi9XvnQiW0GsZ00nP17PkoGia61S40P2nrsCCMGqVs7Gz9F/jK6zxQ4W2HoTKMHQ0gYqB2weuY7zKuo2+eLQ1SRc/Q8xsKb88pOgGb/JkBfucNLR2lAhMApsgPk5QhQtFlcVkmILQFqUxHTedq/PDg0CXLuTxZPSWIjtnYQ4xopvEvrPysJD49kRiMUL8n1jYGFaSXVfHeJRZWeVB4wejVQntcxUSYsY0R+uh973WmxwAXa5PrFwMAmuSVo0JafU3wC4sKnxnpq6qT+G78YG0b7u7IvvacnoTHovsHLOBwuedTLnGhooYYCenlynl5Tr4cvzlb47QsAM3aOFFYTeph7YrDVmmfSh43Fg=
+    properties :
+     x : 300
+     y : 58
+     width : 20
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+      -
+        internal_properties : CAAAAAgAAAAVBoz9GyLxV/cpZAP/ixHth4ZTK1Vu3D9NXK+sXV2BTZ1dCS8vV3emiqd4wQzfixWNSYyccUGkzaiG+91Vnkhz1s0z8q12+B84QW9aoZy+G8kj6T/4yE5f/Cr2ewxq1mHaUE+OL0iN
+        code : |1-
+         // Defines the return value
+         WIN_CountrySelection..ReturnedValue = ""
+        type : 18
+      -
+        type : 161
+        enabled : false
+ menu :
+  name : _Menu
+  identifier : 0x2b43621a11dc4f7e
+  internal_properties : CAAAAAgAAACCv199ARoPUfG3WAPSG9eefhOOjWMQrs8CrX6cGGGJPoSHWBq4PXhStOWc1YnAZMZ5+EFR1WTDn8CTOTiyLnXPpAR5X8rsRkPZrm1yZeYDDt4kRzDPLbUf4Sh/mD3kd1D8V2drCFLmjeQhgpw7GKGwHRga+ZdjSqXGIC3LD1RracZ230hOmUJTj+ABDW4IHrw4PflmVGgp8E9KnAf/gselRrzEY90l3Cr9N00QijFYYrbrl4qF4kdim1YX6jYT4ezQhbJsU84ENZsxzq+o0JVHYQ8rxck600VhGV04/ao=
+  options : []
+ languages :
+  - en-GB
+ popup_menus : []
+ message_bar :
+  internal_properties : CAAAAAgAAAB5u68OnjdVBulO+kJ0ihjifx3XMJ9lf8bsBg6rvxyS3Pf4qyiPF8nL2IYc3jl6TRgQW03CUGnNauVK3ergbJxi2TcwIr7zzPLIp15AZAA74AE2GMRRqdfq8ZQlvg==
+ actionbar : {}
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     code : |1+
+      // Window for selecting any country in order to create a subscriber,
+      // or select a given country for which a subscriber was already created...
+      
+      FUNCTION WIN_CountrySelection(gsCountryList is string = "")
+      
+   -
+     internal_properties : CAAAAAgAAAAS3c648VZdSIcGyy5+4wwrT6DF+SgxhKYNE697YSO+C/M48G0BQUcnkrKT8QFeX6iz4Jvjh7uHfgUS4CsNltWZQi1w3Wjctcozk+DG4/azu9iXKmOT4z+Fzb/9rFJFUBd0mzntRZ84wQLrAw==
+     code : |1+
+      // Display the list of countries in the combo box or a list of countries received in parameter...
+      IF gsCountryList = "" THEN
+      	ListAdd(COMBO_COUNTRY, pGlobal.gsCountryList)
+      	STC_Text = <§$0000§>
+      ELSE
+      	ListAdd(COMBO_COUNTRY, gsCountryList)
+      	STC_Text = <§$0001§>
+      END
+      
+      // Defines the default return value
+      WIN_CountrySelection..ReturnedValue = ""
+     type : 34
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     code : |1-
+      
+     type : 2
+   -
+     code : |1-
+      
+     type : 11
+   -
+     code : |1-
+      
+     type : 12
+   -
+     code : |1-
+      
+     type : 17
+   -
+     code : |1-
+      
+     type : 13
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : Fenêtre1
+resources :
+ string_res :
+  identifier : 0x18c12c0f00102dc6
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+  strings :
+   -
+     text :
+      en-GB : Select the country for which a new database (that uses the data coming form the master site) must be created...
+     index : 0
+   -
+     text :
+      en-GB : Select a country for which a subscriber was created and toward which data must be sent for synchronization...
+     index : 1
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

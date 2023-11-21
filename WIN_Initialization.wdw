@@ -1,0 +1,803 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : WIN_Initialization
+ major_version : 28
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : WIN_Initialization
+ identifier : 0x286e5f9511257449
+ internal_properties : CAAAAAgAAADO8QefhilDGq8U5KC8UWGILEQj1hQa0nd06WZcg5yHhYhQzilCKsrFQNcqk8717rCBuVMCy3n6CJ9qJs3esgBHgE/NwYgOp5KDXyWdf1PHIx1IqoIkvTYiU9znEnGepXGrPONQjeX0DCcah5DHcOfs+5lcE0O0IImeLk9FfCD3R7UoYq8pmxv5SxVWOqcNZv0nLOXOaYU4zFzZec3uKgS4TKDqZHzRpGU54QWnefyBEzZmw7tjcHSCnkrVd9dWTsB8Ahw6xptxxs/l0BuZr+DJZUcQxSdY4CUqmgPeRkLLHCTkeai2vhxe9SISO9dJThaH+ILuhgrhI2B2gMhFQFyfI1Z1wf+7RflaGAjlgVHjopFa+v56/CEcQaKeukymLLzgov6gBYAVNSg/KxNVdZeWGwyFBUxAB0ubjdnLhMMzLOmanhzYmsgQR8RzD36iULaLp1hGG/zSBMDEm9kbibXMl+EqgRhasYknJUTB+n8zwZwV8LhZzmgX3ge5pXQOLEW2KX0bfwXJRnrD7YdCfiSmf9rJI3NvQhw3aL4jhsx2Nxcp7o7MF2XPyx6b8YSAYAY1Y4+BtBo7IOr4MjN4hsVKNidfNF1KdqAsXfqXF1NRT6TilduF6TkruyuecoJC8N2QTFqODAylK9cVQWn5eqkIQZCvO+5DMxqox2XtJNbQW0x6jHyov+n+yAW6Zy7U5Qxj9o4FS7OFvqR84ZL4aR3Juk9qYvNPN8uTlVSwS5h4Wkt+6NwcAKkqpQoD3oH05LwVo3Ulf+w41vvWD8fDx0mZEam0ngK5OYsMJDJwA/kYjQL3TC5u5n5h6S9jA5FI8r44Uq41qNkvPg==
+ properties :
+  width : 787
+  height : 598
+  widthClient : 785
+  heightClient : 566
+ controls :
+  -
+    name : EDT_RTFCode
+    identifier : 0x286e5f9511277449
+    internal_properties : CAAAAAgAAACkV91zXUV+2IFE0dMSBr7OTz/Tur+xWu303z9a6WkbtexAiu58i1G9SVxhb/L84vnG4aGkt36cAPUuLYgYU2Kpj4xcGjRNVDPPdUd3Nsf+NLH4V3CW4mrcFDNAfPVTWTn6xUMtQoJrFSqWLJHIdqYjb8OArmDG89GAwQmVRo3XSAjvcSTNe8DZ9uoCMd5/8aFpv1tdVVceNeD/rWxgRFjg4unwKnuH3mb6bI/+6yKGo6/zLG8nvhXpa0rIs0M8iaVa/gXuci6IIQiQabNGNOFCKt9PQPvddb4GXuJRo2iSvBnikvg3SCdt1lrkAQKQBD953wxdMT7sR82CcZz/meJJ42y+VA5ZfD6aHHp/xfacRJucJGrScpPlgsK3HwZrq2UM8I2Ozw66xkMrGBC6AZiE9Ui2W7FBGY+9iB8fXT6YCKVar7hCQv3glfHreYPH3CIzu0IFWUG5pjbsWSj5VSiSwltizUzv+iytuS/0AFxOwiEv4QLWOX1KucI2NQHsCqI5QvVKkZUcW7mxqH8U1ZUxi4IHU7+mH56z9EDPq1ZuGiXOlzIAQYosEioUkSVleYBYuRV4C900CPrWvIUbsJwqtFQ6qhQgvMi5ve8Y5HxcdYJhgvHPibo4mACleAaQdiwPhXubK9iLGztpbsvXV3FjqiM7FAEnBtKgox84NvA1ZwztBJcCywauJz7bASxhGXBF3rcPcyD8kSoIYCy/GfvER0/8fBpXS13slIRKUKeWAk2x4JaPe7rACo4Kx5GZihOlaIQQw5cQ3KAS94veZnL+Mo9AXW+c59jUo4Co5ICfvmPPEo5+8h1glRbQLdkI8b7uCbDSLAP2PBnOrNMw1O7Ha8R/LP2g4ajMBCWBjqKJg4j+wyMr205+CZ/3SndMXKB25bTUpmrpEqGaSbkZ0eSNZQ5K3uhybstkEXhNVysZMoxQwDBmEF1KFxSn83WJO7kUUwEkVtVf3jy5/81VqfphxDecskAxrGTHiPJr4Q/H7PqLC+7h4EbOEID0+AXvmYEyOGjeAEJ3wcD02PSVxZraykzrsNl2bdH4YhghoftkbXz8u1Ruh9T0koGvlLDO2ZTSzZ6Ho93t8+fcGEM=
+    properties :
+     x : 6
+     y : 339
+     width : 772
+     height : 189
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+  -
+    name : STC_Step
+    identifier : 0x286e5f9511287449
+    internal_properties : CAAAAAgAAAChxjzlo792i0mNiAd2B6LozxDiq8bvMZYKCh1lVZHSJneYhmSRGBO6LF6o8tkZnDfPRwSBaFMuG5ecZ/wCAhD3mya/YIII1BrNwr/Ig5T40SHAJMnErf0kpTaRjOxYAXZnPFtxtJfaNma3XnzllxK+nJOWNHns4e5U2rwbn0MEn+XTNrXkWpjy2zv/sprallNAUA9xPgwb74BS3U6rINTFv56pRBSZSWW3UL7AZrlE52z4DON2NlMRrVQA4e8tmKzDWHrqf0Y+Pvquvp9fnj0dSsWv9425TtsuT31JZ1aunTAZY0I/pvm4QvVnoxxrNIYDmquIiVpnh7yPtbkJA4kxOSWhcIV5TsxVJvx/QT4bOQKI/CjDcv0r4iQ2Jo5SM/5pAM+/nyoaqH/xUrxUABGnwBBE2PAS7lLxAtaAnrJs4XJ8mDGSLLLg3WiOftwzpKs=
+    properties :
+     x : 6
+     y : 6
+     width : 772
+     height : 20
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : BTN_Finish
+    identifier : 0x286e5f9511297449
+    internal_properties : CAAAAAgAAADai9arfwoGB73bZva0cZSJI0+UmjpbyVDvYBWfAg6a53avRvk6cZ4C1cbUcaDoUrZkivQ3bhuO8rqIrOaeIpAh6LcOJc/QyHWNizWUm6IX17K6JEacjaM5MJlOPIkNYWIlH62Sbdz0LvbwpF7Y5yQVB0JqIEZH8VuBrPp48hYRkpv+RHkZHAFKgSTnekjm2b/MPaN+X5EGYCJcXAo39hZCX/XcmaiHKdcu/Zo9nQ/tTpwMIYKRAZ9D6NnpG7TtDLLDpb5PsKLXndBVs/wmNcHSM63KgF4aYfN0Bbhc8VDkRgZaY9M7t755v+P0zrGyY+embCUGwrygASEsRbOAv99HGIWoNy6/iPDUsTe3DPlDnNfnYH/rRVCxw6cGy5AlK3svyCZXICQPybDPR3Z0dePqPtEgXPJFI+iWzIcAXhVC34iQ1hWRMSzKotiM/osIOJ+5BgxMoQWZKsLfSDlxMV0tXYHCRS2/jwtfQngBwo4/IJBrq9azChnzDwywhLF5FuW9vhdAgI84alaJ6fY7vmFFhMNao5TEsZCwME6E09LDBzjgGS0L+rS9ksqSF1Si23DjYV03GC473ZQbuPiYtcaooop0lLhZn3/x5/HzHE/TT0WnnNmaKiwenDiBFo03dN72NaplfXxKH+9GtlW+Aax1g2n1+Z/xFnjnxY+mxeBByk3JMzweOvdB8qBWgHYiKA4Eop6ppYkGiGT1BtAsg6eMnZHwyB6aA9KE28/FKFrdGvq4U53ec5mlZlM9Fp+yegJxOXb/aKisp/2b0G5W/p8WXM80i3cbVfGj/vzc0YDnp2YSIU7IfgySmzB1aWObQD4r571vcmhdb+RncTMjWeg6IUYuofKGIoM4iaeQqouC+Ja6TIp4p1vfACBFRnvJFzo5wj601NAO34gQydIB6ac3ZoUbCTh/h+OYKw8Hq+wBebTMOz23NmcAOcXv3V7yv2g+jjh1hmvZzRgw
+    properties :
+     x : 698
+     y : 534
+     width : 80
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+      -
+        internal_properties : CAAAAAgAAADQZyvpRjJZltgKBVFD+SKMukTEU1n2G2jmPSjnx1ZKdSF2vB36egNKcReVrz/xwpIZdIpZoyUu0CjPxu+MpGLAedmE/39iAmJIcu72BpKoWkpseLXy2lnJGPSMFw==
+        code : |1-
+         // If the user wants to end without seeing the steps
+         IF gnCurrentStep <> gnNumberStep THEN
+         	
+         	HourGlass(True)
+         	// Browse each step to perform the associated process
+         	FOR nStepSubscript = gnCurrentStep _TO_ gnNumberStep
+         		_Process(nStepSubscript)	
+         	END
+         	HourGlass(False)
+         	
+         END
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BTN_NextStep
+    identifier : 0x286e5f95112a7449
+    internal_properties : CAAAAAgAAADaYf6zBuGjHpZXYx2SZ7B6eJDECrDc6E0d3tUlCVDdTOOeeW7urZ2MILdu0dHI/vAu9dHBaljAYyAwScncfaqEzXJMrInks7LU0ZpL6On8Um8AfibLh1gJHEFYWU11srRlmJVxhfE8ooWcmmTTQUk17ceC72YBfi8dfNb5C8RQSfH1SlX5eeQDkdYKCw/Mt1LJqCtEYhxkQ+92W/xCoiyuLnxTN1pytrm6/dal4Z9G/gUNcXlNp/Gsyp22E9PuO1MH+zsLB3nFlLhE6X1/rFu3MaOSMgG8jPk7AZ2mMsfG6JKp3lukGtRPGWA+JkrIZiFph6/47fJj7u1LR8ktxGfd+79g9s9+0Hg5pJSKMc2116yJoytp5agth/+m3/TGJ1Rft4i0ba4Hov2Z9Q6PHNISjSyEwEjXT5R6eNyJ3KDVCwWHrDXmc7mN0Ke/qY/PRRPGvmkjJKKoGS2ZfJmfGTYSVfHtwIO8U69XpvBtKXcXYcGsPllYGLrH9XLXfZiwG6eRAT4pNFHsQx2NoCQFPKmeUw9oLf9+Pfrb8S0pwO1BUOYZCKDBPY7gNollidl6XhWHKfVfvj1kiC4uMWNvcnsT10SUowDOhTLMO28X9WFH0diDnx3FIRp846kLIq8zEQHfolIA7RBq0Pn28UKPDJOwKJZxIqAMe2dZmWY5YD1GO8ayiE6n0DBjZWRB2+WpjnGoOXV/2KcCPYc/pWshQpXDfLcUpLtKn3FERKGhDvddDZpURArvGuSNfPLoOhO4xS/VwwT8NlLp7vPE7ArH32KyToQ7tkFENY1tVa0uzWyVWeFUWTS9iVKVhajQrkH6EsnhfIS/g/l+JVd8tT3hrnpSI7wiM4CLMKFRFLuB7s+g1Mi38d47FEYIF4aSeCwz5SVqC6sZ6/MKAtwQXaFKZBSNC5V33aBgvNwWpmQjPxtxuGIvHPZWDbClCaqtVXgHJmRLuzvM1RbGWe8NtpCc7GgbzRMd3h22
+    properties :
+     x : 559
+     y : 534
+     width : 133
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+      -
+        code : |1-
+         NextStep()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : EDT_ExplanatorySteps
+    identifier : 0x286e5f95112b7449
+    internal_properties : CAAAAAgAAADxDMDq3HsgHozNDw2+LhdtFakeKll3t5ixNlIK2ITHKQ/5pOttux1ZXeihBv0V6m9rLTjn7BUSgRf6T1pWR62R2GK2670Bbj1fOI7UrGgnXbxqALl2QwclAJPzWMlNfkpBbj9uDJgcOp9DHybaBt0witvq9YU9L+frvl3QuvwagRF/IsvXtcQWLxragj0B2WhYYxo7mxBSjqpJKLPLU5kLc1KBdQu1kiPvfTWPBg23TeVBn+8KmEMvsvtFrseKPuN+7t7+ZPUbF6ynsAekuRdQScneKJtDqPLxMihjr95VpVSOyliwy4dQG1PgKZTTl8LBJ/HzXKKAG6KI1utJZgtyazF0EmqsJMFmj4szTV/iu8NC8F1/yRawekryifwKrc7YOmvgi+kjF+zklvSMlj0Z3rjE71jvL0kdn03g1GdzxGj7CzlLELYyYCGiaTPV6lEmSAWkiEvQwmu1BreNP4KU9K9JC4gR09pGJ73V+pUJt4XGi1F+F7R8bhCDSAOYuJkcNBjfcuOhbnbb6hI8kIh+yQepbSiUW2eP9B12pfo1bUwSIuq4l5iESfHXWp004uodiHR6i53l08uOLHg+QkzcSbMo53uq94aSPuR40sFyGuv2rMnllxJ0LELCfjMaho7XRtBk2c/d76DBEG0fHZtbijBwF7Jy/ca7sr/+ZDHWTf4FCJAEzXZB4wwe6AfCP0MVeO1MBDflIhEOoalYLZ/QSBWc2iJxz9rSgcuGsRo074AlHy2e0/yGCPVeVFXtmyBreuACL81f+pnFjckR4KlFn1+admuJg/GII7m0BSJsQGXhHqkh+l0tw/D5mSXOU0eFLevzefLHy3fRct6MBPn8WKRCHo1f+bonWi4vUqyelMla6TjYhqVVUf2zgeqfcw2ALlQTkYDeWldQwtI0jl1HKUq5TJf3Yto3AVgoNW1QKI8PLDd6KHY5t0nRfh3ur58hRFAWOh2UcE/Ygmc732r6hcuxqytmRC950+a+nEC9bnCxK90Cf9DttGK4NqC+jBgh6SWXlvAzUTladaqgscI5sfTjUbIsurjd4/dQ0Fk3nE2fvKqTDLBwyp1wIIc4k3Cnf2lrban46C0Z
+    properties :
+     x : 6
+     y : 32
+     width : 383
+     height : 301
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+  -
+    name : IMG_AnimationBackground
+    identifier : 0x286e5f95112c7449
+    internal_properties : CAAAAAgAAABzAiqZtvHcwvecKT7qwXSlOyLXHyWLIC+4V3RF/aQJdaZkU3Zw36M1RUGivIZ0Qq6u0uFbW94whTWiWfRbOBnkFrm/gN6NKWerW/lx1oJdAVv3lh6i3/YGiAoIrtuYiNQG6af2sSBJC0pe4piuky7u2lXqUeNczGhR5YhylLYkHTIe+mWKixGbsMhSOvres0EzFgt44gbVqREHPD7l+MI8Tf0d1la23uRymkQCIf1hEhLr+bKK8LlnJRTRCaYVGbodvJOJfcCo8MP5KBj/Yum/qCBekFhQacXqThSb5fyc8YdK8unLBIId09u7t3xDG2uRTrzN8UnOaS4zsM+MB+jHdA0Vh9ObyqFsg2HwUdTxpijg9Om/s4ytEBpVXPam9MADi6ScuvDBV1k0ILBy70v8dOQuccbdaAqs6C5JnSUnfk84fG4vTlkXSl4ruDAQSBpfbrVEJYbt9wwk78AN9NIkjx1xeIaMuEA8xs/hvpSJB8GYMsvx4+sL08lzPv33HcFTQBdeU+JV7b09RTHsmlOTZZLLOrcDkGBW92O0ldj+w9yZUWdgbxf0x8FAlmCo+dKLbfm5zBKkmEnGTh09ZucnbqAKsV2T5RhxGQZyL4NQHeRwJJKODwjNhEiNWKzRl3MI9YelO9QcBUMbK7OatYyCBM1+ApqLZgrvfExYbAN3C4ywXvC2hwwfe9NftsPJFmxVkleR3ONn37gQMo10AVq21JG5M8hVF82F8cuqXZTT6PI9kIrDB5Edy39t10qufXoTW8L+/mNfawTb6YFh/9OcBkAPl1wmhUtDV8HYdDw3WyBilmcmCsJXkxeH8im6QUe2VOg=
+    properties :
+     x : 395
+     y : 32
+     width : 383
+     height : 301
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes : []
+  -
+    name : BTN_ViewMasterDirectory
+    identifier : 0x286e5f95112d7449
+    internal_properties : CAAAAAgAAACOli9FioSoP3AFG6SiYtHJsb8MLsrMNq1vUNlgQbjHMd1Cibaf+69hsyA5ek/BJxOQTPRlBwQZd201XGiaPA/SB63PBl8yp8Mwo3pibHAgqOj3Y3cD49ym8JXPNL2qsYFbEia+mqDMftXd/ptkWCKEcC/xLjSXqhctZMhfbPcS0Vd+hfDUVuu6ZhX9Q6Q1Zchn+Qlz2flbzExzNd5pVD+ybw9mrKbrzWYlY8RFGCBnbWT+w81opSXhAMo4z729jJTeWqmeE3XUBj+sZwBsowc9V+s8xfu2PMBkx/VXF9X2Q1yXIU5f49hvlXDhRZdtte0X7pXKxussGCl72C/0mjdmIILqPyBWRjfPXphsLQwEhevyP92sTLOeSu/1VBow0VlAxMferE/w7B0olAghKkygkOi/ebqj8guxbrb2KmUm0t40KHYt1qyQA70aemMbQ+YqzfS75XBDjhtL+Te1u3dio1eJCFnCi5cEI4AdxMUnbfRG3VKFsoBQ/TCNZpiAKXDOVKinzyV1Uewm363J569fesoZllp6Cn2NZ3grUnO9R1xuMSHHfRamxTx7IdaS/Y5Tn8QjyWYJIzYFnChIkuM7KypQtQF+wzMGZdDBcWF3cPZrP5TZzUJ3E4e0hMqCZ8Gn267oRKzlS8aeN5RTqo/k0+XFdx3q77k4wAA35/fxoc7B0+FweCznV9dqFQaOcmCxub0UC9TRh3HxHyouBgAa+vaTjV38GWeA/CrU1YnZrQMmhmFcrMRczvXO+A3tR7n8+9HGnOc5v7OGiOk81sSHoPbD9ZI637WtLapIv+YiKptww9dcnbSYsfwBhqneqEnmcSGeuQZ0Pmrwkha20umnD2cc1hUWi5X8D9+ZY0TvdVgGe+YWTU2E0VzbPnV6NUP91FxVHC5kmLBhMqxcHGq/XTSyqQbcS+vYDDSmeGtvJ410/5Rgbu1gPwqLjLOJ0FLQJqfKAcCvcLj3WkJIEiMDgD4AQFL55c8u6+ajkGF3G5TboBtyIJkKpkjtzflFOTFN0i6UXSmJ7F5BUkk=
+    properties :
+     x : 6
+     y : 536
+     width : 109
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+      -
+        code : |1-
+         // Opens the master directory in the explorer
+         ShellExecute(pGlobal.gsMasterDirectory)
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BTN_ViewSubscriberDirectory
+    identifier : 0x286e5f95112e7449
+    internal_properties : CAAAAAgAAADwotnID+SS6F99kcQhFz8j4JGd1SjA05BGOM/nhb++zdjLLVur9KTnXmevjcR0msT1pazqV262yE+qldUFtq5YGHQgAzraJW8dqguKrRFLkFpEd7Ulgwpu1EneVHbf5HRhxH5BdrUz67peP0Zh2IGfeYZ/wche5vZyZrOdBBEBiikXTeAVYHp7w854UGMJcUl7IvYru9a6f/7c1tcitomzobJ6rV9sJsUB+o8zyxuiV3IabeoDTkms7XjZDk3cIIfpQ5q4nwDp61k0WBBpU5NvEJIGK1kStJcmUa3/29yynL2YMn9WS/n6dYYSFFC5IObIndAGs0wg6krL7+//o4vp58WxLRpRkehh/h//Z5+jm81s7mgd04eFMuCMcozhd+ypXY26hq2lFAEcyVkNpe3HvDbAalBGdhISSCFJSQ6m6qBm8W8gU47i6/qm93i6T/ans9DnUpEKAOPVRo/XOLXuTRQ4KGpom1vf5z/9Mk1/vYlrsJ5i89UC4OWJ3yroVU0E4S86bnsq/ld4vm23ecvrkKGifJjELUzUU7e9dHEPtWxJ8BPVd3urVqzGt/Q0l8SzYK8N9zBwDttrCQCOPA9v/WGBQU3qRNgVcaurmQkBNp6AXCIF4b+8JHGhaEoi8Qf/at8M5vr6xNFuBGJ1yCc8PWym26us7ixHvt2Z2dVhmfDa2qmMHCl8sIOFh2r6VvzXkCho0cZyQCYrqBJEILL4mpvoY69iBuwfHBu4uXUhjQ0Fy3NmWhd7uzXzTqK5jeuokonbSbKapzsTDv9Wkx/EylFHwXBlwjCfsVUmLkrRNEKb6PxXEmw/FaW0aLNmzwpGe66k4y7ccAhn/PIIMldoCx/5mppum2xvXOllOyjGS5YOu7jg8wBTXbc54gzbUE/Jr0ozF02shipmGw4Sdgz9FFb0fojl5QO+V/uXfVVx48jGzfJIsi6EzWlShg6QKZfd27V917HiY0k1z1j/ifjw2S1yAe/CdXYNMY2CX5pC6MUsSzv6EJVTqFHbTyBmfWGfz52N6IVE5pjIqLOF2vk3118=
+    properties :
+     x : 121
+     y : 536
+     width : 109
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+      -
+        code : |1-
+         // Opens the subscriber directory in the explorer
+         ShellExecute(pGlobal.gsSubscriberDirectory)
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : BTN_ViewVariables
+    identifier : 0x286e5f95112f7449
+    internal_properties : CAAAAAgAAABsac2RqIYKP03F86jCrV7VGiAnpT6US+8QMYCXJTkvfhVtEUDJ07WDPOnwVWHvtpMOG0QWMS9qslc25gw+LWhfQIH7M623vtJQ1PkgMFXqfTghPxeWTNX2KcfedUCkRDKnD4QvDOAf9t6VGvlmRImHz66T0ThAclR9A3e6q7iy5+4CLi71QuFNVHrOw8rp/fzNuNxMN/sxHsW1PzKwruqod/IJcVmUcCSinU5TGRy/14x0w/7q1Bx3+vIFQRiAmCjgbT4yNN3qwUE1gzhl0/+6YeAe5g6eBJh4shN74127uthwVw3zBC3kLh5/pYrl3PzRKJB/Gh5GwV1nXYIQjheGpG0zmznQGyFTNLSJ0dMJG29CjzjoOZ500UkTnw03F9mCwmEDpVR3bNi88rordRVhQk4P8b1wmVujD58ua4FYx5mRSPt1Rf0Q/pe6x7i1BucLOuOgP3M5wI11OrAXXyg/gmfbXvFP92KefHBD9ktqRmFUpZkxq4xYASJdKpGPSUJNEN7zfaZe8Pn58InCf7fDISgJOtFaGILgZPJtRJGqJh0FYxdhaau8eXACHVUYqc1+W7B6eoGlCieDqhJaM317R/upCSmji1q7GiyOKau2a9o3Uv0TEIxIAuZyO6dTfTrnNxY+Li6DC6E57wtuR39Xl9EMIbjEywE7Th/yILO7/gA5Le7kxsoR2y7/9D6pls8S2r1wO9MHQJq7pDgAzh/coOhchowj3Z8EoF2qYkfLamCl6L8tzKqn7Bb6GXxCyi/23DpyVCg4D55xLwI/V8jmzYoH5lPw/K4Hbt0NMbn6KGR43lC45WCCsxuJFuDzznjlKJHvOQ9dXhDMp+KOu0zFnTvCRTGWrOlPNGlKFnmgHQCqRmeLQWojx8IUAWzTRLbgNIEJ7sJGoZZSrBlMbBVyBvRV2T+fvMfALAym2nxpU6yOfAa5v+lg3Pn0m5g9S+kZmHtCXO0MW6dQcmVJ6mfxcI/n+Uk=
+    properties :
+     x : 236
+     y : 536
+     width : 109
+     height : 24
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+      -
+        code : |1-
+         // Displays the process variables
+         OpenChild(WIN_ViewVariable)
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : STC_Code_Step_1
+    identifier : 0x286e5f9511307449
+    internal_properties : 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
+    properties :
+     x : 1074
+     y : 6
+     width : 100
+     height : 20
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : STC_Code_Step_2
+    identifier : 0x286e5f9511317449
+    internal_properties : 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
+    properties :
+     x : 1074
+     y : 32
+     width : 100
+     height : 20
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : STC_Code_Step_3
+    identifier : 0x286e5f9511327449
+    internal_properties : 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
+    properties :
+     x : 1074
+     y : 59
+     width : 100
+     height : 20
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : STC_Code_Step_4
+    identifier : 0x286e5f9511337449
+    internal_properties : CAAAAAgAAAAh2LLwaoHqkOQs+05jNPrpzp/A2L1ZqVsnk9uNKCL5mFai7KLViJdLxcQo2Ox7aEe5tBmcdxFhZh4q9Dahk7sdMZ7aJx8cHPzaRndB/fMIyyCUgxPuf55pGC165ER4cBujOPe9x9YW3Y8rU90iTLUE6pe9wRnjsJJ5ERB/ohRpTPBVEXyuooV3DJtioKSqsXXNfGP5UBx0i1TkI4v8YVnoF4rmQhP5pvUtZAjnEDFM8yG04gn0OvpQKrZln8xpVNDIBD5Vq8dctw87n4vkrU9k4V6Sl+YmsoFU3vINNkC761X4ULWg/YbcVgzvgxmPS3ET2MYsGThrqL4nVTKsCmEtDyYjrjofqLydilGp8HSPlQdA0Q+gkuaScvceoRDCQhrgVI89YNWlZbKRPKM2Cc8XCzecZmiUEEe7WBmjLrmDgaUC4WK3GUVLUZxXwbxxIwqCFKWv8HHhK99LGibVrfhgV7vcbuKLiHmQTSekPl05fCOU1PxmU0YrYPkwfpyJcx+v/A17bXPbFzb8xcL0jjMvChB5ThqjIo4F0Eyx/9jS0/geEq8mF3bcIbT4+rJ0twFpHqgOXWtQPMXjizF4Il8aG4bLUxjhLnJF3zTD+W/X/4NHwdifMuvOp+KwQLpeh2k3gzbznpirJs2t6mW7vP1AF3gYx6mJkhQme2QSq5gFZD3hKJtGDKlppdDKnDiSu/AODR9lLHqSSpJ7foYIDibrEOZYHAwNyoZhz3MjfV38Vdlf5MZGhq+Th2o2HiGVwuF3G0fJYio0ychWFJDl9T3LnusVA0PTGuylAuI78uB/562D8gBU+aF4A1doh4bU9VCSnBBtxD96YAfkzLE1u9lKSMgRhbis6I7zQrkD3tsKtfik+6QNDZLefQkVtiSiSMF3NR1RkgcSLgHlgHmATsolTbPCTw7X1Gsl4/AZaGZXKd4aWORRfRgqdJ+e+0cHQ8MNS3V1gdCSAk6CtAZ/aIkm5CU4n3coNl3JEahbEYT60FgOpHCgMn5qXVWfhpi4GRjp7ZS0cTXYu3chMporClY1ZOicYLfENe3OiP65b4xkTOydxhIEwQ2Q9auU7FvaYX7824j0Ww+vJISN43csvTI+YF7YxjcGU2ZrNHdbCApZ1GyZOYIr1h4ExnH7ATpN31k7LtW97ZvADsndo5NP2kXtjPCSBEyifVb8JLXKHIbE/xjGiaE/LSVEtgNUxElESf1uRtB9EaREDjPc+h3rT6aP5MeelbM1a8ekhP+3V5tZ88ogCZ3NsqrmbpNHt/B65qyLyeiT1tyOO16ZRQrIUmKAfmoHRbM5NaxCqCowX4V3MTv6lYvzQnhi2SRLHokZXCt/skuEcWDfqj+70Li7I5V8UGPeHq+HWz/TKzIi+ixW
+    properties :
+     x : 1074
+     y : 84
+     width : 100
+     height : 20
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : STC_Explanations_Step_1
+    identifier : 0x286e5f9511347449
+    internal_properties : CAAAAAgAAABRt8iJqzXA82CDj6Ee2YLgRaJv12QETGUXQTcnboAoWjGr/rBRsa52uyXjQ2j/82VOwvZ7AfOh8y7qg5lws72vG7DA4kPWG3hY2YhYalxO4q9RE0wjA3XC979J3zxrr/VZB74MViIN0nbVAPX3+PoNQq6UkFtce59K0mejrOaYRvMKhn5yb6wGGnqs8gTAu1vj+WKUaa30A3IP7ybhK3H6DNGeW5B3CxOyh55lPGsKNy3oWzV+t7NyCDdXha1my+dqBY/GUiJun162+v7QjAcoBmDaohwm1IxH97Xg5S/W5tdlFLss/m6F+yGOnKhnYwcg0Vq3LY+1DtKFBBjGo10rL6VDNbZMkMwVm5BDe0+vdXzFMIusQma6Vvx9qgA5UNfKqUezA1hR9xWJIBDv5uFhOKwyTl+VYlYMElQhLJgEtgcmJq5qmQAeMU2uevg51//TDIEQOuzgwp/80cEm3LUaXcQZ982WoYbRPLLtlGnT8lT+oixz+qiHiMdIXOe/dPkFDQ+ct7VoC/SpOBclIioN9QvhKAFr3Xip5Ls0pxvFplduhSaXHO0FNma5Ib5oqSnEoht+2zyOmKdoupyv+Cp8WnXEV7BT87fRQULm/0iKjfsE34LevfsSYXaQSPCXskK5pbdXfAjpCvaZz5HbWtR/Nt8OnPPT/k4IMIKzQQ44BBnN52MFyQje9aouWntmXM0efdrzIfXPbkWPojRNr8aK4bP9JE7bT7oXgqOwmWc03CAI0bkwbHyVCAjkNo+Z8bWQGIFHwENSBgiOnUYWc/hpVrBWcNVbsuGT14DgrJrXB15blzozhEjoQKyIj02kLnn6csHaSVhxKqZanVOAsVfTxik7w91xX4dJ9S5aTRbnFPAo0gtMwAbGHj0De3TkJBtzarfZSKmeuWn4MumLI67kgIEA7da8xU0x/PfDbSg2tEdlbrlXlThbp+50ct/IKd75NVhusOk6WDHqJZi3s7mYMtCDg66k8jcPVUJlNo2Fz1za8bcCayvs2//4x5dKclwsuyOnX6cyfCjEsqRzo+HMw0v3Al28fHHga0GF4wXZerwf24cchrdRXLKmbi1ThQYnu6pFmtaSZ6YoU2gp0SDyMMNYwavKiDc2rebTUE0SGaqCuMIZwOV2Z9ZZxBNxLI8sYC/Yll5ahgATlGMNBQbmNLrnSuj4f7QOURusH944f0VJCW8l6PwYCjf+T/ruWFuIZCFtSh+6jg6t5UFlKRU579/91FTB+gPXwZpGkGDRST33ZSs123KbbBTd1pGWl3vy0gBusvG6GUgUaOZMn3M4CV9jwJAMJSZMbb84mMXI37lKLiR0Ca1l4pTpy7GyJBt6TYLK0witEA43Fu8U0OvEiA6SmswxZWOrE9IaKhEx/GaaFGfieTM4Bxp+UEaE6Re5AI7g9v1howPHMS5HLJYG8ZJoLjFvq42iqA26fAniftTdOZOQaHKim7VCFietr86JfKdLo16QBBNAX391KygzhWZp5ypr6vSOqJkYCONgQRvoTcV+idIitlN+pR955j63far0cH9eArM3yFF3+S3v4ixQh6DbfcPWWo9o1uQ/NJvRXu4vi+qea0LGloM0Blnez44alRkE2DeUaOeHBg2b+WYACTHntGu1cjzBkYxAnqds7vdYpRRbWmMBFFuQZ4T3odKXhz90xcD2n2XpG9Jxs1NJQIPwrIcVU4Q9W8vE2FRqNZCQakjyGWw8zlINnFHHHIc6T5T2/xWzZ9W4dzJc3gVjqmpPg3WJaev9fssZudkKKTvMTlKMd1E47WKbc1FLIh+3FcY27S+jgRfw2xQ/07CsbJWxSau56oslWLI2bWBe8bPTN3q2TeW/xiCSgv2w9FC6m26JBOJwV1jZ5b7DZ1gIt7LIrMv5SyJo/QldNivPhCbhJ40gCqPhP97vBH+LX69qDGMYo4scJd80FfzH9X6y
+    properties :
+     x : 1190
+     y : 6
+     width : 100
+     height : 20
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : STC_Explanations_Step_2
+    identifier : 0x286e5f9511357449
+    internal_properties : CAAAAAgAAADxaswbItw3N2ppKhiTIwT4WluUvdUGga4MJL7ndYm/+Sb4ARor25u7Qm8X/K5j1tJJ3eOvSr8NTbmOVct3xcNQJkcedtePig2p0qs64eHM/+KcuavK/C6oOtYPaIJew33GuAI2yMvpuowJOM55R22j9nlGFn0VQsFwPZ5M/uPG4fRNL/9nWd7L7kKjCGNCaPB17kciCJwrvrsDKFrCPSRa6CRPEV/5bDZf35AmwqhSvnP4fFJ39slfd5YHWRQwhlaAROUvEAdRFtzEcsJWdrN2uwxaANhCjAsFG4eoSK9BCLk3iFv6PcsuE0ieqXOh30c4tw8vkMzo28cfY+WsiT/31CJCPHL+E2qJqdwcNAp9WY2pfscEZTs0dBQkJMdLFAcIz659gH6JLL3DaY2/UUgPAkgzIIQhJ6hirjdE/cySnr8iCrldb82KiMF2r8ejHhjBmno4hSJVwgxr9k8NeVgQwg8D2smAf6ge6ahcvEeoJOYPEOTC5VfGxFBATVcBkZ9gq9eclBYQ0r5nYU1ghtWr3pTdgTPnwpAstPmpv13v3bcQmRU+zRYpUPRH7G5clXCLFiu6sNSLwtF4NOiDtCczR78j28eenK8tYzxDFhj7CBUNXhYJ2iaU2mH6IFAjfAA0FSgdoZXjXM0n/i+HY+M5Rqq2MFv+lmeSDQctRBU2inKErbW0flgBFAJr6vaUirF125ZjXKhD4rD6B9yj4yqlGzOhEVOzDFMzJh5v9E+QyBrnbGOmyq0o2PGEfHGaoVUtKfGCBrEdf82oYFcQc4OCzb0NIJA5kr54ARlPe4JARjhxB3v1VZcftEJL3w0zxaiwJddKcOU2kwadr/+QrDpWINhHK2BchT16GgXOsm6sulzgudIJZkKfM1Vl2IrtShY2fBwx39r1GXSUrXOlfvw0bhfdAaISc2T5/CM/1WUQHeV/SYv7+zdM8seXR3lKT74qmiaaXh6f27rQA6KJxrezBHYh4NH0qRQ8lPwZ+BdwjRGvnyBzT1IA/Cc4McGyAZWK1svVE7/u5Y52q1kfvz/V91MbsxLfJ6/fVFH6ilBuo+jlJdKAAW6RbHpArqatv3ACZlRsXw7yhKNUEAkvZOjAPoQrpUDz6g5RYjrIGn59NHbB5+KNdJHBMcRW0jC7qLNdAo+fZzAPH/x4824vaQkyYjmoCWtxSsPnEA7nMDs+F4oKhtB6aEt3eNLCNLcZXIVYVJroe6rJM35JPrNp6Nze+j240aYB5UCWPyLcvOQ9pK0bbhhyg/zi2nTncVr5D4WGvEU7U6t6iMyH/FAyGMkEFm0kW2XdTJAdIptqam3+VMp+uLKk1vcgNUxAjQNnmPwSJp1PpFzRipzVNYGJ0tnxmJC2TrVTst222DG/91g4A6uKu7YSMLmUoT350fzKLxTb/HlOGauGFQB8we34iGrYOlqhlZd04s2P0/aBaipb92JIIT9aDhwodivk73Q00uR1
+    properties :
+     x : 1190
+     y : 32
+     width : 100
+     height : 20
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : STC_Explanations_Step_3
+    identifier : 0x286e5f9511367449
+    internal_properties : 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
+    properties :
+     x : 1190
+     y : 59
+     width : 100
+     height : 20
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : STC_Explanations_Step_4
+    identifier : 0x286e5f9511377449
+    internal_properties : CAAAAAgAAAA1e9Mmeyo7B04YaWqHFQtDOt1N+4UV0AaErqDlFAdqk8ouOqThgIfKM3VEN61Rula7D/Vm7f8BhHbAomK4Tx80Y5N4GPammlqk1LBUjO4C19d9DzTv+KbEi45idwmBgJ0/NRHtIuFzZuq6m8xhxud9SQXyY9N77z7Fyivdpe2qaBvZJrbrZVafeuVO85DFhiqaG+12QPDTphWdq66VdhUrLr/7aUd/A3NXwyCLE0egJfw+lYoZoVkDsDaEzaI+Dvh/v1Hbe+koKeQ629rfElXHjCCoQBlDLxviIysUSa5VWaAM9l+Y9l0hr5WO290ubEHWBkW+AmYlx2B0JZWELl1DjFJVc7OlXURhKlNauDus3BjrQKACBDiO1vIoraoeB0VBsFhoPTmy9CtxKdNqY74Q5ljcfDRn38IJ5aew+zlpghfxjB3YKw3UT9Gwff50JFiy2jhVVcFyNrQCbd5F0MonQR0CZguW8ulLrDvqStw6eexo222GQKx8GbHmDokhNCHQTDJb9piZBe0z2/gtbCmR7SA+4FG5Vq2hk4jDTqFplt5Acjdefm0voTXQM5sMsBgiVGv1K8UgOSPWLW6NbP4MIWpcW5qqFO30jMcxp8jNkTcfrxpJNJEuioBtCGxh8c04MOyj9PpgFYrtGjuNStjXNMlueLMMPGF1U61rrfMe/TOOBa8dGbujuPiHhHukcso/EKdkw04WJAOS8IP72rJjpRDrrOoA/jjeKyEsEGzTIsHw8BfKhaFmLIj1CPyDBe75n9Qu3NCW7V8d/+Gj7wsD00DNb3nJl4VravVIbf+F4bMO8MQPQogFkeHr1kg/SH9sGiGl5o4Rs+tVeDUcVPGfPkdceJN8ER2fh8dksDgt17xTEkfcid5oQqjJMn8tafV+OneA1ka94Hm5H9Xp2czEi+tRaq7MYEKIRDIas2BPA92lm5/bst0+ZFLFCf94z7Ji0TAPJysyBU0loTKS+UsmD8opJNxtvVkPPk62Zv6yDVkT3WiTkv6MrMicECYpwiWqRyM3usmY+c3bS/K+MJrzGhF1Rjfj3g9IAVWShiDqXxPsV9a2GEbROfDDehnpS5ILWOwKJwe9HWFvjd6HQbHgxJCQmPAJzKYyM+8Gl5DOhAY5Eo7CPDd6D21/0HgWseZt0vSxssLS4iDCstRP9KnWqMERbP9O8vz/lpu440QKN4+ij2PUMvIXER0rgHlFPnCIwWVchmhQqkjMCDqhGo9xg0klRAgFyJJg3Cqk1QM3YnjSO+LKenOKiwpLC5dYEhmfXTMjt+jh5ocW0uEJqV82BtAUs+vB0m4WrP9L5nYF5WvJqAYRMQM49GQjZrL6f7SZSWXXuTRXVFhY/qeF05IXhyOGllGgYYHiC2YzrdL5Rs7j2sLgHwNF8oEfhu8SlbBYj3mGoLgtVjF0ricBRb6NcqY76k/hR8iP3fK/nl55KwJzmIGTQlLcPs6Kklwx8dpNV+0KexUl2mT3ELPo7dKHEfdmSqLXK+H7OFh2Kn+1xQu1mbYVrfReV5p/9JOTYeeW+hccFKqXovo3YTDN7lIROQizWBtQ3z/Hd0pG19ImEMVlDRIiG8hUwFx1Y1sDzD/t6qPjsBaTV0Hu7bEiJ2t7fpkKNNNpGjbl9LtxbtAC4JiyU4PosUtAubN6OJ6JSAtktSmU3Mqt/8hfIKaABfqnu7JTy7HxxNdwgqw6BosUqINWGHevcSTyI1LgkGuBQHtsrpzJeHVjAaGYEUgiWU0IoIu5NLZLWwvgctASp2koGeu0PLu9fAVj83O970sHxB+BUnrUitOjRIQDK8sUDa6pdCzmoUoA6B9XBZnvaeMnWGU8WLyD9ROPLseUEtUUTT19zLsKh3KmmCyJWjfyoiztPSUvx0N/YTub//q+AhFueSSPqw0b9RZngn8w9VC0/CSek+254eI+NHOcTHlfKuYi8AQp+ZUN1rZxeIw2og==
+    properties :
+     x : 1190
+     y : 84
+     width : 100
+     height : 20
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : STC_BackgroundArea
+    identifier : 0x286e5f9511267449
+    internal_properties : CAAAAAgAAADM08fqzjzUK0YHlpJDUXpQRWrYSchxV4O3oUIKtJ/HwSnbUg9NSAK7YXkjrKVUYaKdr/0QozRDOP2ONqsiNhWi6QoPnpMhx8Q3kMn88iPzRb0BPR+Z+yI5exkqeJZRDJ13VbM8K4/L3KIogFD38e2NmdXmPXmABVnF/Zbo0KculwVNw/qKWKfbItH8429Iydi/09AUydlZBMT6T1Zzy08GejnR/rHIAHJIQ9U80IsGZ7Bz21Xd9i18UAURZ+JrRjo1Ev2mpAXSz/ai5FU33iFTb7BWRQB5TcOoovxZJkUolcfq6/hjJvK2JXy80XaOhMSjQVrI3bMCAusEtpP8nZuE/kUZwfSXmNTIoqZopQ+YqnCjmKppqBgeeYo5UQ29u3jp4I13MAgwM7h53fa5k06aMjYn/hWC0SWUxU0=
+    properties :
+     x : 6
+     y : 6
+     width : 773
+     height : 522
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : STC_Model
+    identifier : 0x286e5f9511387449
+    internal_properties : CAAAAAgAAAAnxWip7N1FxGjKil3kgAFYcqK62n6iG4GUpxeTBKeG23MSE4tQek3YM10uphbIXNsR263ZGDJcD1dqCV7zT6HVmsuoccQCjppXrjHLUeLjmxi+SXqPRTlRVchroPkez4fo5wqOIXWjnn69T0aVYsBqGS5eaPRO0/920yNnCvO51vR/ph0eX63cMxbY0wiJtCujkJ+K5z0Zcdpa1/X9QBeNDXT6IbV44OVhqR50An9f3TGg0o+1+xBRA9/4vFyD9VkQu8jiD4Y7TPbvEsqrZ+2+OENG/BDpB3xRbJMQmwR3B12s7GtXrh5E65dExf3Zehv+Vuo5eZCptm4/YZ/mSM5427yUiX3KiYKWNjRVWGIGz6MZROkcdbUrExzi9uAJj4zu2OyilrqYhHBVvzXd8KRAsQ6ePDr67DLYs3/EfDY//OH93wcXOdAQ8n/gz8i2cP+yjnqfK4Wrk4nPMMiXQTDTJB6AktrraNayMMEt5thbhVB3B2aXkSgt
+    properties :
+     x : 1080
+     y : 193
+     width : 205
+     height : 41
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : STC_BaseModel
+    identifier : 0x286e5f9511397449
+    internal_properties : CAAAAAgAAADyZrmf1OS5lOFyY1gbjaxP49NtiQ/mwp3cO0UdPZxOkYQcD3QRZgY+MOiLXsM6SyBH7ZcuFC7MgR5JOt9rLr1wE10iCuGtnFJLk2qYhWAScqiUGhEFhJoHQ3l3Ng7yK54DjNYZARCQ/SKLfL2A1D8GzDj1avrcF5cceRGJEsHrp+AQH+YdXsReTnEHcL09pS/O4hbAwO3enWOqEXH63xoPqSDsUXIqkLT2VIZR2u7Vmj/Vr2a4XHnBntwSo+JsSWF2zeka2FFEuYYGcxxwlWUVKtQwf73aM0H3mpVZ+BQFSvQM/OlcsVunuJzOo1xYPxgROrEKhaKHvIqJsKcrR+shY1WEV/ee7jXYihD9IdLnT56eeqJl0EoLrldIAdjK01IQI5jL8vViUCf7LTjWifd+dzREI9OmpkA0N1hLbwmeyUxeNpPumf55rkpGN0UPwCqp6s90K85R+F0+EBuIsOwEbF/+BRCKJDCExrGocfs5/CcHU0TRW6CoUg==
+    properties :
+     x : 1080
+     y : 161
+     width : 207
+     height : 19
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : IMG_Step1
+    identifier : 0x286e5f95113a7449
+    internal_properties : CAAAAAgAAABqEtdPAFJP2Frv+tQPakxzA+6N4/ZS1XVv+EbvoFR3SEPnuxEy876m0ruZytdodqyFQu+1HHBvSOltQViG1nSrPcgBNqoQC28fDX9upTekrVdi84cbiAYrgwIOpRFSwzt4uEJD7gK1CTg1xNTuw39RfMWuW6m/mXYjU8Mx6vJpf1hZPGX1/ZSryqdZMJbgHaRAHN/WM+MvTbyvUZpObqjhMmu8Cn/2EEiD5MgdZYR0WeLP6PqMrGv6vgMAOfBiEm/VF0muMRueq9h7/945i92EvtXMsz4C7m5gWtFRS1SBCot3JJuWh9yQmVOBpZX4pStslAF0jHaCf5l7uPFyHvEcdJElnVrhFjET4s3W18nn4JhO1PCV5GQlUhEKoHOoG2GluoiHey0iYka4MHyaBnIDRDBD0IfW7z19msCSeRSSInC2Hsb64UtZQoMvtC+WwvVMVxTNcaZUB3VTR6HXCSN6PwLqwGkddVwFebFVYCPQn1YGF8rGkRExgV3B/FmmQo9ir0puS/gDfLwW7aaM1h3YvrvJvLf8hGLWR83tnAT3EIS5C9lPrDOBEQ6pn6YRDps0M+5662XLc4ZDkifCqkA9yC1oEKHZiHqhfFwes5BgcAVx9ng2gtbed7yKIS4iv4sTQA0ZxzVO/MXBaws8jhTUWuzNmY2YuvLuNKcF8YqSxz2RXqk/y/eCPEbklz7LWHiD+4sgIJTSceR+zmLqbbwCvGh0UramQFjZLJCd2b4=
+    properties :
+     x : 825
+     y : 297
+     width : 385
+     height : 303
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes : []
+  -
+    name : IMG_Step2
+    identifier : 0x286e5f95113b7449
+    internal_properties : CAAAAAgAAAAKEScTSY0v61x/NX8vmRN3AlEN1UmsU6DgE4OAFCSz8WQeCPiyEzYv4lBQLG8ae98mWjBA+hUlKFKrLFmrpLBw2RzU+UQBWOCGiAGjtTm10wMSqf8coMHu/hnho5PN0IoTWnV+uOLUOsWm1y3pDsgRQB2Ldd5wAp5ogoZvvz/zTlg5aCj9SliWf454pA4gK+toqhI9YbjfhhTrt1Satyt5iCyLGGRJR3LB8Dyv/IhpxEYD06+wRAAFZEKXPGjrg1jGjTUV01gczN2Vgz8DukjaOX92wI26vPFNcnNMZC0kg89AKx5fL2Cya0DwI+jdirvXkwfT6vWaQ4+chj0Km60bYWdqTYP8AYkY5iiagOLrz3m86MIRU2JV264lGZ1HncBoUaANTlv44cdNt2k2TZAca2uh9Lgyg4ISG78/EYEUw4vlLGpjF6/Or1zkA4s1SIr74izTtCZ3tytrVLDWBHNPZ2rQUJI7t6Ls0hfoThgS8wUOlpn2SVNSOnr/ZggMFIx1LnXg+rc/fu530c/fYYf++7Dj51oQxOvDHupkcH27CJhOAkB59ZGrUJkxQdxIstiElvCfuY+AHWoIC7b2pjbvZ0KMUeqoAU6RT1tjmXaqK3SkMi238djYyaA1gbNJZmSoBQxhkekALIS/tfem7p+DkU/uSdEOYAlFtSDCin56kjjmLdk4UHH847Ze2o0qdrSh5/N/NCiT895jKu3lRMNnX254QkPYwEVsOnr0/C4FBg==
+    properties :
+     x : 1300
+     y : 192
+     width : 385
+     height : 303
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes : []
+  -
+    name : IMG_Step3
+    identifier : 0x286e5f95113c7449
+    internal_properties : CAAAAAgAAADlPJCMIuzMzD1cyuSCdPbkkcCaEhZjBEVV5AQJhxua4rfB3d1n7tMMQzHxTVZxQsA9QcnJc1xigSec9RJSw1shJLe90m2YUTnPUWo8PFDcBBoRqvgdo8YfCfQhD+/JFmqR8MfQJA5kAMV+y0kFIk4h9lshe/5gjqSkUlYvz4/5XgZP5q59OswEd4pEoNqEXe8y/HDjsdA7CLijb6zyp7Fh4t5Z7tzRw/BNFFB/LIgvhGCVVfkk0MjbxLLXrMhrOXDMg0sD02Awqpkha+/z+trWJ30QYtXKuPcWGNli4odysd1+eWwFTUJfTeYmMUZnZpkPE9NHXPesL12+jM+ccQHhHftatXniR8VCSFLYhvRTAUXAUDLLNextzNc8Ihg0ZmlVRoMi2/oT4NhWZlotPu0peAg0IX3BKinXGOrEnD4tjAzmE7PUJrJRbVpijZ3DeniJ8CKtLmwx8FKKASNHk4pSigVp95nMvIeDMZRr05uJZpgZn8DtQkxrZZX4bRmjJ9PcFVJDFVCgN6myGoYQUJahHtOMRumR5YhOUYuruRTSS3/F/0OUosZ8e0zigJ3vxS+3QRkm0FChGnE3uCGTUUXqQhXdgNnR1rvEOpzy4kWp1uN7H4hKQld1yqE2gLJKZ2tRrqXYKBI35U3ITh6NF/RWwniHIAjXN17u7uk5AfeDmSHPBvAXsdBdAJO7hXBXQ4eS0OQOu6EKaEMYX7CguVT2zNPV5a61o6aNG1vLi7/qaQ==
+    properties :
+     x : 1306
+     y : 508
+     width : 385
+     height : 303
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes : []
+  -
+    name : IMG_Step4
+    identifier : 0x286e5f95113d7449
+    internal_properties : CAAAAAgAAAD07DHhlqQdCmTZrBLZnAYl1cC3fVz8q68xsvCGgD8sFXImsva/euU1Zd6Y1cJfbzVsWSJmZXvqF/y4ED8ZeWUUTFcMuxMTrkq6iC4l5HoRumo9YkQ8j+XC1sWElXlUBYWqemRF/ARTq5p3HtJ49VFrXlfQTc/h36jFHZWvDBTTAVqrThfrv/LVhGkbBkAqt/4a1sGAKS1tD25x85hQgHIr/LWmZMXgpjLVnqKLV97ei+zpwjxSbqmE2GVyTxocvEkH0aOQJz0c9YqtQcRrHVdmSNfOXUTMJA7CtBtrYbaz3IXhskHwuIio8bPT/3so9VuooG14nsb+S6n7SvNw1t1YzOlBeXjd+qU35mP8yV1j1IRaaDQzMIBSrdxfq1ajIGSwTStwDlDtbynbVWfZle8OQ3eKdU59brqcWQ0d3I8bqfMp+e+lBG6Cpifb0Dd6gjUgWyBV2VoCdVdFydd9IwnMgQwMPu/3i7K/0xszFm3OCTAYUTBMC5e3iyebyn+weFFUmQx8Oeqxav6Y7/TCkNsqYKWTUq0maki4Sc8Tiua1Qkb71Z+VZik3K9jjtYwL1G12/dDIubcZwcAd/O1YdF7PSm96XndjHpCblmYk6VpeAqfTYIbaJCq6ARZWBc6QI29xXmMLb3tOxOOfyzPYIDzsXDbHbxkKLiagloMp2bD2qzOXZK8TPTsOjugYQyq9IMBNhU3uVl6Ytz4YaIjQl4pMZpIuKOxoDqZrviIDRyA=
+    properties :
+     x : 1303
+     y : -126
+     width : 385
+     height : 303
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes : []
+ menu :
+  name : _Menu
+  identifier : 0x2b41d144138f098f
+  internal_properties : CAAAAAgAAACCv199ARoPUfG3WAPSG9eefhOOjWMQrs8CrX6cGGGJPoSHWBq4PXhStOWc1YnAZMZ5+EFR1WTDn8CTOTiyLnXPpAR5X8rsRkPZrm1yZeYDDt4kRzDPLbUf4Sh/mD3kd1D8V2drCFLmjeQhgpw7GKGwHRga+ZdjSqXGIC3LD1RracZ230hOmUJTj+ABDW4IHrw4PflmVGgp8E9KnAf/gselRrzEY90l3Cr9N00QijFYYrbrl4qF4kdim1YX6jYT4ezQhbJsU84ENZsxzq+o0JVHYQ8rxck600VhGV04/ao=
+  options : []
+ languages :
+  - en-GB
+ popup_menus : []
+ message_bar :
+  internal_properties : CAAAAAgAAAAjFWXItEk/EPvcbGR+hALkgRfdOpVtIn+yZNxHnmSRFJegE/AnD2HbGAaMfhGCqfzkryHG9FVhjtF+iQYkZ59QBQ88Okhh0vjCoVhOagox2hvIqrJnU30QK15/ZA==
+ actionbar : {}
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     code : |1-
+      PROCEDURE WIN_Initialization()
+      
+      // Constants
+      CONSTANT
+      	cstPLANE_MasterReplica = 1
+      	cstPLANE_SubscriberReplica = 2
+      	cstPLANE_Transfer = 3
+      	cstPLANE_MovableReplica = 4
+      END
+      
+      // Global variables
+      gnCurrentStep is int = 0
+      gnNumberStep is int = 4
+      
+      // Initialize the window
+      Initialization()
+   -
+     code : |1-
+      // Displays the first step
+      NextStep()
+     type : 34
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     code : |1-
+      // Closes the connections
+      HCloseConnection(pGlobal.gsConnectionName_Portugal)
+      HCloseConnection(pGlobal.gsConnectionName_Spain)
+     type : 2
+   -
+     code : |1-
+      
+     type : 11
+   -
+     code : |1-
+      
+     type : 12
+   -
+     code : |1-
+      
+     type : 17
+   -
+     code : |1-
+      
+     type : 13
+  procedures :
+   -
+     name : Initialization
+     procedure_id : 1760449597926437961
+     type_code : 14
+     code : |1+
+      // Summary: Initialize the window
+      // Syntax:
+      //Initialization ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      //
+      PROCEDURE Initialization()
+      
+      sListDirectories is string
+      sDirectory is string
+      	
+      	
+      // Checks whether elements from a previous execution are found in order to delete them
+      IF fDir(pGlobal.gsMasterDirectory, frDirectory) <> "" OR fDir(pGlobal.gsSubscriberDirectory, frDirectory) <> "" OR fDir(pGlobal.gsTransferDirectory, frDirectory) <> "" THEN
+      	// Assigns a time-out before closing
+      	DelayBeforeClosing(500)
+      	// Asks confirmation to the user
+      	IF YesNo("Data coming from a previous execution of the example was found." +CR+ "Do you want to delete it?" +CR+CR+ "Note: " +CR+ "Deleting the data of a previous execution is highly recommended: the initialization could trigger some errors if data is already found.") THEN 
+      		// Close the Customer file
+      		HClose(CUSTOMER)
+      		// Close the connection
+      		HCloseConnection(pGlobal.gsCurrentConnection)
+      		// List of previous directories: master and subscriber(s)...
+      		sListDirectories = fListDirectory(pGlobal.gsHomeDirectory, frNotRecursive)
+      		// Deletes the listed directories
+      		FOR EACH string sDirectory of sListDirectories SEPARATED BY CR
+      			fRemoveDir(sDirectory, frRecursive)
+      		END
+      	END
+      	// Deletes the time-out before closing
+      	DelayBeforeClosing()
+      END
+      
+     type : 458752
+   -
+     name : DisplayCurrentStep
+     procedure_id : 1760449597926503497
+     type_code : 14
+     code : |1-
+      // Summary: Displays the current step
+      // Syntax:
+      // DisplayCurrentStep ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      //
+      PROCEDURE DisplayCurrentStep()
+      
+      
+      // Displays the text
+      _DisplayText()
+      
+      // Displays the code
+      _DisplayCode()
+      
+      // Displays the animation
+      _DisplayAnimation()
+      
+      // If it si the last step, hides the "Next step" button
+      IF gnCurrentStep = gnNumberStep THEN
+      	BTN_NextStep..Visible = False
+      END
+     type : 458752
+   -
+     name : _DisplayText
+     internal_properties : CAAAAAgAAABSspNuNnAwBeKWHfzD7fVmUuna7jYeaOLVWiSddG+LT2OVg+UcMZ92Di+QPlAlO+GJMd7yv9O0XXbPXsjyTiSeeC1uMubAcMo5+/N0FoN5iTCyN6Z3C0RikkmRRHATqK7MQl7l3AyP1yN5aGru+NgLREtEwMRYMOCN0TyDPTvEN4v75Gb14ONeFpvKLQSG8astltc0FaQbWEF8r88JFFAegOXfK4mURGp6G9iX+NxlEU1sx5putYf1DrhHF3fDWULV
+     procedure_id : 1760449597926569033
+     type_code : 14
+     group : 3
+     code : |1-
+      // Summary: Displays the explanatory text of a step
+      // Syntax:
+      //_DisplayText ([<nStep> is int])
+      //
+      // Parameters:
+      //	nStep (integer): Number of the step
+      // Return value:
+      // 	None
+      //
+      PROCEDURE _DisplayText(LOCAL nStep is int = gnCurrentStep)
+      
+      // According to the step
+      SWITCH nStep
+      
+      	CASE cstPLANE_MasterReplica
+      		STC_Step = "Creating the HyperFileSQL Classic data in Portugal (master replica)"
+      		EDT_ExplanatorySteps = STC_Explanations_Step_1
+      		
+      	CASE cstPLANE_SubscriberReplica
+      		STC_Step = "Creating the Access data of Spain (subscriber replica)"
+      		EDT_ExplanatorySteps = STC_Explanations_Step_2
+      		
+      	CASE cstPLANE_Transfer
+      		STC_Step = "Inserting data of the HyperFileSQL Classic database into the Access database"
+      		EDT_ExplanatorySteps = STC_Explanations_Step_3
+      		
+      	CASE cstPLANE_MovableReplica
+      		STC_Step = "Creating the transfer directory for synchronizing the data (movable replica)"
+      		EDT_ExplanatorySteps = STC_Explanations_Step_4
+      END
+     type : 458752
+   -
+     name : _DisplayCode
+     procedure_id : 1760449597926634569
+     type_code : 14
+     group : 3
+     code : |1-
+      // Summary: Displays the code of a step
+      // Syntax:
+      //_DisplayCode([<nStep> is int])
+      //
+      // Parameters:
+      //	nStep (integer): Number of the step
+      // Return value:
+      // 	None
+      //
+      PROCEDURE _DisplayCode(LOCAL nStep is int = gnCurrentStep)
+      
+      // According to the step
+      SWITCH nStep
+      
+      	CASE cstPLANE_MasterReplica
+      		EDT_RTFCode = STC_Code_Step_1
+      		
+      	CASE cstPLANE_SubscriberReplica
+      		EDT_RTFCode = STC_Code_Step_2
+      		
+      	CASE cstPLANE_Transfer
+      		EDT_RTFCode = STC_Code_Step_3
+      		
+      	CASE cstPLANE_MovableReplica
+      		EDT_RTFCode = STC_Code_Step_4
+      		
+      END
+     type : 458752
+   -
+     name : _DisplayAnimation
+     procedure_id : 1760449597926700105
+     type_code : 14
+     group : 3
+     code : |1-
+      // Summary: Displays the animation of a step
+      // Syntax:
+      //_DisplayAnimation ([<nStep> is int])
+      //
+      // Parameters:
+      //	nStep (integer): Number of the step
+      // Return value:
+      // 	None
+      //
+      PROCEDURE _DisplayAnimation(LOCAL nStep is int = gnCurrentStep)
+      
+      
+      GR_AnimationControls..Visible = False
+      // According to the step
+      SWITCH nStep
+      
+      	CASE cstPLANE_MasterReplica
+      		IMG_AnimationBackground = IMG_Step1
+      		
+      	CASE cstPLANE_SubscriberReplica
+      		IMG_AnimationBackground = IMG_Step2
+      		
+      	CASE cstPLANE_Transfer
+      		IMG_AnimationBackground = IMG_Step3
+      		
+      	CASE cstPLANE_MovableReplica
+      		IMG_AnimationBackground = IMG_Step4
+      		
+      END
+     type : 458752
+   -
+     name : _Process
+     internal_properties : CAAAAAgAAABtvOP2bSDy3KabVvuipZQmcenTjFBU3Jod4Xm4l6uJgoq0SbdgpsLSXfqOPSi7Y8Qg7y4768SR4lyqBC8dFmlK/qn3T2dT7T6dFmA64SwkCxulV2wEKFcqDfcQEvZ8SF5AYkBhUbadkRx2qZMVXlD0zG2Xc0xGoSlpkYo+CIOUg1FwY48O9O6LNjtS1CX18+NkyPHctXrui7W3aQVRujqa+do3Cv+7PHe5oMWgdCn2PYL0yyu3R1D8XtohVIUz1OXwkUBp9TCDaqaB7dTJ3AGipfD0ANpBRgT+P/Wo5WasuDHhRXVS6rkt8N3QS8oYNrwW9OmPj0NZ24O1RBkQHDW9D03OiuSx9g==
+     procedure_id : 1760449597926765641
+     type_code : 14
+     group : 3
+     code : |1+
+      // Summary: Process a step
+      // Syntax:
+      //_Process ([<nStep> is int])
+      //
+      // Parameters:
+      //	nStep (integer): Step whose process must be performed
+      // Return value:
+      // 	None
+      //
+      PROCEDURE _Process(LOCAL nStep is int = gnCurrentStep)
+      
+      sMasterReplica is string
+      sMovableReplica is string
+      
+      // According to the step
+      SWITCH nStep
+      
+      	CASE cstPLANE_MasterReplica
+      		// Create the home directory of the data
+      		fMakeDir(pGlobal.gsMasterDirectory)
+      		
+      		// Connect to this location to create the HyperFileSQL database
+      		HOpenConnection(pGlobal.gsConnectionName_Portugal)
+      		HChangeConnection(CUSTOMER, pGlobal.gsConnectionName_Portugal)
+      		
+      		// Create the data file and insert records
+      		HCreation(CUSTOMER)
+      		CUSTOMER.LASTNAME = "BERNARD"
+      		CUSTOMER.CUSTOMERINFO = "This Customer was initially entered in Portugal"
+      		CUSTOMER.DATETIMEID = DateSys()+TimeSys()
+      		HAdd(CUSTOMER)
+      		
+      		Multitask(100)
+      		CUSTOMER.LASTNAME = "CONSTANTIN"
+      		CUSTOMER.CUSTOMERINFO = "This Customer was initially entered in Portugal"
+      		CUSTOMER.DATETIMEID = DateSys()+TimeSys()
+      		HAdd(CUSTOMER)
+      		
+      		// Create the master replica with this data
+      		IF HCreateMasterReplica(pGlobal.gsMasterDirectory+["\"]+cstNameMasterReplica) = False THEN 
+      			EndProgram("Failure creating the master replica." +CR+ HErrorInfo(hErrMessage))
+      		END
+      		
+      	CASE cstPLANE_SubscriberReplica
+      		
+      		// Create the home directory of the data
+      		fMakeDir(pGlobal.gsSubscriberDirectory)
+      		
+      		// Create the subscriber replica for the site
+      		IF HCreateSubscriberReplica(pGlobal.gsMasterDirectory, pGlobal.gsSubscriberDirectory, "SPAIN", 0, "CUSTOMER" +TAB+ "DATETIMEID") = False THEN
+      			EndProgram("Failure creating the subscriber replica." +CR+ HErrorInfo(hErrMessage))
+      		END
+      		
+      	CASE cstPLANE_Transfer
+      		
+      		// Transfer the HyperFileSQL database into the ACCESS database (first synchronization)
+      		// Then, the Access database can be exploited
+      		// with these replication files
+      		sMasterReplica = pGlobal.gsMasterDirectory +["\"]+ cstNameMasterReplica
+      		
+      		// Open a connection on the HyperFileSQL database (Portugal)
+      		OpenAConnection("PORTUGAL")
+      		
+      		// Create the movable replica with the initial content of the HyperFileSQL database
+      		HCreateMoveableReplica(sMasterReplica, "SPAIN", "")
+      		
+      		// Establish a connection on the Spanish Access database
+      		OpenAConnection("SPAIN")
+      		sMovableReplica = pGlobal.gsMasterDirectory + RPL.File
+      		
+      		// Create the data file: the Access database
+      		HCreation(CUSTOMER)
+      		
+      		// Synchronize the replica with the Access database in order for the data of the master to be found in the subscriber
+      		HSynchronizeReplica(sMovableReplica, pGlobal.gsSubscriberDirectory +["\"]+ cstNameMainSubscriberReplica, rplToSubscriber)
+      		
+      		// A synchronization must also be performed from the subscriber to the master
+      		// The master will be "informed" that the initial synchronization was successfully performed
+      		HCreateMoveableReplica(pGlobal.gsSubscriberDirectory +["\"]+ cstNameMainSubscriberReplica, "SPAIN", "")
+      		sMovableReplica = pGlobal.gsTransferDirectory +["\"]+ RPL.File 
+      		fCopyFile(pGlobal.gsSubscriberDirectory +["\"]+ RPL.File, sMovableReplica)
+      		
+      		// Connect to the master database in order to synchronize this new subscriber replica...
+      		OpenAConnection("PORTUGAL")		
+      		HSynchronizeReplica(pGlobal.gsMasterDirectory +["\"]+ cstNameMasterReplica, sMovableReplica, rplToMaster)
+      		
+      	CASE cstPLANE_MovableReplica
+      		
+      		// Create the directory to store the movable replicas
+      		fMakeDir(pGlobal.gsTransferDirectory)
+      		
+      END
+     type : 458752
+   -
+     name : NextStep
+     procedure_id : 1760449597926831177
+     type_code : 14
+     code : |1-
+      // Summary: goes to the next step
+      // Syntax:
+      //NextStep ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      //
+      PROCEDURE NextStep()
+      
+      // Process the current step
+      _Process()
+      
+      // Increments the current step
+      gnCurrentStep++
+      
+      // Displays the step
+      DisplayCurrentStep()
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAAAspXRQsX4kpYpRJzI8SMGEUfXYJhQeqig0H9mPZLI9hoPnkeFEnSQ8t7JVd8VUY9eLyST/2DyAYB+9rK7lbHVOclfSdkhgAQ9dNjlmStKMpPl9
+  original_name : Modele1
+resources :
+ string_res :
+  identifier : 0x1b30e765000ca40e
+  internal_properties : CAAAAAgAAACyXVFaObH4lOGSEHJoZf1MD49w+XTw2LScZCP/urkWFwy+HYJdyQ3umA==
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe
